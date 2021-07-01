@@ -1,11 +1,56 @@
 @charset "utf-8";
 /* global */
 
+body {
+  overflow: auto;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+header .fa {
+  padding: 7px 11px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  bottom: -14px;
+  right: 15px;
+  border-radius: 50%;
+}
+
+div .fa {
+  padding: 7px 11px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  background: #f96332;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
 /* nav */
@@ -37,14 +82,14 @@ nav ul li {
 }
 
 nav ul li a:hover {
-  background-color: rgba(245, 245, 245, 0.4);
-  color: black;
+  color: white;
+  background-color: rgba(249, 99, 50, 0.6);
 }
 
 nav ul a {
   text-decoration: none;
-  color: white;
-  background-color: black;
+  background-color: rgba(245, 245, 245, 0.6);
+  color: black;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: large;
@@ -61,8 +106,6 @@ header {
   padding: 19.2% 10.8%;
   width: 78.4%;
   text-align: center;
- 
-
 }
 
 header h1 {
@@ -79,25 +122,6 @@ header h1 span {
   font-size: 90%;
 }
 
-.fa {
-  padding: 7px 11px;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  bottom: -14px;
-  right: 15px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  background: #f96332;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
 /* article */
 
 article {
@@ -106,7 +130,7 @@ article {
 }
 
 article h2 {
-  margin: 4% auto 2% 2%;
+  margin: 75px auto 2% 2%;
 }
 
 article p {
@@ -122,27 +146,172 @@ article q {
   opacity: 0.5;
 }
 
+/* section */
+
+section {
+  position: relative;
+}
+
+section img {
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  display: block;
+  margin: auto;
+}
+
+section img:nth-child(1) {
+  top: 350px;
+  z-index: 999;
+  left: 225px;
+}
+
+section img:nth-child(2) {
+  bottom: 200px;
+  left: -125px;
+}
+
+section p {
+  border: 2px solid #f96332;
+  color: #f96332;
+  opacity: 1;
+  padding: 1.5%;
+  width: 300px;
+  margin: auto;
+  position: relative;
+  bottom: 150px;
+  left: -175px;
+}
+
+section p span {
+  opacity: 0.5;
+}
+
+section aside {
+  width: 425px;
+  position: absolute;
+  left: 54.5%;
+  bottom: 7%;
+}
+
+section aside h3 {
+  margin: auto auto 2% 2%;
+}
+
+section img:nth-child(4) {
+  left: -245px;
+  bottom: 100px;
+}
+
+/* div */
+
+div {
+  width: 100%;
+  padding: 2% 0;
+  background-color: rgba(249, 99, 50, 0.025);
+  text-align: center;
+}
+
+div h2 {
+  text-align: left;
+  margin: 2% auto 4% 8%;
+}
+
+div img {
+  vertical-align: super;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  margin: auto 1%;
+  filter: grayscale(100%);
+}
+
+div span {
+  display: inline-block;
+  width: 220px;
+  height: 258px;
+  margin: auto 1%;
+}
+
+div span h3 {
+  margin: 4%;
+}
+
+div span h3 span {
+  display: inline;
+  width: unset;
+  height: unset;
+  color: #f96332;
+}
+
 /* breaks */
 
-@media only Screen and (max-width: 992px) {
+@media only Screen and (max-width: 1024px) {
   nav ul a,
   header h1 {
     font-size: 120%;
   }
   article {
     width: 90%;
-    font-size: 80%;
+  }
+  article h2 {
+    margin: 4% auto 2% 2%;
+  }
+  section {
+    position: static;
+  }
+  section img {
+    position: static;
+    margin-top: 5%;
+    height: 100%;
+    display: block;
+    left: unset;
+    top: unset;
+    bottom: unset;
+  }
+  section img:nth-child(1),
+  section img:nth-child(2) {
+    width: 60%;
+  }
+  section img:nth-child(4) {
+    width: 90%;
+  }
+  section p,
+  section aside {
+    position: static;
+    left: unset;
+    bottom: unset;
+    width: 87%;
+    margin: 4% auto;
+    padding: 1.5%;
+  }
+  div img {
+    display: block;
+    margin: auto;
+  }
+  div span {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: 175px;
   }
 }
 @media only Screen and (max-width: 576px) {
   nav ul a,
-  header h1 {
-    font-size: 100%;
+  header h1,
+  article,
+  section p,
+  section aside,
+  div {
+    font-size: 90%;
   }
 }
 @media only Screen and (max-width: 320px) {
   nav ul a,
-  header h1 {
+  header h1,
+  article,
+  section p,
+  section aside,
+  div {
     font-size: 65%;
   }
 }
