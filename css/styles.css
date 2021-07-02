@@ -24,8 +24,9 @@ h3 {
 }
 
 article q,
-section p span,
-header h1 span {
+section q,
+header h1 span,
+#section2 span p  {
   opacity: 0.85;
 }
 
@@ -64,7 +65,7 @@ header .fa {
 
 #section2 .fa {
   padding: 7px 11px;
-  margin: auto;
+  margin: 3%;
   text-align: center;
   text-decoration: none;
 }
@@ -173,7 +174,7 @@ article p {
 }
 
 article h2 {
-  margin: 75px auto 2% 4%;
+  margin: 100px auto 2% 4%;
 }
 
 /* #section1  */
@@ -212,7 +213,7 @@ article h2 {
   width: 425px;
   position: absolute;
   left: 54.5%;
-  bottom: 75px;
+  bottom: 60px;
 }
 
 #section1 aside h3 {
@@ -228,14 +229,14 @@ article h2 {
 
 #section2 {
   width: 100%;
-  padding: 2% 0;
+  padding: 2.5% 0;
   background-color: rgba(249, 99, 50, 0.025);
   text-align: center;
 }
 
 #section2 h2 {
   text-align: left;
-  margin: 2% auto 4% 8%;
+  margin: auto auto 4% 8%;
 }
 
 #section2 img {
@@ -253,8 +254,10 @@ article h2 {
   text-align: left;
 }
 
-#section2 span h3 {
+
+#section2 span h3, #section2 span p {
   margin: 4%;
+  text-align: right;
 }
 
 #section2 span h3 span {
@@ -275,7 +278,7 @@ article h2 {
     width: 90%;
   }
   article h2 {
-    margin: 4% auto 2% 2%;
+    margin: 6% auto 2% 2%;
   }
   #section1 {
     position: static;
@@ -313,7 +316,9 @@ article h2 {
     display: block;
     margin: auto;
     width: 60%;
-    height: 175px;
+    text-align: center;
+  }
+  #section2 span h3, #section2 span p {
     text-align: center;
   }
 }
