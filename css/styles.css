@@ -253,6 +253,7 @@ article h2 {
 #section2 h2 {
   text-align: left;
   margin: auto auto 4% 8%;
+  display: inline-blockßßß;
 }
 
 #section2 img {
@@ -386,9 +387,14 @@ footer ul li a:hover {
   #section2 h3,
   #section2 p span {
     text-align: center;
+    width: initial;
+
   }
   #section2 div:nth-child(odd) div:last-of-type p {
     height: 200px;
+  }
+  #section2 .fa { 
+    margin: 1%;
   }
 }
 @media only Screen and (max-width: 576px) {
