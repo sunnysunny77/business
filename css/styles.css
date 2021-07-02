@@ -3,12 +3,12 @@
 
 body {
   overflow: auto;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Trebuchet MS", sans-serif;
 }
 
 h2,
@@ -291,6 +291,42 @@ article h2 {
   color: #f96332;
 }
 
+/* footer */
+
+footer {
+  display: flex;
+  height: 200px;
+  background-color: rgba(249, 99, 50, 0.85);
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+  color: white;
+  font-family: Tahoma, sans-serif;
+}
+
+footer ul a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: large;
+  outline: none;
+}
+
+.over {
+  border-top: 1px solid white ;
+  padding: 5px 10px;
+  width: 132px;
+}
+
+footer ul li a:hover {
+  color: black;
+ 
+}
+
+
 /* breaks */
 
 @media only Screen and (max-width: 1024px) {
@@ -356,7 +392,7 @@ article h2 {
     text-align: center;
   }
   #section2 div:nth-child(odd) div:last-of-type p {
-    height: initial;
+    height: 200px;
   }
 }
 @media only Screen and (max-width: 576px) {
@@ -365,7 +401,8 @@ article h2 {
   article,
   #section1 p,
   #section1 aside,
-  #section2 {
+  #section2,
+  footer {
     font-size: 90%;
   }
 }
@@ -375,7 +412,8 @@ article h2 {
   article,
   #section1 p,
   #section1 aside,
-  #section2 {
+  #section2,
+  footer {
     font-size: 65%;
   }
 }
