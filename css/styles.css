@@ -25,7 +25,7 @@ h3 {
 }
 
 article q,
-section q,
+div q,
 header h1 span,
 #section2 span p {
   opacity: 0.85;
