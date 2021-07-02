@@ -8,8 +8,48 @@ body {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+h2,
+h3,
+nav ul a {
+  font-family: Tahoma, sans-serif;
+  color: black;
+}
+
+h2,
+h3 {
+  font-size: 110%;
+}
+
+article q,
+section p span,
+header h1 span {
+  opacity: 0.85;
+}
+
+article span,
+aside span,
+#section2 span {
+  color: #303030;
+}
+
+article span,
+aside span {
+  text-align: justify;
+  display: inline-block;
+}
+
+img {
+  border: 1px solid lightgray;
+}
+
+#section1 p,
+article p {
+  border: 2px solid #f96332;
+  color: #f96332;
+  padding: 1.5%;
 }
 
 header .fa {
@@ -22,7 +62,7 @@ header .fa {
   border-radius: 50%;
 }
 
-div .fa {
+#section2 .fa {
   padding: 7px 11px;
   margin: auto;
   text-align: center;
@@ -83,16 +123,16 @@ nav ul li {
 
 nav ul li a:hover {
   color: white;
-  background-color: rgba(249, 99, 50, 0.6);
+  background-color: rgba(249, 99, 50, 0.8);
 }
 
 nav ul a {
   text-decoration: none;
-  background-color: rgba(245, 245, 245, 0.6);
-  color: black;
+  background-color: rgba(245, 245, 245, 0.8);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: large;
+  outline: none;
 }
 
 /* header */
@@ -118,7 +158,6 @@ header h1 {
 }
 
 header h1 span {
-  opacity: 0.8;
   font-size: 90%;
 }
 
@@ -129,53 +168,39 @@ article {
   margin: auto;
 }
 
+article p {
+  margin: 2% auto;
+}
+
 article h2 {
   margin: 75px auto 2% 4%;
 }
 
-article p {
-  border: 2px solid #f96332;
-  display: block;
-  margin: 2% auto;
-  color: #f96332;
-  opacity: 1;
-  padding: 1.5%;
-}
+/* #section1  */
 
-article q {
-  opacity: 0.5;
-}
-
-/* section */
-
-section {
+#section1 {
   position: relative;
 }
 
-section img {
+#section1 img {
   position: relative;
   border-radius: 5px;
-  border: 1px solid lightgray;
   display: block;
   margin: auto;
 }
 
-section img:nth-child(1) {
+#section1 img:nth-child(1) {
   top: 350px;
   z-index: 999;
   left: 225px;
 }
 
-section img:nth-child(2) {
+#section1 img:nth-child(2) {
   bottom: 200px;
   left: -125px;
 }
 
-section p {
-  border: 2px solid #f96332;
-  color: #f96332;
-  opacity: 1;
-  padding: 1.5%;
+#section1 p {
   width: 300px;
   margin: auto;
   position: relative;
@@ -183,60 +208,56 @@ section p {
   left: -175px;
 }
 
-section p span {
-  opacity: 0.5;
-}
-
-section aside {
+#section1 aside {
   width: 425px;
   position: absolute;
   left: 54.5%;
   bottom: 75px;
 }
 
-section aside h3 {
+#section1 aside h3 {
   margin: auto auto 2% 2%;
 }
 
-section img:nth-child(4) {
+#section1 img:nth-child(4) {
   left: -245px;
   bottom: 100px;
 }
 
-/* div */
+/* #section2 */
 
-div {
+#section2 {
   width: 100%;
   padding: 2% 0;
   background-color: rgba(249, 99, 50, 0.025);
   text-align: center;
 }
 
-div h2 {
+#section2 h2 {
   text-align: left;
   margin: 2% auto 4% 8%;
 }
 
-div img {
+#section2 img {
   vertical-align: super;
   border-radius: 50%;
-  border: 1px solid lightgray;
   margin: auto 1%;
   filter: grayscale(100%);
 }
 
-div span {
+#section2 span {
   display: inline-block;
   width: 220px;
   height: 258px;
   margin: auto 1%;
+  text-align: left;
 }
 
-div span h3 {
+#section2 span h3 {
   margin: 4%;
 }
 
-div span h3 span {
+#section2 span h3 span {
   display: inline;
   width: unset;
   height: unset;
@@ -256,10 +277,10 @@ div span h3 span {
   article h2 {
     margin: 4% auto 2% 2%;
   }
-  section {
+  #section1 {
     position: static;
   }
-  section img {
+  #section1 img {
     position: static;
     margin-top: 5%;
     height: 100%;
@@ -268,15 +289,15 @@ div span h3 span {
     top: unset;
     bottom: unset;
   }
-  section img:nth-child(1),
-  section img:nth-child(2) {
+  #section1 img:nth-child(1),
+  #section1 img:nth-child(2) {
     width: 60%;
   }
-  section img:nth-child(4) {
+  #section1 img:nth-child(4) {
     width: 90%;
   }
-  section p,
-  section aside {
+  #section1 p,
+  #section1 aside {
     position: static;
     left: unset;
     bottom: unset;
@@ -284,24 +305,25 @@ div span h3 span {
     margin: 4% auto;
     padding: 1.5%;
   }
-  div img {
+  #section2 img {
     display: block;
     margin: auto;
   }
-  div span {
+  #section2 span {
     display: block;
     margin: auto;
     width: 60%;
     height: 175px;
+    text-align: center;
   }
 }
 @media only Screen and (max-width: 576px) {
   nav ul a,
   header h1,
   article,
-  section p,
-  section aside,
-  div {
+  #section1 p,
+  #section1 aside,
+  #section2 {
     font-size: 90%;
   }
 }
@@ -309,9 +331,9 @@ div span h3 span {
   nav ul a,
   header h1,
   article,
-  section p,
-  section aside,
-  div {
+  #section1 p,
+  #section1 aside,
+  #section2 {
     font-size: 65%;
   }
 }
