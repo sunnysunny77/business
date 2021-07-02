@@ -171,7 +171,7 @@ article {
 }
 
 article p {
-  margin: 2% auto;
+  margin: 4% auto;
 }
 
 article h2 {
@@ -310,7 +310,7 @@ article h2 {
     padding: 1.5%;
   }
   #section2 {
-    padding: 0;
+    padding: 0 0 6% 0;
   }
   #section2 img {
     display: block;
@@ -325,6 +325,10 @@ article h2 {
   #section2 span h3, #section2 span p {
     text-align: center;
   }
+  #section2 span:last-of-type {
+    height: initial;
+  }
+  
 }
 @media only Screen and (max-width: 576px) {
   nav ul a,
