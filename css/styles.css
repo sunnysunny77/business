@@ -402,6 +402,10 @@ footer ul li a:hover {
   }
 }
 @media only Screen and (max-width: 576px) {
+  header {
+    min-height: 20vh;
+    background-size: cover;
+  }
   nav ul a,
   header h1,
   article,
