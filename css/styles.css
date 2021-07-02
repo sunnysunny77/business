@@ -27,7 +27,7 @@ h3 {
 article q,
 section q,
 header h1 span,
-#section2 span p  {
+#section2 span p {
   opacity: 0.85;
 }
 
@@ -235,6 +235,20 @@ article h2 {
   text-align: center;
 }
 
+#section2 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section2 div div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
 #section2 h2 {
   text-align: left;
   margin: auto auto 4% 8%;
@@ -247,7 +261,7 @@ article h2 {
   filter: grayscale(100%);
 }
 
-#section2 span {
+#section2 p {
   display: inline-block;
   width: 220px;
   height: 258px;
@@ -255,13 +269,21 @@ article h2 {
   text-align: left;
 }
 
-
-#section2 span h3, #section2 span p {
-  margin: 4%;
+#section2 h3 {
+  margin: 0;
   text-align: right;
+  display: inline-block;
+  width: calc(220px + 1%);
 }
 
-#section2 span h3 span {
+#section2 span {
+  margin: 4% 0;
+  text-align: right;
+  display: inline-block;
+  width: 220px;
+}
+
+#section2 h3 span {
   display: inline;
   width: unset;
   height: unset;
@@ -312,22 +334,31 @@ article h2 {
   #section2 {
     padding: 0 0 2% 0;
   }
+  #section2 div {
+    flex-direction: column;
+  }
+  #section2 div div {
+    width: 60%;
+  }
   #section2 img {
     display: block;
-    margin: auto;
+    margin: auto auto 2% auto;
   }
-  #section2 span {
+  #section2 p {
     display: block;
     margin: auto;
-    width: 60%;
+    width: 100%;
     text-align: center;
   }
-  #section2 span h3, #section2 span p {
+  #section2 h3,
+  #section2 p span {
     text-align: center;
   }
-  #section2 span:last-of-type {
+  #section2 div:nth-child(odd) div:last-of-type p {
     height: initial;
   }
+}
+
   
 }
 @media only Screen and (max-width: 576px) {
