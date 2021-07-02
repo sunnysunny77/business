@@ -407,7 +407,6 @@ footer ul li a:hover {
     background-size: cover;
   }
   nav ul a,
-  header h1,
   article,
   #section1 p,
   #section1 aside,
@@ -418,7 +417,6 @@ footer ul li a:hover {
 }
 @media only Screen and (max-width: 320px) {
   nav ul a,
-  header h1,
   article,
   #section1 p,
   #section1 aside,
