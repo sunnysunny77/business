@@ -230,7 +230,7 @@ article h2 {
 
 #section2 {
   width: 100%;
-  padding: 2% 0;
+  padding: 1% 0;
   background-color: rgba(249, 99, 50, 0.025);
   text-align: center;
 }
@@ -247,6 +247,7 @@ article h2 {
   flex-direction: column;
   flex-wrap: wrap;
   width: 220px;
+  margin: auto 2% auto 0%;
 }
 
 #section2 h2 {
@@ -257,7 +258,7 @@ article h2 {
 #section2 img {
   vertical-align: super;
   border-radius: 50%;
-  margin: auto 1%;
+  margin: auto 2% auto 0%;
   filter: grayscale(100%);
 }
 
@@ -357,9 +358,6 @@ article h2 {
   #section2 div:nth-child(odd) div:last-of-type p {
     height: initial;
   }
-}
-
-  
 }
 @media only Screen and (max-width: 576px) {
   nav ul a,
