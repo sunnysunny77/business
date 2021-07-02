@@ -21,6 +21,7 @@ nav ul a {
 h2,
 h3 {
   font-size: 110%;
+  padding-top: 2%;
 }
 
 article q,
@@ -174,7 +175,7 @@ article p {
 }
 
 article h2 {
-  margin: 100px auto 2% 4%;
+  margin: 85px auto 2% 4%;
 }
 
 /* #section1  */
@@ -229,7 +230,7 @@ article h2 {
 
 #section2 {
   width: 100%;
-  padding: 2.5% 0;
+  padding: 2% 0;
   background-color: rgba(249, 99, 50, 0.025);
   text-align: center;
 }
@@ -307,6 +308,9 @@ article h2 {
     width: 87%;
     margin: 4% auto;
     padding: 1.5%;
+  }
+  #section2 {
+    padding: 0;
   }
   #section2 img {
     display: block;
