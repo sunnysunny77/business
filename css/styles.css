@@ -153,9 +153,9 @@ header {
 header h1 {
   position: absolute;
   bottom: 12.5%;
-  right: 10%;
+  right: 5%;
   color: white;
-  width: 45%;
+  width: 50%;
   border-radius: 5px;
 }
 
