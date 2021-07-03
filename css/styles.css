@@ -406,6 +406,9 @@ footer ul li a:hover {
     min-height: 20vh;
     background-size: cover;
   }
+  header h1{
+    font-size: 100%;
+  }
   nav ul a,
   article,
   #section1 p,
@@ -418,6 +421,7 @@ footer ul li a:hover {
 @media only Screen and (max-width: 320px) {
   nav ul a,
   article,
+  header h1,
   #section1 p,
   #section1 aside,
   #section2,
