@@ -213,8 +213,8 @@ article h2 {
 #section1 aside {
   width: 425px;
   position: absolute;
-  left: 56%;
-  bottom: 60px;
+  left: calc(50% + 65px);
+  bottom: 70px;
 }
 
 #section1 aside h3 {
