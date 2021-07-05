@@ -174,7 +174,7 @@ article p {
 }
 
 article h2 {
-  margin: 115px auto 2% 4%;
+  margin: calc(75px + 4%) auto 2% 4%;
 }
 
 /* #section1  */
@@ -229,7 +229,7 @@ article h2 {
 
 #section2 {
   width: 100%;
-  padding: 2.75% 0;
+  padding: 35px 0;
   background-color: rgba(156, 44, 7, 0.025);
 }
 
@@ -275,7 +275,7 @@ article h2 {
 }
 
 #section2 p span:nth-child(1) {
-  margin: 4% 0;
+  margin: 10px 0;
   text-align: right;
   display: inline-block;
   width: 220px;
@@ -380,7 +380,7 @@ footer ul li a:hover {
   }
   #section2 img {
     display: block;
-    margin: auto auto 2% auto;
+    margin: auto auto 20px auto;
   }
   #section2 p {
     width: 100%;
@@ -397,7 +397,7 @@ footer ul li a:hover {
     width: initial;
   }
   #section2 div:nth-child(odd) div:last-of-type p {
-    height: 215px;
+    height: 185px;
   }
   #section2 .fa {
     margin: auto 1%;
