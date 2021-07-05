@@ -301,7 +301,7 @@ article h2 {
 
 footer {
   display: flex;
-  height: 200px;
+  height: 250px;
   background-color: rgba(156, 44, 7, 0.95);
   justify-content: space-around;
   align-items: center;
