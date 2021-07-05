@@ -395,6 +395,13 @@ footer ul li a:hover {
     height: initial;
     padding: 3% 0;
   }
+  #section2 div div span:nth-child(3) {
+    width: 100%;
+  }
+  #section2 .fab {
+    margin: auto 0;
+  }
+  
 }
 @media only Screen and (max-width: 576px) {
   header {
