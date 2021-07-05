@@ -22,6 +22,9 @@ h2,
 h3 {
   font-size: 110%;
 }
+h2 {
+  padding-top: 10px;
+}
 
 article q,
 div q,
@@ -172,7 +175,7 @@ article p {
 }
 
 article h2 {
-  margin: calc(75px + 4%) auto 2% 4%;
+  margin: calc(65px + 4%) auto 2% 4%;
 }
 
 /* #section1  */
@@ -250,7 +253,6 @@ article h2 {
 }
 
 #section2 img {
-  vertical-align: super;
   border-radius: 50%;
   margin: auto 1.5% auto 1.5%;
   filter: grayscale(100%);
@@ -269,7 +271,7 @@ article h2 {
 
 #section2 p {
   width: 222px;
-  height: 211px;
+  height: 222px;
   text-align: left;
   color: black;
   display: flex;
@@ -410,6 +412,10 @@ footer ul li a:hover {
   }
   header h1{
     font-size: 100%;
+  }
+  nav ul:nth-child(1) {
+    text-align: left;
+    margin-left: 5%;
   }
   nav ul a,
   article,
