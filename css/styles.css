@@ -120,7 +120,7 @@ nav ul:nth-child(2) {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
 }
 
 nav ul li a:hover {
@@ -129,12 +129,13 @@ nav ul li a:hover {
 }
 
 nav ul a {
+  padding: 5px 12px;
   text-decoration: none;
   background-color: rgba(245, 245, 245, 0.95);
-  padding: 5px 10px;
   border-radius: 5px;
   font-size: large;
   outline: none;
+  display: inline-block;
 }
 
 /* header */
@@ -314,16 +315,18 @@ footer ul {
 
 footer ul a {
   color: white;
+  padding: 7.5px;
   text-decoration: none;
-  padding: 5px 10px;
   font-size: large;
   outline: none;
+  display: inline-block;
+  width: 100%;
 }
 
 #over {
   border-top: 1px solid white;
   padding: 5px 10px;
-  width: 132px;
+  width: 155px;
 }
 
 footer ul li a:hover {
