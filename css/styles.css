@@ -426,7 +426,8 @@ footer ul li a:hover {
   #section1 p,
   #section1 aside,
   #section2,
-  footer {
+  footer ul li,
+  footer ul li a {
     font-size: 90%;
   }
 }
@@ -437,7 +438,8 @@ footer ul li a:hover {
   #section1 p,
   #section1 aside,
   #section2,
-  footer {
+  footer ul li,
+  footer ul li a {
     font-size: 65%;
   }
 }
