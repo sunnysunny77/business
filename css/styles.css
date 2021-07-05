@@ -174,7 +174,7 @@ article p {
 }
 
 article h2 {
-  margin: 85px auto 2% 4%;
+  margin: 115px auto 2% 4%;
 }
 
 /* #section1  */
@@ -229,7 +229,7 @@ article h2 {
 
 #section2 {
   width: 100%;
-  padding: 1% 0;
+  padding: 2.75% 0;
   background-color: rgba(156, 44, 7, 0.025);
 }
 
@@ -338,6 +338,9 @@ footer ul li a:hover {
   article h2 {
     margin: 6% auto 2% 2%;
   }
+  article p {
+  padding: 1.5%;
+  }
   #section1 {
     position: static;
   }
@@ -367,7 +370,7 @@ footer ul li a:hover {
     padding: 1.5%;
   }
   #section2 {
-    padding: 0 0 2% 0;
+    padding: 0;
   }
   #section2 div {
     flex-direction: column;
@@ -394,7 +397,7 @@ footer ul li a:hover {
     width: initial;
   }
   #section2 div:nth-child(odd) div:last-of-type p {
-    height: 180px;
+    height: 215px;
   }
   #section2 .fa {
     margin: auto 1%;
