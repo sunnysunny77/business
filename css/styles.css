@@ -189,7 +189,7 @@ article h2 {
 }
 
 #section1 img:nth-child(1) {
-  top: 350px;
+  bottom: -350px;
   z-index: 999;
   left: 225px;
 }
@@ -203,7 +203,7 @@ article h2 {
   width: 300px;
   margin: auto;
   position: relative;
-  bottom: 150px;
+  top: -150px;
   left: -175px;
 }
 
@@ -352,7 +352,6 @@ footer ul li a:hover {
     height: 100%;
     display: block;
     left: unset;
-    top: unset;
     bottom: unset;
   }
   #section1 img:nth-child(1),
@@ -366,7 +365,7 @@ footer ul li a:hover {
   #section1 aside {
     position: static;
     left: unset;
-    bottom: unset;
+    top: unset;
     width: 87%;
     margin: 4% auto;
     padding: 1.5%;
@@ -379,6 +378,7 @@ footer ul li a:hover {
   }
   #section2 div div {
     width: 60%;
+    margin: auto;
   }
   #section2 img {
     display: block;
