@@ -350,7 +350,7 @@ footer ul li a:hover {
   }
   #section1 img {
     position: static;
-    margin-top: 5%;
+    margin-top: 4%;
     height: 100%;
     display: block;
     left: unset;
@@ -362,7 +362,7 @@ footer ul li a:hover {
   }
   #section1 img:nth-child(4) {
     width: 90%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
   }
   #section1 p,
   #section1 aside {
