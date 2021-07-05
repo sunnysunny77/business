@@ -362,6 +362,7 @@ footer ul li a:hover {
   }
   #section1 img:nth-child(4) {
     width: 90%;
+    margin-bottom: 5%;
   }
   #section1 p,
   #section1 aside {
