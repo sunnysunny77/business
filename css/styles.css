@@ -21,7 +21,6 @@ nav ul a {
 h2,
 h3 {
   font-size: 110%;
-  padding-top: 2%;
 }
 
 article q,
@@ -51,7 +50,7 @@ img {
 article p {
   border: 2px solid #9c2c07;
   color: #9c2c07;
-  padding: 1.5%;
+  padding: 25px;
 }
 
 header .fab {
@@ -214,7 +213,7 @@ article h2 {
   width: 425px;
   position: absolute;
   left: calc(50% + 65px);
-  bottom: 70px;
+  top: calc(50% + 45px);
 }
 
 #section1 aside h3 {
@@ -251,7 +250,7 @@ article h2 {
 
 #section2 h2 {
   text-align: left;
-  margin: auto auto 4% 8%;
+  margin: auto auto 40px 8%;
 }
 
 #section2 img {
@@ -403,8 +402,9 @@ footer ul li a:hover {
 }
 @media only Screen and (max-width: 576px) {
   header {
-    min-height: 20vh;
-    background-size: cover;
+    min-height: 10.8vh;
+
+    background-image: url(../images/headerm.jpg);
   }
   header h1{
     font-size: 100%;
