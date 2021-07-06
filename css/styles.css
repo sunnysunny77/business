@@ -129,7 +129,7 @@ nav ul li a:hover {
 }
 
 nav ul a {
-  padding: 5px 12px;
+  padding: 5px 7.5px;
   text-decoration: none;
   background-color: rgba(245, 245, 245, 0.95);
   border-radius: 5px;
@@ -432,7 +432,7 @@ footer ul li a:hover {
     justify-content: center;
   }
   .slk div{
-    margin-left: 0;
+    margin: 0;
   }
 }
 @media only Screen and (max-width: 576px) {
@@ -448,14 +448,14 @@ footer ul li a:hover {
   }
   nav ul:nth-child(1) {
     text-align: left;
-    margin-left: 5%;
+    margin-left: 2.5%;
   }
   nav ul:nth-child(1) li  {
     margin-top: 5px;
   }
   nav ul:nth-child(2) {
     text-align: right;
-    margin-right: 5%;
+    margin-right: 2.5%;
   }
   nav ul:nth-child(2) li  {
     margin-top: 5px;
@@ -476,9 +476,11 @@ footer ul li a:hover {
   header h1,
   #section1 p,
   #section1 aside,
-  #section2,
+  #section2 {
+    font-size: 70%;
+  }
   footer ul li,
   footer ul li a {
-    font-size: 70%;
+    font-size: 85%;
   }
 }
