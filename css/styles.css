@@ -301,7 +301,6 @@ article h2 {
 
 footer {
   display: flex;
-  height: 250px;
   background-color: rgba(156, 44, 7, 0.95);
   justify-content: space-around;
   align-items: center;
@@ -311,6 +310,10 @@ footer ul {
   list-style-type: none;
   color: white;
   font-family: Tahoma, sans-serif;
+}
+
+footer ul:nth-child(1) {
+  padding: 30px 0 15px 0;
 }
 
 footer ul a {
@@ -326,7 +329,7 @@ footer ul a {
 #over {
   border-top: 1px solid white;
   padding: 5px 10px;
-  width: 155px;
+  width: 100%;
 }
 
 footer ul li a:hover {
@@ -417,9 +420,22 @@ footer ul li a:hover {
   header h1{
     font-size: 100%;
   }
+  nav {
+    align-items: baseline;
+  }
   nav ul:nth-child(1) {
     text-align: left;
     margin-left: 5%;
+  }
+  nav ul:nth-child(1) li  {
+    margin-top: 5px;
+  }
+  nav ul:nth-child(2) {
+    text-align: right;
+    margin-right: 5%;
+  }
+  nav ul:nth-child(2) li  {
+    margin-top: 5px;
   }
   nav ul a,
   article,
@@ -428,7 +444,7 @@ footer ul li a:hover {
   #section2,
   footer ul li,
   footer ul li a {
-    font-size: 90%;
+    font-size: 95%;
   }
 }
 @media only Screen and (max-width: 320px) {
@@ -440,6 +456,6 @@ footer ul li a:hover {
   #section2,
   footer ul li,
   footer ul li a {
-    font-size: 65%;
+    font-size: 80%;
   }
 }
