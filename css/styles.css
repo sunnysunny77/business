@@ -297,6 +297,24 @@ article h2 {
   margin: 11px auto 50px auto;
 }
 
+/* slick */
+
+.slk {
+  display:flex;
+  justify-content: flex-end;
+  background-color: antiquewhite;
+  padding: 2.5% 0;
+}
+
+.slk div{
+  width: 200px;
+  margin-right: 5%;
+}
+
+.slk img {
+  border: none;
+}
+
 /* footer */
 
 footer {
@@ -410,7 +428,12 @@ footer ul li a:hover {
   #section2 .fab {
     margin: auto 0;
   }
-  
+  .slk {
+    justify-content: center;
+  }
+  .slk div{
+    margin-left: 0;
+  }
 }
 @media only Screen and (max-width: 576px) {
   header {
@@ -444,7 +467,7 @@ footer ul li a:hover {
   #section2,
   footer ul li,
   footer ul li a {
-    font-size: 95%;
+    font-size: 90%;
   }
 }
 @media only Screen and (max-width: 320px) {
