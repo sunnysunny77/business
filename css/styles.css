@@ -4,6 +4,8 @@
 body {
   overflow: auto;
   font-family: "Trebuchet MS", sans-serif;
+  max-width: 1920px;
+  margin: auto;
 }
 
 * {
@@ -103,6 +105,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  max-width: 1920px;
   height: 50px;
   z-index: 999;
 }
@@ -482,5 +485,10 @@ footer ul li a:hover {
   footer ul li,
   footer ul li a {
     font-size: 85%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body {
+    box-shadow: 1px 0 grey, -1px 0 grey;
   }
 }
