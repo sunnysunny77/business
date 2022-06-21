@@ -314,9 +314,10 @@ figure {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  margin: 5%;
+  margin: 4% 8%;
   min-width: 380px;
   border: 3px solid rgba(156, 44, 7,0.5);
+  border-radius: 10px;
 }
 
 figure img {
@@ -344,11 +345,12 @@ figcaption b {
 }
 
 figure:hover img, figure:focus img {
-  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: scale(1.035);
+  opacity: 0.975;
 }
 
-figure:hover figcaption,  figure:focus figcaption {
+figure:hover figcaption b,  figure:focus figcaption b{
   text-decoration: underline;
 }
 
@@ -489,7 +491,7 @@ footer ul li a:hover {
   }
   figure {
     min-width: unset;
-    margin: 5% 1%;
+    margin: 5% 0;
   }
   figure figcaption {
     font-size: 100%;
