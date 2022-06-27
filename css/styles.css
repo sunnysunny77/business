@@ -315,9 +315,11 @@ article h2 {
 figure {
   position: sticky;
   top: 25vh;
+  /* quater 100vh */
   z-index: 1;
   overflow: hidden;
-  margin: 25vh 0 25vh 8%;
+  margin: 20vh 0 20vh 8%;
+  /* anything */
   border: 3px solid rgba(156, 44, 7, 0.5);
   border-radius: 10px;
   align-self: flex-start;
