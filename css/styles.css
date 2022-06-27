@@ -24,6 +24,7 @@ h2,
 h3 {
   font-size: 110%;
 }
+
 h2 {
   padding-top: 10px;
 }
@@ -305,19 +306,30 @@ article h2 {
 #section3 {
   width: 75%;
   margin: auto;
-  padding: 5% 0;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
 }
 
 figure {
-  position: relative;
+  position: sticky;
+  top: 25vh;
   z-index: 1;
   overflow: hidden;
-  margin: 4% 8%;
-  min-width: 380px;
-  border: 3px solid rgba(156, 44, 7,0.5);
+  margin: 25vh 0 25vh 8%;
+  border: 3px solid rgba(156, 44, 7, 0.5);
   border-radius: 10px;
+  align-self: flex-start;
+  min-width: 440px;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
 }
 
 figure img {
@@ -344,26 +356,28 @@ figcaption b {
   font-size: 130%;
 }
 
-figure:hover img, figure:focus img {
+figure:hover img,
+figure:focus img {
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: scale(1.035);
   opacity: 0.975;
 }
 
-figure:hover figcaption b,  figure:focus figcaption b{
+figure:hover figcaption b,
+figure:focus figcaption b {
   text-decoration: underline;
 }
 
 /* slick */
 
 .slk {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   background-color: antiquewhite;
   padding: 25px 0;
 }
 
-.slk div{
+.slk div {
   width: 200px;
   margin-right: 10%;
 }
@@ -417,18 +431,23 @@ footer ul li a:hover {
   header h1 {
     font-size: 120%;
   }
+
   article {
     width: 90%;
   }
+
   article h2 {
     margin: 6% auto 2% 2%;
   }
+
   article p {
-  padding: 1.5%;
+    padding: 1.5%;
   }
+
   #section1 {
     position: static;
   }
+
   #section1 img {
     position: static;
     margin-top: 4%;
@@ -437,14 +456,17 @@ footer ul li a:hover {
     left: unset;
     bottom: unset;
   }
+
   #section1 img:nth-child(1),
   #section1 img:nth-child(2) {
     width: 60%;
   }
+
   #section1 img:nth-child(4) {
     width: 90%;
     margin-bottom: 6%;
   }
+
   #section1 p,
   #section1 aside {
     position: static;
@@ -454,24 +476,30 @@ footer ul li a:hover {
     margin: 4% auto;
     padding: 1.5%;
   }
+
   #section2 {
     padding: 0;
   }
+
   #section2 div {
     flex-direction: column;
   }
+
   #section2 div div {
     width: 60%;
     margin: auto;
   }
+
   #section2 img {
     display: block;
     margin: auto auto 10px auto;
   }
+
   #section2 p {
     width: 100%;
     height: initial;
   }
+
   #section2 h3,
   #section2 p span:nth-child(1),
   #section2 p span:nth-child(2) {
@@ -479,58 +507,98 @@ footer ul li a:hover {
     height: initial;
     padding: 3% 0;
   }
+
   #section2 div div span:nth-child(3) {
     width: 100%;
   }
+
   #section2 .fab {
     margin: auto 0;
   }
+
   #section3 {
     flex-direction: column;
     align-items: center;
+    width: 97%;
+    height: unset;
   }
-  figure {
+
+  #section3 p {
+    order: 3;
+    margin-bottom: 4%;
+    text-align: justify;
+    padding: 0 5.5%;
+  }
+  
+  #section3 figure:nth-child(2) {
+    order: 1;
+    margin: 6% auto 2% auto;
+  }
+
+  #section3 figure:nth-child(3) {
+    order: 2;
+    margin: 2% auto 6% auto;
+  }
+
+  #section3 figure {
+    position: relative;
+    top: unset;
     min-width: unset;
-    margin: 5% 0;
   }
+
+  .none {
+    display: block;
+  }
+
   figure figcaption {
     font-size: 100%;
   }
+
   figcaption b {
     font-size: 120%;
   }
+
   .slk {
     justify-content: center;
   }
-  .slk div{
+
+  .slk div {
     margin: 0;
   }
 }
+
 @media only Screen and (max-width: 576px) {
   header {
     min-height: 10.8vh;
     background-image: url(../images/headerm.jpg);
   }
-  header h1{
+
+  header h1 {
     font-size: 100%;
   }
+
   nav {
     align-items: baseline;
   }
+
   nav ul:nth-child(1) {
     text-align: left;
     margin-left: 2.5%;
   }
-  nav ul:nth-child(1) li  {
+
+  nav ul:nth-child(1) li {
     margin-top: 5px;
   }
+
   nav ul:nth-child(2) {
     text-align: right;
     margin-right: 2.5%;
   }
-  nav ul:nth-child(2) li  {
+
+  nav ul:nth-child(2) li {
     margin-top: 5px;
   }
+
   nav ul a,
   article,
   #section1 p,
@@ -541,7 +609,9 @@ footer ul li a:hover {
     font-size: 90%;
   }
 }
+
 @media only Screen and (max-width: 320px) {
+
   nav ul a,
   article,
   header h1,
@@ -550,11 +620,13 @@ footer ul li a:hover {
   #section2 {
     font-size: 70%;
   }
+
   footer ul li,
   footer ul li a {
     font-size: 85%;
   }
 }
+
 @media only screen and (min-width: 1921px) {
   body {
     box-shadow: 1px 0 grey, -1px 0 grey;
