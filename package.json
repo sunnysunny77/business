@@ -1,0 +1,23 @@
+{
+  "name": "business",
+  "version": "1.0.0",
+  "description": "business",
+  "main": "./js/scripts.js",
+  "scripts": {
+    "build": "node ./node_modules/sass/sass.js ./scss:./css",
+    "watch": "node ./node_modules/sass/sass.js ./scss:./css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnysunny77/business.git"
+  },
+  "author": "D.C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunnysunny77/business/issues"
+  },
+  "homepage": "https://github.com/sunnysunny77/business#readme",
+  "dependencies": {
+    "sass": "latest"
+  }
+}
