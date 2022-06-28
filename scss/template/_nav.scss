@@ -1,0 +1,62 @@
+/* nav */
+
+nav {
+  position: absolute;
+  font-family: $font2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  height: 50px;
+  z-index: 999;
+  @media only Screen and (max-width: 576px) {
+    align-items: baseline;
+  }
+  ul {
+    text-align: center;
+    &:nth-child(1) {
+      width: 100%;
+      @media only Screen and (max-width: 576px) {
+        text-align: left;
+        margin-left: 2.5%;
+      }
+      li {
+        @media only Screen and (max-width: 576px) {
+          margin-top: 5px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      width: 200px;
+      @media only Screen and (max-width: 576px) {
+        text-align: right;
+        margin-right: 2.5%;
+      }
+      li {
+        @media only Screen and (max-width: 576px) {
+          margin-top: 5px;
+        }
+      }
+    }
+    li {
+      display: inline-block;
+      a {
+        padding: 5px 7.5px;
+        text-decoration: none;
+        background-color: $c13;
+        background-image: url("../images/climpek.png");
+        border-radius: 5px;
+        outline: none;
+        display: inline-block;
+        color: $c15;
+        &:hover,
+        &:focus {
+          color: $c3;
+          background-color: $c14;
+          background-image: none;
+        }
+      }
+    }
+  }
+}
