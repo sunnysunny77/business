@@ -544,6 +544,13 @@ article p q {
 #section3 figure:hover figcaption b, #section3 figure:focus figcaption b {
   text-decoration: underline;
 }
+#section3 figure a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .block {
   display: block;
