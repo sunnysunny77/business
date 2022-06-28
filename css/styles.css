@@ -15,13 +15,15 @@ body {
 
 h2,
 h3,
-nav ul a {
+nav,
+footer,
+figcaption b {
   font-family: Tahoma, sans-serif;
-  color: black;
 }
 
 h2,
-h3 {
+h3,
+figcaption b {
   font-size: 110%;
 }
 
@@ -137,9 +139,9 @@ nav ul a {
   text-decoration: none;
   background-color: rgba(245, 245, 245, 0.95);
   border-radius: 5px;
-  font-size: large;
   outline: none;
   display: inline-block;
+  color: black;
 }
 
 /* header */
@@ -349,13 +351,8 @@ figure figcaption {
   top: 35%;
   left: 5%;
   color: white;
-  font-size: 110%;
   width: 50%;
   z-index: 1;
-}
-
-figcaption b {
-  font-size: 130%;
 }
 
 figure:hover img,
@@ -411,7 +408,6 @@ footer ul a {
   color: white;
   padding: 10px;
   text-decoration: none;
-  font-size: large;
   outline: none;
   display: inline-block;
   width: 100%;
@@ -430,8 +426,9 @@ footer ul li a:hover {
 /* breaks */
 
 @media only Screen and (max-width: 1023px) {
-  header h1 {
-    font-size: 120%;
+
+  h1 {
+    font-size: 130%;
   }
 
   article {
@@ -521,7 +518,7 @@ footer ul li a:hover {
   #section3 {
     flex-direction: column;
     align-items: center;
-    width: 97%;
+    width: 90%;
     height: unset;
   }
 
@@ -529,7 +526,7 @@ footer ul li a:hover {
     order: 3;
     margin-bottom: 4%;
     text-align: justify;
-    padding: 0 5.5%;
+    padding: 0 1.5%;
   }
   
   #section3 figure:nth-child(2) {
@@ -552,14 +549,6 @@ footer ul li a:hover {
     display: block;
   }
 
-  figure figcaption {
-    font-size: 100%;
-  }
-
-  figcaption b {
-    font-size: 120%;
-  }
-
   .slk {
     justify-content: center;
   }
@@ -575,8 +564,8 @@ footer ul li a:hover {
     background-image: url(../images/headerm.jpg);
   }
 
-  header h1 {
-    font-size: 100%;
+  h1 {
+    font-size: 95%;
   }
 
   nav {
@@ -599,33 +588,6 @@ footer ul li a:hover {
 
   nav ul:nth-child(2) li {
     margin-top: 5px;
-  }
-
-  nav ul a,
-  article,
-  #section1 p,
-  #section1 aside,
-  #section2,
-  footer ul li,
-  footer ul li a {
-    font-size: 90%;
-  }
-}
-
-@media only Screen and (max-width: 320px) {
-
-  nav ul a,
-  article,
-  header h1,
-  #section1 p,
-  #section1 aside,
-  #section2 {
-    font-size: 70%;
-  }
-
-  footer ul li,
-  footer ul li a {
-    font-size: 85%;
   }
 }
 
