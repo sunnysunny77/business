@@ -16,7 +16,7 @@ nav {
   ul {
     text-align: center;
     &:nth-child(1) {
-      width: 100%;
+      width: 33%;
       @media only Screen and (max-width: 576px) {
         text-align: left;
         margin-left: 2.5%;
@@ -28,7 +28,7 @@ nav {
       }
     }
     &:nth-child(2) {
-      width: 200px;
+      width: 67%;
       @media only Screen and (max-width: 576px) {
         text-align: right;
         margin-right: 2.5%;
