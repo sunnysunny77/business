@@ -167,17 +167,16 @@ footer ul a:hover, footer ul a:focus {
 /* header */
 header {
   background-image: url("../images/header.jpg");
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
   position: relative;
-  height: 75vh;
+  padding: 21% 0px;
   text-align: center;
 }
 @media only Screen and (max-width: 576px) {
   header {
-    height: 23vh;
     background-image: url(../images/headerm.jpg);
   }
 }
@@ -191,16 +190,12 @@ header h1 {
 }
 @media only Screen and (max-width: 1023px) {
   header h1 {
-    font-size: 150%;
+    font-size: 130%;
   }
 }
 @media only Screen and (max-width: 576px) {
   header h1 {
-    font-size: 95%;
-    right: unset;
-    left: 0;
-    bottom: unset;
-    top: 50px;
+    font-size: 85%;
   }
 }
 header h1 span {
