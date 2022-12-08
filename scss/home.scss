@@ -348,7 +348,7 @@ article {
       }
     }
     figure {
-      position: relative;    
+      position: relative;
       z-index: 1;
       overflow: hidden;
       border: 3px solid $c11;
@@ -399,6 +399,58 @@ article {
   display: none;
   @media only Screen and (max-width: 1023px) {
     display: block;
+  }
+}
+
+/* #section4 */
+#section4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 9%;
+  @media only Screen and (max-width: 1023px) {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    article:nth-child(1) {
+      order: 2;
+      h3 {
+        margin-left: 3%;
+      }
+    }
+    img:nth-child(2) {
+      order: 1;
+      margin-bottom: 3%;
+    }
+    img:nth-child(3) {
+      order: 3;
+      margin-bottom: 3%;
+    }
+    article:nth-child(4) {
+      order: 4;
+      h3 {
+        margin-right: 3%;
+      }
+    }
+  }
+  article,
+  img {
+    width: 40%;
+    margin: 0;
+    height: fit-content;
+    @media only Screen and (max-width: 1023px) {
+      width: 90%;
+      border-radius: 5px;
+    }
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  article:nth-child(4) {
+    text-align: right;
   }
 }
 
