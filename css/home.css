@@ -15,6 +15,11 @@ body {
     box-shadow: 1px 0 grey, -1px 0 grey;
   }
 }
+@media only Screen and (max-width: 576px) {
+  body {
+    font-size: 80%;
+  }
+}
 
 h2,
 h3 {
@@ -33,47 +38,27 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   max-width: 1920px;
-  height: 50px;
   z-index: 999;
+  top: 0;
+  margin-top: 1%;
+  width: 92%;
+  padding: 0 4%;
+  text-align: center;
+  font-size: larger;
 }
 @media only Screen and (max-width: 576px) {
   nav {
-    align-items: baseline;
-    font-size: smaller;
+    position: static;
+    background-image: url("../images/climpek.png");
+    padding: 4%;
   }
-}
-nav ul {
-  text-align: center;
 }
 nav ul:nth-child(1) {
   width: 33%;
 }
-@media only Screen and (max-width: 576px) {
-  nav ul:nth-child(1) {
-    text-align: left;
-    margin-left: 2.5%;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  nav ul:nth-child(1) li {
-    margin-top: 5px;
-  }
-}
 nav ul:nth-child(2) {
   width: 67%;
-}
-@media only Screen and (max-width: 576px) {
-  nav ul:nth-child(2) {
-    text-align: right;
-    margin-right: 2.5%;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  nav ul:nth-child(2) li {
-    margin-top: 5px;
-  }
 }
 nav ul li {
   display: inline-block;
@@ -88,6 +73,12 @@ nav ul li a {
   display: inline-block;
   color: black;
 }
+@media only Screen and (max-width: 576px) {
+  nav ul li a {
+    background-image: none;
+    background-color: transparent;
+  }
+}
 nav ul li a:hover, nav ul li a:focus {
   color: white;
   background-color: rgba(156, 44, 7, 0.95);
@@ -101,11 +92,7 @@ footer {
   background-color: rgba(156, 44, 7, 0.95);
   justify-content: space-around;
   align-items: center;
-}
-@media only Screen and (max-width: 576px) {
-  footer {
-    font-size: smaller;
-  }
+  font-size: larger;
 }
 footer ul:nth-child(1) {
   padding: 30px 0;
@@ -113,7 +100,7 @@ footer ul:nth-child(1) {
 footer ul:nth-child(1) > li:nth-child(1) {
   border-top: 1px solid white;
   padding: 12.5px 15px 12.5px 12.5px;
-  width: 100%;
+  width: 90%;
 }
 footer ul ~ ul {
   text-align: right;
@@ -195,7 +182,15 @@ header h1 {
 }
 @media only Screen and (max-width: 576px) {
   header h1 {
-    font-size: 85%;
+    bottom: unset;
+    top: 5px;
+    right: 5px;
+    font-size: 112%;
+  }
+}
+@media only Screen and (max-width: 320px) {
+  header h1 {
+    font-size: 86%;
   }
 }
 header h1 span {
@@ -235,6 +230,11 @@ article h2 {
 @media only Screen and (max-width: 1023px) {
   article h2 {
     margin: 6% auto 2% 2%;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  article h2 {
+    margin: auto auto 2% 2%;
   }
 }
 article span {
@@ -470,7 +470,7 @@ article p q {
   }
 }
 #section2 div div span:nth-child(3) .fab {
-  padding: 7px 11px;
+  padding: 7px 9px;
   margin: auto 3%;
   text-decoration: none;
 }
