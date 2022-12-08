@@ -197,6 +197,14 @@ header h1 span {
   font-size: 90%;
   opacity: 0.95;
 }
+header h1 a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+header h1 a:hover {
+  text-decoration: underline;
+}
 header .fab {
   padding: 7px 11px;
   position: absolute;
