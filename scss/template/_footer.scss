@@ -6,6 +6,9 @@ footer {
   background-color: $c14;
   justify-content: space-around;
   align-items: center;
+  @media only Screen and (max-width: 576px) {
+    font-size: smaller;
+  }
   ul:nth-child(1) {
     padding: 30px 0;
     > li:nth-child(1) {

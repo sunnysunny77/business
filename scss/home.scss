@@ -50,10 +50,14 @@ header {
     width: 50%;
     border-radius: 5px;
     @media only Screen and (max-width: 1023px) {
-      font-size: 130%;
+      font-size: 150%;
     }
     @media only Screen and (max-width: 576px) {
       font-size: 95%;
+      right: unset;
+      left: 0;
+      bottom: unset;
+      top: 50px;
     }
     span {
       font-size: 90%;

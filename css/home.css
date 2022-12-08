@@ -41,6 +41,7 @@ nav {
 @media only Screen and (max-width: 576px) {
   nav {
     align-items: baseline;
+    font-size: smaller;
   }
 }
 nav ul {
@@ -100,6 +101,11 @@ footer {
   background-color: rgba(156, 44, 7, 0.95);
   justify-content: space-around;
   align-items: center;
+}
+@media only Screen and (max-width: 576px) {
+  footer {
+    font-size: smaller;
+  }
 }
 footer ul:nth-child(1) {
   padding: 30px 0;
@@ -185,12 +191,16 @@ header h1 {
 }
 @media only Screen and (max-width: 1023px) {
   header h1 {
-    font-size: 130%;
+    font-size: 150%;
   }
 }
 @media only Screen and (max-width: 576px) {
   header h1 {
     font-size: 95%;
+    right: unset;
+    left: 0;
+    bottom: unset;
+    top: 50px;
   }
 }
 header h1 span {

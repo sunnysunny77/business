@@ -12,6 +12,7 @@ nav {
   z-index: 999;
   @media only Screen and (max-width: 576px) {
     align-items: baseline;
+    font-size: smaller;
   }
   ul {
     text-align: center;
