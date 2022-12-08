@@ -171,7 +171,6 @@ header h1 {
   position: absolute;
   bottom: 12.5%;
   right: 5%;
-  color: white;
   width: 50%;
   border-radius: 5px;
 }
@@ -198,8 +197,7 @@ header h1 span {
   opacity: 0.95;
 }
 header h1 a {
-  font-size: inherit;
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 header h1 a:hover {

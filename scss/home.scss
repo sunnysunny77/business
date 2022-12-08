@@ -45,7 +45,7 @@ header {
     position: absolute;
     bottom: 12.5%;
     right: 5%;
-    color: $c3;
+   
     width: 50%;
     border-radius: 5px;
     @media only Screen and (max-width: 1023px) {
@@ -65,8 +65,7 @@ header {
       opacity: 0.95;
     }
     a {
-      font-size: inherit;
-      color: inherit;
+      color: $c3;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -411,6 +410,7 @@ article {
 }
 
 /* #section4 */
+
 #section4 {
   display: flex;
   flex-wrap: wrap;
