@@ -372,8 +372,14 @@ article p q {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 @media only Screen and (max-width: 1023px) {
+  #section2 div {
+    justify-content: space-evenly;
+  }
+}
+@media only Screen and (max-width: 576px) {
   #section2 div {
     flex-direction: column;
   }
@@ -387,7 +393,12 @@ article p q {
 @media only Screen and (max-width: 1023px) {
   #section2 div img {
     display: block;
-    margin: auto auto 10px auto;
+    margin: 2% auto auto 8%;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section2 div img {
+    margin: auto;
   }
 }
 #section2 div div {
@@ -398,8 +409,13 @@ article p q {
 }
 @media only Screen and (max-width: 1023px) {
   #section2 div div {
-    width: 60%;
+    width: 40%;
     margin: auto;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section2 div div {
+    width: 60%;
   }
 }
 #section2 div div h3 {

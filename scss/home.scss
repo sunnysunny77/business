@@ -45,7 +45,6 @@ header {
     position: absolute;
     bottom: 12.5%;
     right: 5%;
-
     width: 50%;
     border-radius: 5px;
     @media only Screen and (max-width: 1023px) {
@@ -220,7 +219,11 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     @media only Screen and (max-width: 1023px) {
+      justify-content: space-evenly;
+    }
+    @media only Screen and (max-width: 576px) {
       flex-direction: column;
     }
     img {
@@ -230,7 +233,10 @@ article {
       border: 1px solid $c9;
       @media only Screen and (max-width: 1023px) {
         display: block;
-        margin: auto auto 10px auto;
+        margin: 2% auto auto 8%;
+      }
+      @media only Screen and (max-width: 576px) {
+        margin: auto;
       }
     }
     div {
@@ -239,8 +245,11 @@ article {
       width: 222px;
       margin: auto 1% auto 1%;
       @media only Screen and (max-width: 1023px) {
-        width: 60%;
+        width: 40%;
         margin: auto;
+      }
+      @media only Screen and (max-width: 576px) {
+        width: 60%;
       }
       h3 {
         margin: 0;
