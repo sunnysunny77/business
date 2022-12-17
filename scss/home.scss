@@ -371,12 +371,12 @@ article {
         margin: auto;
         width: 100%;
         height: 100%;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
       }
       &:hover img,
       &:focus img {
-        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
         transform: scale(1.035);
-        opacity: 0.975;
+        opacity: 0.975;     
       }
       figcaption {
         position: absolute;

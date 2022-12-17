@@ -548,9 +548,9 @@ article p q {
   margin: auto;
   width: 100%;
   height: 100%;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 #section3 a figure:hover img, #section3 a figure:focus img {
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: scale(1.035);
   opacity: 0.975;
 }
