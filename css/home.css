@@ -685,7 +685,7 @@ article p q {
 #section4 div span h3 {
   margin: 5%;
 }
-#section4 div:hover span {
+#section4 div:hover span, #section4 div:focus span {
   background-color: rgba(156, 44, 7, 0.95);
   opacity: 0.75;
   top: 7%;
@@ -693,7 +693,7 @@ article p q {
   bottom: 7%;
   left: 7%;
 }
-#section4 div:hover span p {
+#section4 div:hover span p, #section4 div:focus span p {
   opacity: 1;
 }
 #section4 div:nth-child(2) {

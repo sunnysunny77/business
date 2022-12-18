@@ -499,7 +499,8 @@ article {
         margin: 5%;
       }
     }
-    &:hover span {
+    &:hover span,
+    &:focus span {
       background-color: $c14;
       opacity: 0.75;
       top: 7%;
