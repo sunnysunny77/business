@@ -13,37 +13,67 @@ nav {
   padding: 0 4%;
   text-align: center;
   font-size: larger;
+  color: $c15;
   z-index: 998;
   @media only Screen and (max-width: 576px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: height 1s linear;
     position: sticky;
     top: 0;
-    width: 96%;
+    width: 100%;
     background-image: url("../images/climpek.png");
     background-color: $c3;
-    padding: 2%;
+    padding: 0;
+  }
+  #menu {
+    display: none;
+    @media only Screen and (max-width: 576px) {
+      display: block;
+      color: $c4;
+      padding: 5px 10px;
+      align-self: baseline;
+      &:hover,
+      &:focus {
+        color: $c15;
+      }
+    }
   }
   ul {
-    &:nth-child(1) {
+    &:nth-child(2) {
       width: 33%;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       width: 67%;
+    }
+    &:nth-child(3),
+    &:nth-child(2) {
+      @media only Screen and (max-width: 576px) {
+        width: 90%;
+      }
     }
     li {
       display: inline-block;
+      list-style-type: none;
+      @media only Screen and (max-width: 576px) {
+        display: list-item;
+        width: 100%;
+      }
       a {
+        color: inherit;
         padding: 5px 7.5px;
+        margin: 2.5px 0;
         text-decoration: none;
         background-color: $c13;
         background-image: url("../images/climpek.png");
-        @media only Screen and (max-width: 576px) {
-          background-image: none;
-          background-color: transparent;
-        }
         border-radius: 5px;
         outline: none;
         display: inline-block;
-        color: $c15;
+        @media only Screen and (max-width: 576px) {
+          background-image: none;
+          background-color: transparent;
+          display: none;
+        }
         &:hover,
         &:focus {
           color: $c3;
@@ -58,4 +88,21 @@ nav {
 .toggle {
   background-image: none;
   background-color: transparent;
+}
+
+.display {
+  display: block;
+}
+
+@keyframes ani {
+  0% {
+    background-color: $c9;
+  }
+  100% {
+    background-color: $c3;
+  }
+}
+
+.ani {
+  animation: ani 2s;
 }
