@@ -31,6 +31,15 @@ h2 {
   padding-top: 10px;
 }
 
+.hide {
+  display: none;
+}
+
+@media only Screen and (min-width: 576px) {
+  main {
+    padding-top: 33px;
+  }
+}
 /* nav */
 nav {
   position: absolute;
@@ -40,17 +49,19 @@ nav {
   align-items: center;
   max-width: 1920px;
   z-index: 999;
-  top: 0;
-  margin-top: 1%;
+  top: 1%;
   width: 92%;
   padding: 0 4%;
   text-align: center;
   font-size: larger;
+  z-index: 998;
 }
 @media only Screen and (max-width: 576px) {
   nav {
-    position: static;
+    position: sticky;
+    top: 0;
     background-image: url("../images/climpek.png");
+    background-color: white;
     padding: 4%;
   }
 }
@@ -83,6 +94,11 @@ nav ul li a:hover, nav ul li a:focus {
   color: white;
   background-color: rgba(156, 44, 7, 0.95);
   background-image: none;
+}
+
+.toggle {
+  background-image: none;
+  background-color: transparent;
 }
 
 /* footer */
@@ -210,6 +226,7 @@ header .fab {
   bottom: -14px;
   right: 15px;
   border-radius: 50%;
+  z-index: 999;
 }
 
 /* article */
