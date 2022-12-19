@@ -17,9 +17,10 @@ nav {
   @media only Screen and (max-width: 576px) {
     position: sticky;
     top: 0;
+    width: 96%;
     background-image: url("../images/climpek.png");
     background-color: $c3;
-    padding: 4%;
+    padding: 2%;
   }
   ul {
     &:nth-child(1) {
