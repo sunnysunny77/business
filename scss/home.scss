@@ -229,6 +229,7 @@ article {
     }
     @media only Screen and (max-width: 576px) {
       flex-direction: column;
+      flex-wrap: nowrap;
     }
     img {
       border-radius: 50%;
@@ -241,6 +242,8 @@ article {
       }
       @media only Screen and (max-width: 576px) {
         margin: auto;
+        width: 50%;
+        height: 50%;
       }
     }
     div {
