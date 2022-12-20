@@ -8,6 +8,7 @@ function handleResize() {
 
         [...button].forEach(function (button) {
             button.classList.remove("toggle");
+            button.classList.remove("display");
         });
         nav.style = "";
     }

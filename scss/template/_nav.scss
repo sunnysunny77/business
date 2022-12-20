@@ -18,7 +18,6 @@ nav {
   @media only Screen and (max-width: 576px) {
     justify-content: flex-start;
     flex-direction: column;
-    transition: height 1s linear;
     position: sticky;
     z-index: 998;
     top: 0;
