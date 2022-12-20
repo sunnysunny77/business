@@ -170,7 +170,7 @@ nav .fab {
       opacity: 0;
     }
     100% {
-      height: 38px;
+      height: 38.5px;
       opacity: 1;
     }
   }
