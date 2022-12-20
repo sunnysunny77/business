@@ -42,18 +42,19 @@ h2 {
 }
 /* nav */
 nav {
-  position: absolute;
+  position: sticky;
   font-family: Tahoma, sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   max-width: 1920px;
-  z-index: 999;
-  top: 1%;
+  top: 0;
   width: 92%;
   padding: 0 4%;
   text-align: center;
   font-size: larger;
+  background-image: url("../images/climpek.png");
+  background-color: white;
   color: black;
   z-index: 2;
 }
@@ -61,11 +62,7 @@ nav {
   nav {
     justify-content: flex-start;
     flex-direction: column;
-    position: sticky;
-    top: 0;
     width: 100%;
-    background-image: url("../images/climpek.png");
-    background-color: white;
     padding: 0;
   }
   nav:hover .button, nav:focus .button {
@@ -77,9 +74,11 @@ nav {
   @keyframes ani {
     0% {
       background-color: lightgray;
+      color: transparent;
     }
     100% {
       background-color: white;
+      color: inherit;
     }
   }
 }
@@ -122,16 +121,12 @@ nav ul li a {
   color: inherit;
   padding: 5px 7.5px;
   text-decoration: none;
-  background-color: rgba(245, 245, 245, 0.95);
-  background-image: url("../images/climpek.png");
   border-radius: 5px;
   outline: none;
   display: inline-block;
 }
 @media only Screen and (max-width: 576px) {
   nav ul li a {
-    background-image: none;
-    background-color: transparent;
     display: none;
     margin-bottom: 15px;
   }
@@ -144,11 +139,6 @@ nav ul li a:hover, nav ul li a:focus {
 
 .display {
   display: block;
-}
-
-.toggle {
-  background-image: none;
-  background-color: transparent;
 }
 
 /* footer */

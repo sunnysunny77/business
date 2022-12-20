@@ -1,28 +1,25 @@
 /* nav */
 
 nav {
-  position: absolute;
+  position: sticky;
   font-family: $font2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   max-width: 1920px;
-  z-index: 999;
-  top: 1%;
+  top: 0;
   width: 92%;
   padding: 0 4%;
   text-align: center;
   font-size: larger;
+  background-image: url("../images/climpek.png");
+  background-color: $c3;
   color: $c15;
   z-index: 2;
   @media only Screen and (max-width: 576px) {
     justify-content: flex-start;
     flex-direction: column;
-    position: sticky;
-    top: 0;
     width: 100%;
-    background-image: url("../images/climpek.png");
-    background-color: $c3;
     padding: 0;
     &:hover .button,
     &:focus .button {
@@ -33,9 +30,11 @@ nav {
       @keyframes ani {
         0% {
           background-color: $c9;
+          color: transparent;
         }
         100% {
           background-color: $c3;
+          color: inherit;
         }
       }
       animation: ani 2s;
@@ -78,14 +77,10 @@ nav {
         color: inherit;
         padding: 5px 7.5px;
         text-decoration: none;
-        background-color: $c13;
-        background-image: url("../images/climpek.png");
         border-radius: 5px;
         outline: none;
         display: inline-block;
         @media only Screen and (max-width: 576px) {
-          background-image: none;
-          background-color: transparent;
           display: none;
           margin-bottom: 15px;
         }
@@ -102,9 +97,4 @@ nav {
 
 .display {
   display: block;
-}
-
-.toggle {
-  background-image: none;
-  background-color: transparent;
 }
