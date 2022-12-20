@@ -39,6 +39,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media only Screen and (min-width: 576px) {
+  main {
+    padding-top: 39.656;
+  }
+}
 
 /* nav */
 .display {

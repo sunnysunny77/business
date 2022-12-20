@@ -1,7 +1,6 @@
 const nav = document.getElementById("nav");
 const button = document.getElementsByClassName("button");
 const main = document.querySelector("main");
-main.style.marginTop = nav.offsetHeight + "px";
 
 function handleNav() {
     let scrollY = window.scrollY;
@@ -18,6 +17,7 @@ function handleNav() {
         main.style.marginTop = nav.offsetHeight + "px";
     } else if (window.innerWidth <= 576) {
 
+        nav.classList.remove("absolute");
         nav.classList.remove("sticky");
     }
 }
