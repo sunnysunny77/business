@@ -20,6 +20,7 @@ nav {
     flex-direction: column;
     transition: height 1s linear;
     position: sticky;
+    z-index: 998;
     top: 0;
     width: 100%;
     background-image: url("../images/climpek.png");
