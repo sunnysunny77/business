@@ -1,9 +1,10 @@
+const nav = document.getElementById("nav");
+const main = document.getElementById("main");
+const button = document.getElementsByClassName("button");
+
 function handleNav() {
 
     let scrollY = window.scrollY;
-    const nav = document.getElementById("nav");
-    const main = document.getElementById("main");
-    const button = document.getElementsByClassName("button");
 
     if (scrollY < main.offsetTop && window.innerWidth > 576) {
 
@@ -32,13 +33,11 @@ function handleNav() {
 
 function handleResize() {
 
-    const nav = document.getElementById("nav");
-
     if (window.innerWidth <= 576) {
 
         nav.style = "";
         nav.classList = "";
-        [...document.getElementsByClassName("button")].forEach(function (button) {
+        [...button].forEach(function (button) {
             button.classList.remove("toggle");
         });
     } 
