@@ -69,6 +69,23 @@ nav {
     background-color: white;
     padding: 0;
   }
+  nav:hover .button, nav:focus .button {
+    display: block;
+  }
+  nav:hover, nav:focus {
+    animation: ani 2s;
+  }
+  @keyframes ani {
+    0% {
+      background-color: lightgray;
+    }
+    100% {
+      background-color: white;
+    }
+  }
+}
+nav:hover #menu, nav:focus #menu {
+  color: black;
 }
 nav #menu {
   display: none;
@@ -79,9 +96,6 @@ nav #menu {
     color: #9c2c07;
     padding: 5px 10px;
     align-self: baseline;
-  }
-  nav #menu:hover {
-    color: black;
   }
 }
 nav ul:nth-child(2) {
@@ -129,25 +143,8 @@ nav ul li a:hover, nav ul li a:focus {
   background-image: none;
 }
 
-.toggle {
-  background-image: none;
-  background-color: transparent;
-}
-
 .display {
   display: block;
-}
-
-@keyframes ani {
-  0% {
-    background-color: lightgray;
-  }
-  100% {
-    background-color: white;
-  }
-}
-.ani {
-  animation: ani 2s;
 }
 
 /* footer */

@@ -1,22 +1,11 @@
 const nav = document.getElementById("nav");
 const main = document.getElementById("main");
-const button = document.getElementsByClassName("button");
-
-function handleClick() {
-
-    [...button].forEach((button) => { button.classList.toggle("display") });
-    nav.classList.toggle("ani");
-}
 
 function handleResize() {
 
     if (window.innerWidth <= 576) {
 
         nav.style = "";
-        nav.classList.remove("ani");
-        [...button].forEach(function (button) {
-            button.classList.remove("toggle");
-        });
     }
 }
 
@@ -26,9 +15,6 @@ function handleNav() {
 
     if (scrollY < main.offsetTop && window.innerWidth > 576) {
 
-        [...button].forEach(function (button) {
-            button.classList.remove("toggle");
-        });
         nav.style.position = "absolute";
         nav.style.top = "1%";
         nav.style.backgroundImage = "none";
@@ -38,9 +24,6 @@ function handleNav() {
 
     if (scrollY >= main.offsetTop && window.innerWidth > 576) {
 
-        [...button].forEach(function (button) {
-            button.classList.add("toggle");
-        });
         nav.style.position = "sticky";
         nav.style.top = 0;
         nav.style.backgroundImage = "url('images/climpek.png')";
@@ -49,8 +32,24 @@ function handleNav() {
     }
 }
 
-document.getElementById("menu").addEventListener("click", handleClick);
+function handleTouch() {
+
+    [...document.getElementsByClassName("button")].forEach(function (button) {
+        button.classList.add("display");
+    });
+}
+
+function handleMove() {
+
+    [...document.getElementsByClassName("button")].forEach(function (button) {
+        button.classList.remove("display");
+    });
+}
 
 window.addEventListener("resize", handleResize);
 
 window.addEventListener("scroll", handleNav);
+
+nav.addEventListener("touchstart", handleTouch);
+
+document.addEventListener("touchmove", handleMove);

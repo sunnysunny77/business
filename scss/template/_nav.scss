@@ -25,6 +25,26 @@ nav {
     background-image: url("../images/climpek.png");
     background-color: $c3;
     padding: 0;
+    &:hover .button,
+    &:focus .button {
+      display: block;
+    }
+    &:hover,
+    &:focus {
+      @keyframes ani {
+        0% {
+          background-color: $c9;
+        }
+        100% {
+          background-color: $c3;
+        }
+      }
+      animation: ani 2s;
+    }
+  }
+  &:hover #menu,
+  &:focus #menu {
+    color: $c15;
   }
   #menu {
     display: none;
@@ -33,9 +53,6 @@ nav {
       color: $c4;
       padding: 5px 10px;
       align-self: baseline;
-      &:hover {
-        color: $c15;
-      }
     }
   }
   ul {
@@ -84,24 +101,6 @@ nav {
   }
 }
 
-.toggle {
-  background-image: none;
-  background-color: transparent;
-}
-
 .display {
   display: block;
-}
-
-@keyframes ani {
-  0% {
-    background-color: $c9;
-  }
-  100% {
-    background-color: $c3;
-  }
-}
-
-.ani {
-  animation: ani 2s;
 }
