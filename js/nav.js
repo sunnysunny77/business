@@ -1,5 +1,6 @@
 const nav = document.getElementById("nav");
 const main = document.getElementById("main");
+const button = document.getElementsByClassName("button");
 
 function handleResize() {
 
@@ -15,6 +16,9 @@ function handleNav() {
 
     if (scrollY < main.offsetTop && window.innerWidth > 576) {
 
+        [...button].forEach(function (button) {
+            button.classList.remove("toggle");
+        });
         nav.style.position = "absolute";
         nav.style.top = "1%";
         nav.style.backgroundImage = "none";
@@ -24,6 +28,9 @@ function handleNav() {
 
     if (scrollY >= main.offsetTop && window.innerWidth > 576) {
 
+        [...button].forEach(function (button) {
+            button.classList.add("toggle");
+        });
         nav.style.position = "sticky";
         nav.style.top = 0;
         nav.style.backgroundImage = "url('images/climpek.png')";
@@ -34,14 +41,14 @@ function handleNav() {
 
 function handleTouch() {
 
-    [...document.getElementsByClassName("button")].forEach(function (button) {
+    [...button].forEach(function (button) {
         button.classList.add("display");
     });
 }
 
 function handleMove() {
 
-    [...document.getElementsByClassName("button")].forEach(function (button) {
+    [...button].forEach(function (button) {
         button.classList.remove("display");
     });
 }
