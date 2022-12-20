@@ -65,16 +65,6 @@ nav {
     padding: 0;
   }
 }
-nav #menu {
-  color: #9c2c07;
-  padding: 10px;
-  align-self: baseline;
-}
-@media only Screen and (min-width: 576px) {
-  nav #menu {
-    display: none;
-  }
-}
 nav ul:nth-child(2) {
   width: 33%;
 }
@@ -115,6 +105,16 @@ nav ul li a:hover, nav ul li a:focus {
   color: white;
   background-color: rgba(156, 44, 7, 0.95);
   background-image: none;
+}
+nav #menu {
+  color: #9c2c07;
+  padding: 10px;
+  align-self: baseline;
+}
+@media only Screen and (min-width: 576px) {
+  nav #menu {
+    display: none;
+  }
 }
 @media only Screen and (max-width: 576px) {
   nav:hover ul li, nav:focus ul li {
