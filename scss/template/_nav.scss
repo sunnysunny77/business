@@ -22,6 +22,25 @@ nav {
     width: 100%;
     padding: 0;
   }
+  &:hover ul li,
+  &:focus ul li {
+    @media only Screen and (max-width: 576px) {
+      @keyframes ani1 {
+        0% {
+          height: 0px;
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          height: 43px;
+          opacity: 1;
+        }
+      }
+      animation: ani1 2s;
+    }
+  }
   &:hover .button,
   &:focus .button {
     display: block;
@@ -31,19 +50,22 @@ nav {
     @keyframes ani {
       0% {
         background-color: $c9;
-        color: transparent;
       }
       100% {
         background-color: $c3;
-        color: inherit;
       }
     }
-    animation: ani 2s;
+    @media only Screen and (max-width: 576px) {
+      animation: ani 2s;
+    }
   }
   #menu {
     color: $c4;
-    padding: 15px;
+    padding: 10px;
     align-self: baseline;
+    @media only Screen and (min-width: 576px) {
+      display: none;
+    }
   }
   ul {
     &:nth-child(2) {
@@ -71,9 +93,11 @@ nav {
         text-decoration: none;
         border-radius: 5px;
         outline: none;
-        display: none;
-        @media only Screen and (max-width: 576px) {      
-          margin-bottom: 15px;
+        display: block;
+        margin: 2% 0;
+        @media only Screen and (max-width: 576px) {
+          display: none;
+          margin: auto auto 15px auto;
         }
         &:hover,
         &:focus {
