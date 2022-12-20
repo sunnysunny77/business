@@ -32,5 +32,10 @@ h2 {
   display: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column
+}
+
 @import "nav";
 @import "footer";

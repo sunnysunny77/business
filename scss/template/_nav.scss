@@ -3,6 +3,27 @@
 .display {
   display: block;
 }
+.sticky {
+  position: sticky;
+  background-image: url("../images/climpek.png");
+  background-color: $c3;
+}
+
+.absolute {
+  position: absolute;
+}
+
+#nav{
+  @media only Screen and (max-width: 576px) {
+    position: sticky;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url("../images/climpek.png");
+    background-color: $c3;
+    width: 100%;
+    padding: 0;
+  }
+}
 
 nav {
   position: absolute;
@@ -11,22 +32,13 @@ nav {
   justify-content: flex-end;
   align-items: center;
   max-width: 1920px;
-  top: 0;
   width: 92%;
+  top: 0;
   padding: 0 4%;
   text-align: center;
   font-size: larger;
   color: $c15;
   z-index: 2;
-  @media only Screen and (max-width: 576px) {
-    position: sticky;
-    background-image: url("../images/climpek.png");
-    background-color: $c3;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-  }
   ul {
     &:nth-child(2) {
       width: 33%;
