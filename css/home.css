@@ -55,14 +55,13 @@ nav {
   text-align: center;
   font-size: larger;
   color: black;
-  z-index: 998;
+  z-index: 2;
 }
 @media only Screen and (max-width: 576px) {
   nav {
     justify-content: flex-start;
     flex-direction: column;
     position: sticky;
-    z-index: 998;
     top: 0;
     width: 100%;
     background-image: url("../images/climpek.png");
@@ -277,7 +276,7 @@ header .fab {
   bottom: -14px;
   right: 15px;
   border-radius: 50%;
-  z-index: 999;
+  z-index: 3;
 }
 
 /* article */
@@ -351,7 +350,7 @@ article p q {
 }
 #section1 img:nth-child(1) {
   bottom: -350px;
-  z-index: 997;
+  z-index: 1;
   left: 225px;
 }
 @media only Screen and (max-width: 1023px) {

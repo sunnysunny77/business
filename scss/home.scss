@@ -78,7 +78,7 @@ header {
     bottom: -14px;
     right: 15px;
     border-radius: 50%;
-    z-index: 999;
+    z-index: 3;
   }
 }
 
@@ -141,7 +141,7 @@ article {
     }
     &:nth-child(1) {
       bottom: -350px;
-      z-index: 997;
+      z-index: 1;
       left: 225px;
       @media only Screen and (max-width: 1023px) {
         width: 60%;
