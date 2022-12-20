@@ -477,7 +477,7 @@ article {
     padding: 12% 0;
     background-size: contain;
     background-repeat: no-repeat;  
-    span {
+    p {
       display: flex;
       flex-direction: column;
       justify-content: end;
@@ -489,26 +489,26 @@ article {
       left: 2%;
       transition: background-color 1s linear, opacity 1s linear, top 1s linear, right 1s linear, bottom 1s linear,
         left 1s linear;
-      p {
+      span {
         margin: 5%;
         opacity: 0;
         transition: opacity 1s linear;
         height: 15%;
         width: 200px;
       }
-      h3 {
+      b {
         margin: 5%;
       }
     }
-    &:hover span,
-    &:focus span {
+    &:hover p,
+    &:focus p {
       background-color: $c14;
       opacity: 0.75;
       top: 7%;
       right: 7%;
       bottom: 7%;
       left: 7%;
-      p {
+      span {
         opacity: 1;
       }
     }
@@ -517,9 +517,9 @@ article {
     }
     &:nth-child(3) {
       background-image: url(../images/startup.jpg);
-      span {
+      p {
         text-align: right;
-        p {
+        span {
           align-self: end;
         }
       }

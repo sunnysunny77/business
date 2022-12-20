@@ -38,6 +38,8 @@ function handleResize() {
     if (window.innerWidth <= 576) {
 
         nav.style = "";
+    } else {
+        nav.classList = "";
     }
 }
 

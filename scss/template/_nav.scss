@@ -33,8 +33,7 @@ nav {
       color: $c4;
       padding: 5px 10px;
       align-self: baseline;
-      &:hover,
-      &:focus {
+      &:hover {
         color: $c15;
       }
     }
@@ -62,7 +61,6 @@ nav {
       a {
         color: inherit;
         padding: 5px 7.5px;
-        margin: 2.5px 0;
         text-decoration: none;
         background-color: $c13;
         background-image: url("../images/climpek.png");
@@ -73,6 +71,7 @@ nav {
           background-image: none;
           background-color: transparent;
           display: none;
+          margin-bottom: 15px;
         }
         &:hover,
         &:focus {

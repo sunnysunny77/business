@@ -80,7 +80,7 @@ nav #menu {
     padding: 5px 10px;
     align-self: baseline;
   }
-  nav #menu:hover, nav #menu:focus {
+  nav #menu:hover {
     color: black;
   }
 }
@@ -108,7 +108,6 @@ nav ul li {
 nav ul li a {
   color: inherit;
   padding: 5px 7.5px;
-  margin: 2.5px 0;
   text-decoration: none;
   background-color: rgba(245, 245, 245, 0.95);
   background-image: url("../images/climpek.png");
@@ -121,6 +120,7 @@ nav ul li a {
     background-image: none;
     background-color: transparent;
     display: none;
+    margin-bottom: 15px;
   }
 }
 nav ul li a:hover, nav ul li a:focus {
@@ -729,7 +729,7 @@ article p q {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#section4 div span {
+#section4 div p {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -741,17 +741,17 @@ article p q {
   left: 2%;
   transition: background-color 1s linear, opacity 1s linear, top 1s linear, right 1s linear, bottom 1s linear, left 1s linear;
 }
-#section4 div span p {
+#section4 div p span {
   margin: 5%;
   opacity: 0;
   transition: opacity 1s linear;
   height: 15%;
   width: 200px;
 }
-#section4 div span h3 {
+#section4 div p b {
   margin: 5%;
 }
-#section4 div:hover span, #section4 div:focus span {
+#section4 div:hover p, #section4 div:focus p {
   background-color: rgba(156, 44, 7, 0.95);
   opacity: 0.75;
   top: 7%;
@@ -759,7 +759,7 @@ article p q {
   bottom: 7%;
   left: 7%;
 }
-#section4 div:hover span p, #section4 div:focus span p {
+#section4 div:hover p span, #section4 div:focus p span {
   opacity: 1;
 }
 #section4 div:nth-child(2) {
@@ -768,10 +768,10 @@ article p q {
 #section4 div:nth-child(3) {
   background-image: url(../images/startup.jpg);
 }
-#section4 div:nth-child(3) span {
+#section4 div:nth-child(3) p {
   text-align: right;
 }
-#section4 div:nth-child(3) span p {
+#section4 div:nth-child(3) p span {
   align-self: end;
 }
 
