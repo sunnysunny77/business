@@ -2,6 +2,24 @@ const nav = document.getElementById("nav");
 const main = document.getElementById("main");
 const button = document.getElementsByClassName("button");
 
+function handleClick() {
+
+    [...button].forEach((button) => { button.classList.toggle("display") });
+    nav.classList.toggle("ani");
+}
+
+function handleResize() {
+
+    if (window.innerWidth <= 576) {
+
+        nav.style = "";
+        nav.classList = "";
+        [...button].forEach(function (button) {
+            button.classList.remove("toggle");
+        });
+    }
+}
+
 function handleNav() {
 
     let scrollY = window.scrollY;
@@ -31,17 +49,8 @@ function handleNav() {
     }
 }
 
-function handleResize() {
 
-    if (window.innerWidth <= 576) {
-
-        nav.style = "";
-        nav.classList = "";
-        [...button].forEach(function (button) {
-            button.classList.remove("toggle");
-        });
-    } 
-}
+document.getElementById("menu").addEventListener("click", handleClick);
 
 window.addEventListener("resize", handleResize);
 
