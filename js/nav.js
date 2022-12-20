@@ -6,6 +6,9 @@ function handleResize() {
 
     if (window.innerWidth <= 576) {
 
+        [...button].forEach(function (button) {
+            button.classList.remove("toggle");
+        });
         nav.style = "";
     }
 }
