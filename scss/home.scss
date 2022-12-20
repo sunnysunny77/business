@@ -79,6 +79,9 @@ header {
     right: 15px;
     border-radius: 50%;
     z-index: 3;
+    @media only Screen and (max-width: 576px) {
+      display: none;
+    }
   }
 }
 
@@ -476,7 +479,7 @@ article {
     position: relative;
     padding: 12% 0;
     background-size: contain;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     p {
       display: flex;
       flex-direction: column;

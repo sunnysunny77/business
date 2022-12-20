@@ -5,7 +5,7 @@
 }
 
 nav {
-  position: sticky;
+  position: absolute;
   font-family: $font2;
   display: flex;
   justify-content: flex-end;
@@ -16,11 +16,12 @@ nav {
   padding: 0 4%;
   text-align: center;
   font-size: larger;
-  background-image: url("../images/climpek.png");
-  background-color: $c3;
   color: $c15;
   z-index: 2;
   @media only Screen and (max-width: 576px) {
+    position: sticky;
+    background-image: url("../images/climpek.png");
+    background-color: $c3;
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
@@ -54,9 +55,13 @@ nav {
         outline: none;
         display: block;
         margin: 2% 0;
+        background-image: url("../images/climpek.png");
+        background-color: $c3;
         @media only Screen and (max-width: 576px) {
           display: none;
           margin: auto auto 15px auto;
+          background-image: none;
+          background-color: unset;
         }
         &:hover,
         &:focus {
@@ -71,6 +76,18 @@ nav {
     color: $c4;
     padding: 10px;
     align-self: baseline;
+    @media only Screen and (min-width: 576px) {
+      display: none;
+    }
+  }
+  .fab {
+    padding: 7px 11px;
+    position: absolute;
+    text-decoration: none;
+    bottom: -14px;
+    right: 15px;
+    border-radius: 50%;
+    z-index: 3;
     @media only Screen and (min-width: 576px) {
       display: none;
     }
