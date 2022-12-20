@@ -1,5 +1,9 @@
 /* nav */
 
+.display {
+  display: block;
+}
+
 nav {
   position: sticky;
   font-family: $font2;
@@ -21,43 +25,6 @@ nav {
     flex-direction: column;
     width: 100%;
     padding: 0;
-  }
-  &:hover ul li,
-  &:focus ul li {
-    @media only Screen and (max-width: 576px) {
-      @keyframes ani1 {
-        0% {
-          height: 0px;
-          opacity: 0;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          height: 43px;
-          opacity: 1;
-        }
-      }
-      animation: ani1 2s;
-    }
-  }
-  &:hover .button,
-  &:focus .button {
-    display: block;
-  }
-  &:hover,
-  &:focus {
-    @keyframes ani {
-      0% {
-        background-color: $c9;
-      }
-      100% {
-        background-color: $c3;
-      }
-    }
-    @media only Screen and (max-width: 576px) {
-      animation: ani 2s;
-    }
   }
   #menu {
     color: $c4;
@@ -108,8 +75,41 @@ nav {
       }
     }
   }
-}
-
-.display {
-  display: block;
+  &:hover ul li,
+  &:focus ul li {
+    @media only Screen and (max-width: 576px) {
+      @keyframes ani {
+        0% {
+          height: 0px;
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          height: 43px;
+          opacity: 1;
+        }
+      }
+      animation: ani 2s;
+    }
+  }
+  &:hover .button,
+  &:focus .button {
+    display: block;
+  }
+  &:hover,
+  &:focus {
+    @keyframes ani1 {
+      0% {
+        background-color: $c9;
+      }
+      100% {
+        background-color: $c3;
+      }
+    }
+    @media only Screen and (max-width: 576px) {
+      animation: ani1 2s;
+    }
+  }
 }
