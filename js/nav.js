@@ -7,7 +7,6 @@ function handleNav() {
 
     if (scrollY < main.offsetTop && window.innerWidth > 576) {
 
-        button[0].classList.remove("toggle");
         [...button].forEach(function (button) {
             button.classList.remove("toggle");
         });
@@ -38,7 +37,10 @@ function handleResize() {
     if (window.innerWidth <= 576) {
 
         nav.style = "";
-        nav.classList = "";  
+        nav.classList = "";
+        [...document.getElementsByClassName("button")].forEach(function (button) {
+            button.classList.remove("toggle");
+        });
     } 
 }
 
