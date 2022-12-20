@@ -13,7 +13,7 @@ function handleResize() {
     if (window.innerWidth <= 576) {
 
         nav.style = "";
-        nav.classList = "";
+        nav.classList.remove("ani");
         [...button].forEach(function (button) {
             button.classList.remove("toggle");
         });
@@ -48,7 +48,6 @@ function handleNav() {
         main.style.paddingTop = 0;
     }
 }
-
 
 document.getElementById("menu").addEventListener("click", handleClick);
 
