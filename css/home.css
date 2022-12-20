@@ -35,11 +35,6 @@ h2 {
   display: none;
 }
 
-@media only Screen and (min-width: 576px) {
-  main {
-    padding-top: 33px;
-  }
-}
 /* nav */
 nav {
   position: sticky;
@@ -65,36 +60,27 @@ nav {
     width: 100%;
     padding: 0;
   }
-  nav:hover .button, nav:focus .button {
-    display: block;
-  }
-  nav:hover, nav:focus {
-    animation: ani 2s;
-  }
-  @keyframes ani {
-    0% {
-      background-color: lightgray;
-      color: transparent;
-    }
-    100% {
-      background-color: white;
-      color: inherit;
-    }
-  }
 }
-nav:hover #menu, nav:focus #menu {
-  color: black;
+nav:hover .button, nav:focus .button {
+  display: block;
+}
+nav:hover, nav:focus {
+  animation: ani 2s;
+}
+@keyframes ani {
+  0% {
+    background-color: lightgray;
+    color: transparent;
+  }
+  100% {
+    background-color: white;
+    color: inherit;
+  }
 }
 nav #menu {
-  display: none;
-}
-@media only Screen and (max-width: 576px) {
-  nav #menu {
-    display: block;
-    color: #9c2c07;
-    padding: 5px 10px;
-    align-self: baseline;
-  }
+  color: #9c2c07;
+  padding: 10px;
+  align-self: baseline;
 }
 nav ul:nth-child(2) {
   width: 33%;
@@ -123,11 +109,10 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
   outline: none;
-  display: inline-block;
+  display: none;
 }
 @media only Screen and (max-width: 576px) {
   nav ul li a {
-    display: none;
     margin-bottom: 15px;
   }
 }

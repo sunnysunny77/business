@@ -32,11 +32,5 @@ h2 {
   display: none;
 }
 
-@media only Screen and (min-width: 576px) {
-  main {
-    padding-top: 33px;
-  }
-}
-
 @import "nav";
 @import "footer";

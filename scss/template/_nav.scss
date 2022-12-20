@@ -21,37 +21,29 @@ nav {
     flex-direction: column;
     width: 100%;
     padding: 0;
-    &:hover .button,
-    &:focus .button {
-      display: block;
-    }
-    &:hover,
-    &:focus {
-      @keyframes ani {
-        0% {
-          background-color: $c9;
-          color: transparent;
-        }
-        100% {
-          background-color: $c3;
-          color: inherit;
-        }
-      }
-      animation: ani 2s;
-    }
   }
-  &:hover #menu,
-  &:focus #menu {
-    color: $c15;
+  &:hover .button,
+  &:focus .button {
+    display: block;
+  }
+  &:hover,
+  &:focus {
+    @keyframes ani {
+      0% {
+        background-color: $c9;
+        color: transparent;
+      }
+      100% {
+        background-color: $c3;
+        color: inherit;
+      }
+    }
+    animation: ani 2s;
   }
   #menu {
-    display: none;
-    @media only Screen and (max-width: 576px) {
-      display: block;
-      color: $c4;
-      padding: 5px 10px;
-      align-self: baseline;
-    }
+    color: $c4;
+    padding: 10px;
+    align-self: baseline;
   }
   ul {
     &:nth-child(2) {
@@ -79,9 +71,8 @@ nav {
         text-decoration: none;
         border-radius: 5px;
         outline: none;
-        display: inline-block;
-        @media only Screen and (max-width: 576px) {
-          display: none;
+        display: none;
+        @media only Screen and (max-width: 576px) {      
           margin-bottom: 15px;
         }
         &:hover,
