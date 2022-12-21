@@ -41,3 +41,5 @@ nav.addEventListener("touchstart", handleTouch);
 document.addEventListener("touchmove", handleMove);
 
 window.addEventListener("scroll", handleNav);
+
+window.addEventListener("resize", handleNav);
