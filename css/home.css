@@ -132,13 +132,13 @@ nav ul li a:hover, nav ul li a:focus {
   background-color: rgba(156, 44, 7, 0.95);
   background-image: none;
 }
-nav span {
+nav span.fas {
   color: #9c2c07;
   padding: 10px;
   align-self: baseline;
 }
 @media only Screen and (min-width: 576px) {
-  nav span {
+  nav span.fas {
     display: none;
   }
 }
