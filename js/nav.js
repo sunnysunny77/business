@@ -5,7 +5,7 @@ const main = document.querySelector("main");
 function handleNav() {
     let scrollY = window.scrollY;
 
-    if (scrollY >= main.offsetTop && window.innerWidth > 576) {
+    if (scrollY >= main.offsetTop - nav.offsetHeight && window.innerWidth > 576) {
 
         nav.classList.add("sticky");
         nav.classList.remove("absolute");
