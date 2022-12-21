@@ -71,10 +71,9 @@ nav {
         background-color: $c3;
         @media only Screen and (max-width: 576px) {
           display: none;
-          margin: auto;
+          margin: auto auto 10px auto;
           background-image: none;
           background-color: unset;
-          margin-bottom: 10px;
         }
         &:hover,
         &:focus {
@@ -85,7 +84,7 @@ nav {
       }
     }
   }
-  #menu {
+  span {
     color: $c4;
     padding: 10px;
     align-self: baseline;
@@ -122,6 +121,7 @@ nav {
           opacity: 1;
         }
       }
+      animation-timing-function: ease-in-out;
       animation: ani 2s;
     }
   }
