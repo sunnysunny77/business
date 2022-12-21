@@ -24,7 +24,7 @@ function handleNav() {
 
 function handleTouch() {
 
-    [...button].forEach(function (button) {images/section1.jpg
+    [...button].forEach(function (button) {
         button.classList.add("display");
     });
 }
