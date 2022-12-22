@@ -1,4 +1,8 @@
 /* template */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
