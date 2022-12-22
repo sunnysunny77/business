@@ -423,7 +423,7 @@ article p q {
     margin-bottom: 6%;
   }
 }
-#section1 p {
+#section1 img + p {
   width: 300px;
   margin: auto;
   position: relative;
@@ -434,14 +434,14 @@ article p q {
   padding: 25px;
 }
 @media only Screen and (max-width: 1023px) {
-  #section1 p {
+  #section1 img + p {
     position: static;
     width: 87%;
     margin: 4% auto;
     padding: 1.5%;
   }
 }
-#section1 p q {
+#section1 img + p q {
   opacity: 0.95;
 }
 #section1 aside {
@@ -449,21 +449,63 @@ article p q {
   position: absolute;
   left: calc(50% + 65px);
   top: calc(50% + 45px);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 aside {
+    justify-content: space-between;
     position: static;
-    width: 90%;
+    width: 70%;
     margin: 4% auto;
   }
 }
-#section1 aside h3 {
-  margin: auto auto 2% 2%;
+@media only Screen and (max-width: 576px) {
+  #section1 aside {
+    width: 90%;
+  }
 }
-#section1 aside span {
-  color: #303030;
-  text-align: justify;
+#section1 aside h2 {
+  width: 100%;
+  padding-top: 0;
+  text-align: center;
+}
+#section1 aside h2 + p {
+  width: 100%;
+}
+#section1 aside h2 + p + p + h3 {
+  text-align: right;
+}
+#section1 aside p {
+  width: 50%;
   display: inline-block;
+  margin: 1.5% 0;
+}
+#section1 h3 {
+  width: 48%;
+  display: inline-block;
+  align-self: center;
+}
+#section1 h3 + p {
+  order: 2;
+  text-align: right;
+}
+@media only Screen and (max-width: 1023px) {
+  #section1 h3 + p {
+    order: unset;
+    text-align: left;
+  }
+}
+#section1 h3 + p + h3 {
+  order: 1;
+}
+@media only Screen and (max-width: 1023px) {
+  #section1 h3 + p + h3 {
+    order: unset;
+    text-align: right;
+  }
 }
 
 /* #section2 */

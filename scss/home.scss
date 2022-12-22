@@ -166,7 +166,7 @@ article {
       }
     }
   }
-  p {
+  img + p {
     width: 300px;
     margin: auto;
     position: relative;
@@ -190,18 +190,54 @@ article {
     position: absolute;
     left: calc(50% + 65px);
     top: calc(50% + 45px);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
     @media only Screen and (max-width: 1023px) {
+      justify-content: space-between;
       position: static;
-      width: 90%;
+      width: 70%;
       margin: 4% auto;
     }
-    h3 {
-      margin: auto auto 2% 2%;
+    @media only Screen and (max-width: 576px) {
+      width: 90%;
     }
-    span {
-      color: $c2;
-      text-align: justify;
+    h2 {
+      width: 100%;
+      padding-top: 0;
+      text-align: center;
+      + p {
+        width: 100%;
+        + p  + h3 {
+          text-align: right;
+        }
+      }
+    }
+    p {
+      width: 50%;
       display: inline-block;
+      margin: 1.5% 0;
+    }
+  }
+  h3 {
+    width: 48%;
+    display: inline-block;
+    align-self: center;
+    + p {
+      order: 2;
+      text-align: right;
+      @media only Screen and (max-width: 1023px) {
+        order: unset;
+        text-align: left;
+      }
+      + h3 {
+        order: 1;
+        @media only Screen and (max-width: 1023px) {
+          order: unset;
+          text-align: right;
+        }
+      }
     }
   }
 }
