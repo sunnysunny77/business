@@ -119,7 +119,7 @@ nav ul li a {
   border-radius: 5px;
   outline: none;
   display: block;
-  margin: 2% 0;
+  margin: 4% 0;
   background-image: url("../images/climpek.png");
   background-color: white;
 }
@@ -891,6 +891,51 @@ article p q {
   .slk div {
     margin: 0;
   }
+}
+
+/* #section5 */
+#section5 {
+  background-color: rgba(156, 44, 7, 0.025);
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4%;
+}
+@media only Screen and (max-width: 576px) {
+  #section5 {
+    height: unset;
+    flex-direction: column;
+  }
+}
+#section5 p {
+  width: 25%;
+  height: 15vh;
+  border: 2px solid #9c2c07;
+  color: #9c2c07;
+  padding: 2.5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+@media only Screen and (max-width: 576px) {
+  #section5 p {
+    width: 94%;
+    margin: 5% 0;
+    height: unset;
+    min-height: 10vh;
+  }
+}
+#section5 p::after {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: calc(50% - 25px);
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #9c2c07;
+  border-left: 25px solid transparent;
 }
 
 /*# sourceMappingURL=home.css.map */
