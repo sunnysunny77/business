@@ -202,6 +202,7 @@ footer {
   font-family: Tahoma, sans-serif;
   background-color: rgba(156, 44, 7, 0.95);
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   font-size: larger;
 }
@@ -210,19 +211,28 @@ footer ul:nth-child(1) {
 }
 footer ul:nth-child(1) > li:nth-child(1) {
   border-top: 1px solid white;
-  padding: 12.5px 15px 12.5px 12.5px;
-  width: 90%;
+  padding: 10px 12.5px 10px 10px;
+  max-width: 72px;
 }
 footer ul ~ ul {
   text-align: right;
 }
 footer ul ~ ul li:nth-child(3) {
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+footer ul ~ ul li {
+  padding-right: 10px;
 }
 footer ul {
   list-style-type: none;
   color: white;
+}
+@media only Screen and (max-width: 576px) {
+  footer ul {
+    width: 100%;
+  }
 }
 footer ul a {
   color: white;
@@ -283,7 +293,9 @@ header h1 {
   bottom: 12.5%;
   right: 5%;
   width: 50%;
+  text-shadow: grey 1px 0 10px;
   border-radius: 5px;
+  font-style: oblique;
 }
 @media only Screen and (max-width: 1023px) {
   header h1 {
@@ -292,9 +304,6 @@ header h1 {
 }
 @media only Screen and (max-width: 576px) {
   header h1 {
-    bottom: unset;
-    top: 5px;
-    right: 5px;
     font-size: 112%;
   }
 }
@@ -871,28 +880,6 @@ article p q {
   align-self: end;
 }
 
-/* slick */
-.slk {
-  display: flex;
-  justify-content: flex-end;
-  background-color: antiquewhite;
-  padding: 25px 0;
-}
-@media only Screen and (max-width: 1023px) {
-  .slk {
-    justify-content: center;
-  }
-}
-.slk div {
-  width: 200px;
-  margin-right: 10%;
-}
-@media only Screen and (max-width: 1023px) {
-  .slk div {
-    margin: 0;
-  }
-}
-
 /* #section5 */
 #section5 {
   background-color: rgba(156, 44, 7, 0.025);
@@ -936,6 +923,28 @@ article p q {
   border-right: 25px solid transparent;
   border-bottom: 25px solid #9c2c07;
   border-left: 25px solid transparent;
+}
+
+/* slick */
+.slk {
+  display: flex;
+  justify-content: flex-end;
+  background-color: antiquewhite;
+  padding: 25px 0;
+}
+@media only Screen and (max-width: 1023px) {
+  .slk {
+    justify-content: center;
+  }
+}
+.slk div {
+  width: 200px;
+  margin-right: 10%;
+}
+@media only Screen and (max-width: 1023px) {
+  .slk div {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
