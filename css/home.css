@@ -639,8 +639,12 @@ article p q {
 @media only Screen and (max-width: 1023px) {
   #section2 div div p span:nth-child(2) {
     text-align: center;
-    height: initial;
     padding: 3% 0;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section2 div div p span:nth-child(2) {
+    height: initial;
   }
 }
 #section2 div div span:nth-child(3) {
@@ -897,7 +901,7 @@ article p q {
 }
 #section5 p {
   width: 25%;
-  height: 15vh;
+  height: 16vh;
   border: 2px solid #9c2c07;
   color: #9c2c07;
   padding: 2.5%;

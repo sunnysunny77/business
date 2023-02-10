@@ -334,8 +334,10 @@ article {
           height: 111px;
           @media only Screen and (max-width: 1023px) {
             text-align: center;
-            height: initial;
             padding: 3% 0;
+          }
+          @media only Screen and (max-width: 576px) {
+            height: initial;
           }
         }
       }
@@ -583,7 +585,7 @@ article {
   }
   p { 
     width: 25%;
-    height: 15vh;
+    height: 16vh;
     border: 2px solid $c4;
     color: $c4;
     padding: 2.5%;
