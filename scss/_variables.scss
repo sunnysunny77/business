@@ -14,7 +14,13 @@ $c13: rgba(245, 245, 245, 0.95);
 $c14: rgba(156, 44, 7, 0.95);
 $c15: black;
 
-$font1: "Trebuchet MS", sans-serif;
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(./Poppins-Regular.ttf);
+    font-display: swap;
+}
+
+$font1: Poppins-Regular;
 $font2: Tahoma, sans-serif;
 
 @import "template/style";
