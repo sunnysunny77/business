@@ -584,13 +584,15 @@ article {
     flex-direction: column;
   }
   p { 
+
     width: 25%;
-    height: 16vh;
+    height: 150px;
     border: 2px solid $c4;
     color: $c4;
     padding: 2.5%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
     position: relative;
     @media only Screen and (max-width: 576px) {
