@@ -1,5 +1,4 @@
 const nav = document.getElementById("nav");
-const button = document.getElementsByClassName("button");
 const main = document.querySelector("main");
 
 function handleNav() {
@@ -21,24 +20,6 @@ function handleNav() {
         nav.classList.remove("sticky");
     }
 }
-
-function handleTouch() {
-
-    [...button].forEach(function (button) {
-        button.classList.add("display");
-    });
-}
-
-function handleMove() {
-
-    [...button].forEach(function (button) {
-        button.classList.remove("display");
-    });
-}
-
-nav.addEventListener("touchstart", handleTouch);
-
-document.addEventListener("touchmove", handleMove);
 
 window.addEventListener("scroll", handleNav);
 

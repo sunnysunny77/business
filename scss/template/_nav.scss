@@ -1,8 +1,5 @@
 /* nav */
 
-.display {
-  display: block;
-}
 .sticky {
   position: sticky;
   background-image: url("../images/climpek.png");
@@ -19,9 +16,18 @@
     justify-content: flex-start;
     flex-direction: column;
     background-image: url("../images/climpek.png");
+    transition: background-color 1s;
     background-color: $c3;
     width: 100%;
     padding: 0;
+    &:hover,
+    &:focus {
+      background-color: $c9;
+      ul li {
+        opacity: 1;
+        margin-top: 0px;
+      }
+    }
   }
 }
 
@@ -40,6 +46,7 @@ nav {
   color: $c15;
   z-index: 2;
   ul {
+    overflow: hidden;
     &:nth-child(2) {
       width: 33%;
     }
@@ -59,6 +66,11 @@ nav {
         display: list-item;
         width: 100%;
       }
+      @media only Screen and (max-width: 576px) {
+        opacity: 0;
+        margin-top: -117px;
+        transition: opacity 0.5s, margin-top 2s;
+      }
       a {
         color: inherit;
         padding: 5px 7.5px;
@@ -70,7 +82,6 @@ nav {
         background-image: url("../images/climpek.png");
         background-color: $c3;
         @media only Screen and (max-width: 576px) {
-          display: none;
           margin: auto auto 10px auto;
           background-image: none;
           background-color: unset;
@@ -102,45 +113,6 @@ nav {
     z-index: 3;
     @media only Screen and (min-width: 576px) {
       display: none;
-    }
-  }
-  &:hover ul li,
-  &:focus ul li {
-    @media only Screen and (max-width: 576px) {
-      @keyframes ani {
-        0% {
-        
-          opacity: 0;
-          margin-top: -117px;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          margin-top: 0;
-          opacity: 1;
-        }
-      }
-      animation-timing-function: ease-in-out;
-      animation: ani 2s;
-    }
-  }
-  &:hover .button,
-  &:focus .button {
-    display: block;
-  }
-  &:hover,
-  &:focus {
-    @keyframes ani1 {
-      0% {
-        background-color: $c9;
-      }
-      100% {
-        background-color: $c3;
-      }
-    }
-    @media only Screen and (max-width: 576px) {
-      animation: ani1 2s;
     }
   }
 }

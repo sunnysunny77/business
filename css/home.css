@@ -50,10 +50,6 @@ main {
 }
 
 /* nav */
-.display {
-  display: block;
-}
-
 .sticky {
   position: sticky;
   background-image: url("../images/climpek.png");
@@ -70,9 +66,17 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     background-image: url("../images/climpek.png");
+    transition: background-color 1s;
     background-color: white;
     width: 100%;
     padding: 0;
+  }
+  #nav:hover, #nav:focus {
+    background-color: lightgray;
+  }
+  #nav:hover ul li, #nav:focus ul li {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 
@@ -90,6 +94,9 @@ nav {
   font-size: larger;
   color: black;
   z-index: 2;
+}
+nav ul {
+  overflow: hidden;
 }
 nav ul:nth-child(2) {
   width: 33%;
@@ -112,6 +119,13 @@ nav ul li {
     width: 100%;
   }
 }
+@media only Screen and (max-width: 576px) {
+  nav ul li {
+    opacity: 0;
+    margin-top: -117px;
+    transition: opacity 0.5s, margin-top 2s;
+  }
+}
 nav ul li a {
   color: inherit;
   padding: 5px 7.5px;
@@ -125,7 +139,6 @@ nav ul li a {
 }
 @media only Screen and (max-width: 576px) {
   nav ul li a {
-    display: none;
     margin: auto auto 10px auto;
     background-image: none;
     background-color: unset;
@@ -158,41 +171,6 @@ nav .fab {
 @media only Screen and (min-width: 576px) {
   nav .fab {
     display: none;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  nav:hover ul li, nav:focus ul li {
-    animation-timing-function: ease-in-out;
-    animation: ani 2s;
-  }
-  @keyframes ani {
-    0% {
-      opacity: 0;
-      margin-top: -117px;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
-}
-nav:hover .button, nav:focus .button {
-  display: block;
-}
-@keyframes ani1 {
-  0% {
-    background-color: lightgray;
-  }
-  100% {
-    background-color: white;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  nav:hover, nav:focus {
-    animation: ani1 2s;
   }
 }
 
