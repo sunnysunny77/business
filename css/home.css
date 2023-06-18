@@ -501,154 +501,6 @@ article p q {
 
 /* #section2 */
 #section2 {
-  width: 100%;
-  padding: 35px 0;
-  background-color: rgba(156, 44, 7, 0.025);
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 {
-    padding: 0;
-  }
-}
-#section2 h2 {
-  text-align: left;
-  margin: auto auto 40px 8%;
-}
-#section2 div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div {
-    justify-content: space-evenly;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  #section2 div {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-}
-#section2 div img {
-  border-radius: 50%;
-  margin: auto 1.5% auto 1.5%;
-  filter: grayscale(100%);
-  border: 1px solid lightgray;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div img {
-    display: block;
-    margin: 2% auto auto 8%;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  #section2 div img {
-    margin: auto;
-    width: 50%;
-    height: 50%;
-  }
-}
-#section2 div div {
-  display: flex;
-  flex-direction: column;
-  width: 222px;
-  margin: auto 1% auto 1%;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div {
-    width: 40%;
-    margin: auto;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  #section2 div div {
-    width: 60%;
-  }
-}
-#section2 div div h3 {
-  margin: 0;
-  text-align: right;
-  width: 222px;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div h3 {
-    text-align: center;
-    height: initial;
-    padding: 3% 0;
-  }
-}
-#section2 div div h3 span {
-  display: inline;
-  color: #9c2c07;
-}
-#section2 div div p {
-  width: 222px;
-  height: 222px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div p {
-    width: 100%;
-    height: initial;
-  }
-}
-#section2 div div p span:nth-child(1) {
-  text-align: right;
-  display: inline-block;
-  color: #303030;
-  opacity: 0.95;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div p span:nth-child(1) {
-    text-align: center;
-    height: initial;
-    padding: 3% 0;
-  }
-}
-#section2 div div p span:nth-child(2) {
-  display: inline-block;
-  height: 111px;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div p span:nth-child(2) {
-    text-align: center;
-    padding: 3% 0;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  #section2 div div p span:nth-child(2) {
-    height: initial;
-  }
-}
-#section2 div div span:nth-child(3) {
-  display: inline-block;
-  width: 222px;
-  text-align: center;
-  margin: 11px auto 50px auto;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div span:nth-child(3) {
-    width: 100%;
-  }
-}
-#section2 div div span:nth-child(3) .fab {
-  padding: 7px 9px;
-  margin: auto 3%;
-  text-decoration: none;
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 div div span:nth-child(3) .fab {
-    margin: auto 0;
-  }
-}
-
-/* #section3 */
-#section3 {
   width: 75%;
   margin: auto;
   display: flex;
@@ -657,7 +509,7 @@ article p q {
   height: 100vh;
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 {
+  #section2 {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -665,13 +517,13 @@ article p q {
   }
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 p {
+  #section2 p {
     order: 3;
     margin-bottom: 4%;
     text-align: justify;
   }
 }
-#section3 a {
+#section2 a {
   align-self: flex-start;
   position: sticky;
   /* quater 100vh */
@@ -680,24 +532,24 @@ article p q {
   margin: 20vh 0 20vh 8%;
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 a {
+  #section2 a {
     position: relative;
     top: unset;
   }
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 a:nth-child(2) {
+  #section2 a:nth-child(2) {
     order: 1;
     margin: 6% auto 2% auto;
   }
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 a:nth-child(3) {
+  #section2 a:nth-child(3) {
     order: 2;
     margin: 2% auto 6% auto;
   }
 }
-#section3 a figure {
+#section2 a figure {
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -706,11 +558,11 @@ article p q {
   min-width: 440px;
 }
 @media only Screen and (max-width: 1023px) {
-  #section3 a figure {
+  #section2 a figure {
     min-width: unset;
   }
 }
-#section3 a figure img {
+#section2 a figure img {
   display: block;
   position: relative;
   z-index: 0;
@@ -719,11 +571,11 @@ article p q {
   height: 100%;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
-#section3 a figure:hover img, #section3 a figure:focus img {
+#section2 a figure:hover img, #section2 a figure:focus img {
   transform: scale(1.035);
   opacity: 0.975;
 }
-#section3 a figure figcaption {
+#section2 a figure figcaption {
   position: absolute;
   top: 35%;
   left: 5%;
@@ -731,11 +583,11 @@ article p q {
   width: 50%;
   z-index: 1;
 }
-#section3 a figure figcaption b {
+#section2 a figure figcaption b {
   font-family: Tahoma, sans-serif;
   font-size: 110%;
 }
-#section3 a figure:hover figcaption b, #section3 a figure:focus figcaption b {
+#section2 a figure:hover figcaption b, #section2 a figure:focus figcaption b {
   text-decoration: underline;
 }
 
@@ -752,8 +604,8 @@ article p q {
   }
 }
 
-/* #section4 */
-#section4 {
+/* #section3 */
+#section3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -761,62 +613,62 @@ article p q {
   margin-bottom: 9%;
 }
 @media only Screen and (max-width: 1023px) {
-  #section4 {
+  #section3 {
     flex-direction: column;
     margin: 5% auto auto auto;
     align-items: center;
   }
-  #section4 article:nth-child(1) {
+  #section3 article:nth-child(1) {
     order: 2;
   }
-  #section4 article:nth-child(1) h3 {
+  #section3 article:nth-child(1) h3 {
     margin-left: 3%;
   }
-  #section4 div:nth-child(2) {
+  #section3 div:nth-child(2) {
     order: 3;
     margin: 6% auto 3% auto;
     padding: 27% 0;
   }
-  #section4 div:nth-child(3) {
+  #section3 div:nth-child(3) {
     order: 1;
     margin-bottom: 3%;
     padding: 27% 0;
   }
-  #section4 article:nth-child(4) {
+  #section3 article:nth-child(4) {
     order: 4;
   }
-  #section4 article:nth-child(4) h3 {
+  #section3 article:nth-child(4) h3 {
     margin-right: 3%;
   }
 }
-#section4 article,
-#section4 div {
+#section3 article,
+#section3 div {
   width: 40%;
   margin: 0;
   height: fit-content;
 }
 @media only Screen and (max-width: 1023px) {
-  #section4 article,
-  #section4 div {
+  #section3 article,
+  #section3 div {
     width: 90%;
     border-radius: 5px;
   }
 }
-#section4 article {
+#section3 article {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#section4 article:nth-child(4) {
+#section3 article:nth-child(4) {
   text-align: right;
 }
-#section4 div {
+#section3 div {
   position: relative;
   padding: 12% 0;
   background-size: contain;
   background-repeat: no-repeat;
 }
-#section4 div p {
+#section3 div p {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -828,17 +680,17 @@ article p q {
   left: 2%;
   transition: background-color 1s linear, opacity 1s linear, top 1s linear, right 1s linear, bottom 1s linear, left 1s linear;
 }
-#section4 div p span {
+#section3 div p span {
   margin: 5%;
   opacity: 0;
   transition: opacity 1s linear;
   height: fit-content;
   width: 200px;
 }
-#section4 div p b {
+#section3 div p b {
   margin: 5%;
 }
-#section4 div:hover p, #section4 div:focus p {
+#section3 div:hover p, #section3 div:focus p {
   background-color: rgba(156, 44, 7, 0.95);
   opacity: 0.75;
   top: 7%;
@@ -846,25 +698,24 @@ article p q {
   bottom: 7%;
   left: 7%;
 }
-#section4 div:hover p span, #section4 div:focus p span {
+#section3 div:hover p span, #section3 div:focus p span {
   opacity: 1;
 }
-#section4 div:nth-child(2) {
+#section3 div:nth-child(2) {
   background-image: url(../images/job.jpg);
 }
-#section4 div:nth-child(3) {
+#section3 div:nth-child(3) {
   background-image: url(../images/startup.jpg);
 }
-#section4 div:nth-child(3) p {
+#section3 div:nth-child(3) p {
   text-align: right;
 }
-#section4 div:nth-child(3) p span {
+#section3 div:nth-child(3) p span {
   align-self: end;
 }
 
-/* #section5 */
-#section5 {
-  background-color: rgba(156, 44, 7, 0.025);
+/* #section4 */
+#section4 {
   height: 40vh;
   display: flex;
   justify-content: space-around;
@@ -872,12 +723,12 @@ article p q {
   padding: 4%;
 }
 @media only Screen and (max-width: 576px) {
-  #section5 {
+  #section4 {
     height: unset;
     flex-direction: column;
   }
 }
-#section5 p {
+#section4 p {
   width: 25%;
   height: 150px;
   border: 2px solid #9c2c07;
@@ -890,14 +741,14 @@ article p q {
   position: relative;
 }
 @media only Screen and (max-width: 576px) {
-  #section5 p {
+  #section4 p {
     width: 94%;
     margin: 10% 0;
     height: unset;
     min-height: 10vh;
   }
 }
-#section5 p::after {
+#section4 p::after {
   position: absolute;
   content: "";
   top: -50px;
@@ -906,6 +757,154 @@ article p q {
   border-right: 25px solid transparent;
   border-bottom: 25px solid #9c2c07;
   border-left: 25px solid transparent;
+}
+
+/* #section5 */
+#section5 {
+  width: 100%;
+  padding: 35px 0;
+  background-color: rgba(156, 44, 7, 0.025);
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 {
+    padding: 0;
+  }
+}
+#section5 h2 {
+  text-align: left;
+  margin: auto auto 40px 8%;
+}
+#section5 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div {
+    justify-content: space-evenly;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section5 div {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+#section5 div img {
+  border-radius: 50%;
+  margin: auto 1.5% auto 1.5%;
+  filter: grayscale(100%);
+  border: 1px solid lightgray;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div img {
+    display: block;
+    margin: 2% auto auto 8%;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section5 div img {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+#section5 div div {
+  display: flex;
+  flex-direction: column;
+  width: 222px;
+  margin: auto 1% auto 1%;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div {
+    width: 40%;
+    margin: auto;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section5 div div {
+    width: 60%;
+  }
+}
+#section5 div div h3 {
+  margin: 0;
+  text-align: right;
+  width: 222px;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div h3 {
+    text-align: center;
+    height: initial;
+    padding: 3% 0;
+  }
+}
+#section5 div div h3 span {
+  display: inline;
+  color: #9c2c07;
+}
+#section5 div div p {
+  width: 222px;
+  height: 222px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div p {
+    width: 100%;
+    height: initial;
+  }
+}
+#section5 div div p span:nth-child(1) {
+  text-align: right;
+  display: inline-block;
+  color: #303030;
+  opacity: 0.95;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div p span:nth-child(1) {
+    text-align: center;
+    height: initial;
+    padding: 3% 0;
+  }
+}
+#section5 div div p span:nth-child(2) {
+  display: inline-block;
+  height: 111px;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div p span:nth-child(2) {
+    text-align: center;
+    padding: 3% 0;
+  }
+}
+@media only Screen and (max-width: 576px) {
+  #section5 div div p span:nth-child(2) {
+    height: initial;
+  }
+}
+#section5 div div span:nth-child(3) {
+  display: inline-block;
+  width: 222px;
+  text-align: center;
+  margin: 11px auto 50px auto;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div span:nth-child(3) {
+    width: 100%;
+  }
+}
+#section5 div div span:nth-child(3) .fab {
+  padding: 7px 9px;
+  margin: auto 3%;
+  text-decoration: none;
+}
+@media only Screen and (max-width: 1023px) {
+  #section5 div div span:nth-child(3) .fab {
+    margin: auto 0;
+  }
 }
 
 /* slick */
