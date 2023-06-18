@@ -45,7 +45,7 @@ header {
     position: absolute;
     bottom: 12.5%;
     right: 5%;
-    width: 50%;
+    width: 100%;
     text-shadow: $c1 1px 0 10px;
     border-radius: 5px;
     font-style: oblique;
@@ -55,12 +55,20 @@ header {
     @media only Screen and (max-width: 576px) {
       font-size: 112%;
     }
-    @media only Screen and (max-width: 320px) {
+    @media Screen and (max-width: 320px) {
       font-size: 86%;
     }
     svg {
-      font-style: initial;
-      margin-right: 0;
+      @media only Screen and (max-width: 576px) {
+        width: 20%;
+        height: auto;
+      }
+      .font {
+        font-size: 17px;
+        font-weight: 100;
+        fill: white;
+        font-style: initial;
+      }
     }
     a {
       color: $c3;
@@ -461,7 +469,7 @@ article {
     height: unset;
     flex-direction: column;
   }
-  p { 
+  p {
     width: 25%;
     height: 150px;
     border: 2px solid $c4;
