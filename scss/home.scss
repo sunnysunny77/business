@@ -37,7 +37,7 @@ header {
   background-attachment: fixed;
   position: relative;
   padding: 21% 0px;
-  text-align: center;
+  text-align: right;
   @media only Screen and (max-width: 576px) {
     background-image: url(../images/headerm.jpg);
   }
@@ -58,9 +58,9 @@ header {
     @media only Screen and (max-width: 320px) {
       font-size: 86%;
     }
-    span {
-      font-size: 90%;
-      opacity: 0.95;
+    svg {
+      font-style: initial;
+      margin-right: 0;
     }
     a {
       color: $c3;
