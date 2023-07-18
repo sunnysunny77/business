@@ -253,17 +253,19 @@ footer ul a:hover, footer ul a:focus {
 /* header */
 header {
   background-image: url("../images/header.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  background-attachment: fixed;
   position: relative;
-  padding: 21% 0px;
+  padding: 10% 0px;
+  min-height: 200px;
   text-align: right;
+  border-bottom: 1px solid grey;
 }
 @media only Screen and (max-width: 576px) {
   header {
     background-image: url(../images/headerm.jpg);
+    min-height: 132px;
   }
 }
 header h1 {
@@ -271,39 +273,28 @@ header h1 {
   bottom: 12.5%;
   right: 5%;
   width: 100%;
-  text-shadow: grey 1px 0 10px;
+  text-shadow: black 1px 0 10px;
   border-radius: 5px;
   font-style: oblique;
-}
-@media only Screen and (max-width: 1023px) {
-  header h1 {
-    font-size: 130%;
-  }
+  font-size: 1.75em;
 }
 @media only Screen and (max-width: 576px) {
   header h1 {
-    font-size: 112%;
+    font-size: 1.25em;
   }
 }
-@media Screen and (max-width: 320px) {
-  header h1 {
-    font-size: 86%;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  header h1 svg {
-    width: 20%;
-    height: auto;
-  }
+header h1 svg {
+  width: 20%;
+  max-width: 125px;
+  height: auto;
 }
 header h1 svg .font {
   font-size: 17px;
-  font-weight: 100;
-  fill: white;
+  fill: #fcfcfc;
   font-style: initial;
 }
 header h1 a {
-  color: white;
+  color: #fcfcfc;
   text-decoration: none;
 }
 header h1 a:hover {
