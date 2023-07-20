@@ -35,20 +35,22 @@ header {
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
-  padding: 10% 0px;
-  min-height: 200px;
+  width: 100%;
   text-align: right;
-  border-bottom: 1px solid $c1;
+  padding-top: 27.7%;
+  min-height: 300px;
+  box-sizing: border-box;
   @media only Screen and (max-width: 576px) {
     background-image: url(../images/headerm.jpg);
-    min-height: 132px;
+    padding-top: 43%;
+    min-height: 200px;
   }
   h1 {
     position: absolute;
     bottom: 12.5%;
     right: 5%;
     width: 100%;
-    text-shadow: $c15 1px 0 10px;
+    text-shadow: $c2 -1px -1px 2px, $c2 1px 1px 2px;
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
@@ -61,12 +63,12 @@ header {
       height: auto;
       .font {
         font-size: 17px;
-        fill: darken($c3, 1);
+        fill: $c12;
         font-style: initial;
       }
     }
     a {
-      color: darken($c3, 1);
+      color: $c12;
       text-decoration: none;
       &:hover {
         text-decoration: underline;

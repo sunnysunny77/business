@@ -257,15 +257,17 @@ header {
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
-  padding: 10% 0px;
-  min-height: 200px;
+  width: 100%;
   text-align: right;
-  border-bottom: 1px solid grey;
+  padding-top: 27.7%;
+  min-height: 300px;
+  box-sizing: border-box;
 }
 @media only Screen and (max-width: 576px) {
   header {
     background-image: url(../images/headerm.jpg);
-    min-height: 132px;
+    padding-top: 43%;
+    min-height: 200px;
   }
 }
 header h1 {
@@ -273,7 +275,7 @@ header h1 {
   bottom: 12.5%;
   right: 5%;
   width: 100%;
-  text-shadow: black 1px 0 10px;
+  text-shadow: #303030 -1px -1px 2px, #303030 1px 1px 2px;
   border-radius: 5px;
   font-style: oblique;
   font-size: 1.75em;
@@ -290,11 +292,11 @@ header h1 svg {
 }
 header h1 svg .font {
   font-size: 17px;
-  fill: #fcfcfc;
+  fill: antiquewhite;
   font-style: initial;
 }
 header h1 a {
-  color: #fcfcfc;
+  color: antiquewhite;
   text-decoration: none;
 }
 header h1 a:hover {
