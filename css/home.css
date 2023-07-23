@@ -274,14 +274,17 @@ header {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
+    background-size: cover;
+    background-attachment: initial;
   }
 }
 header h1 {
   position: absolute;
   bottom: 12.5%;
   right: 5%;
-  width: 100%;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  width: fit-content;
+  transition: text-shadow 0.2s ease-in-out;
+  text-shadow: -1px -1px 1px #9c2c07, 1px -1px 1px #9c2c07, -1px 1px 1px #9c2c07, 1px 1px 1px #9c2c07;
   border-radius: 5px;
   font-style: oblique;
   font-size: 1.75em;
@@ -291,9 +294,12 @@ header h1 {
     font-size: 1.25em;
   }
 }
+header h1:hover {
+  text-shadow: -1px -1px 1px #dd4b39, 1px -1px 1px #dd4b39, -1px 1px 1px #dd4b39, 1px 1px 1px #dd4b39;
+}
 header h1 svg {
-  width: 20%;
-  max-width: 125px;
+  width: 100%;
+  max-width: 100px;
   height: auto;
 }
 header h1 svg .font {
@@ -303,11 +309,7 @@ header h1 svg .font {
 }
 header h1 a {
   color: #f9e9d2;
-  text-decoration: underline transparent;
-  transition: 0.2s ease-in-out text-decoration;
-}
-header h1 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 header .fab {
   padding: 7px 11px;

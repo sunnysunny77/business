@@ -48,23 +48,28 @@ header {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
+    background-size: cover;
+    background-attachment: initial;
   }
   h1 {
     position: absolute;
     bottom: 12.5%;
     right: 5%;
-    width: 100%;
-    text-shadow: -1px -1px 0 $c15, 1px -1px 0 $c15, -1px 1px 0 $c15, 1px 1px 0 $c15;
-
+    width: fit-content;
+    transition: text-shadow 0.2s ease-in-out;
+    text-shadow: -1px -1px 1px $c4, 1px -1px 1px $c4, -1px 1px 1px $c4, 1px 1px 1px $c4;
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
     @media only Screen and (max-width: 576px) {
       font-size: 1.25em;
     }
+    &:hover {
+      text-shadow: -1px -1px 1px $c7, 1px -1px 1px $c7, -1px 1px 1px $c7, 1px 1px 1px $c7;
+    }
     svg {
-      width: 20%;
-      max-width: 125px;
+      width: 100%;
+      max-width: 100px;
       height: auto;
       .font {
         font-size: 17px;
@@ -74,11 +79,7 @@ header {
     }
     a {
       color: $c12;
-      text-decoration: underline transparent;
-      transition: 0.2s ease-in-out text-decoration;
-      &:hover {
-        text-decoration: underline;
-      }
+      text-decoration: none;
     }
   }
   .fab {
