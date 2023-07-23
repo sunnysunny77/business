@@ -68,6 +68,7 @@ main {
     background-image: url("../images/climpek.png");
     transition: background-color 1s;
     background-color: white;
+    transition: 0.2s ease-in-out background-color;
     width: 100%;
     padding: 0;
   }
@@ -136,6 +137,7 @@ nav ul li a {
   margin: 4% 0;
   background-image: url("../images/climpek.png");
   background-color: white;
+  transition: 0.2s ease-in-out background-color;
 }
 @media only Screen and (max-width: 576px) {
   nav ul li a {
@@ -219,14 +221,17 @@ footer ul a {
   outline: none;
   display: inline-block;
   width: 100%;
+  transition: 0.2s ease-in-out color;
 }
 footer ul a:hover, footer ul a:focus {
   color: black;
 }
 
 /* icons */
-.fab:hover,
-.fab:focus {
+.fab {
+  transition: 0.2s ease-in-out background;
+}
+.fab:hover, .fab:focus {
   background: #9c2c07;
 }
 
@@ -252,20 +257,21 @@ footer ul a:hover, footer ul a:focus {
 
 /* header */
 header {
-  background-image: url("../images/header.jpg");
-  background-size: cover;
+  background-image: url(../images/header.webp);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
   width: 100%;
   text-align: right;
-  padding-top: 34.7%;
+  padding-top: 42.7%;
   min-height: 300px;
   box-sizing: border-box;
+  background-attachment: fixed;
 }
 @media only Screen and (max-width: 576px) {
   header {
-    background-image: url(../images/headerm.jpg);
+    background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
   }
@@ -275,7 +281,7 @@ header h1 {
   bottom: 12.5%;
   right: 5%;
   width: 100%;
-  text-shadow: #303030 -1px -1px 2px, #303030 1px 1px 2px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
   border-radius: 5px;
   font-style: oblique;
   font-size: 1.75em;
@@ -292,12 +298,13 @@ header h1 svg {
 }
 header h1 svg .font {
   font-size: 17px;
-  fill: antiquewhite;
+  fill: #f9e9d2;
   font-style: initial;
 }
 header h1 a {
-  color: antiquewhite;
-  text-decoration: none;
+  color: #f9e9d2;
+  text-decoration: underline transparent;
+  transition: 0.2s ease-in-out text-decoration;
 }
 header h1 a:hover {
   text-decoration: underline;
@@ -912,7 +919,7 @@ article p q {
 .slk {
   display: flex;
   justify-content: flex-end;
-  background-color: antiquewhite;
+  background-color: #f9e9d2;
   padding: 25px 0;
 }
 @media only Screen and (max-width: 1023px) {

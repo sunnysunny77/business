@@ -2,9 +2,12 @@
 
 /* icons */
 
-.fab:hover,
-.fab:focus {
-  background: $c4;
+.fab {
+  transition: 0.2s ease-in-out background;
+  &:hover,
+  &:focus {
+    background: $c4;
+  }
 }
 
 .fa-facebook-f {
@@ -30,18 +33,19 @@
 /* header */
 
 header {
-  background-image: url("../images/header.jpg");
-  background-size: cover;
+  background-image: url(../images/header.webp);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   position: relative;
   width: 100%;
   text-align: right;
-  padding-top: 34.7%;
+  padding-top: 42.7%;
   min-height: 300px;
   box-sizing: border-box;
+  background-attachment: fixed;
   @media only Screen and (max-width: 576px) {
-    background-image: url(../images/headerm.jpg);
+    background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
   }
@@ -50,7 +54,8 @@ header {
     bottom: 12.5%;
     right: 5%;
     width: 100%;
-    text-shadow: $c2 -1px -1px 2px, $c2 1px 1px 2px;
+    text-shadow: -1px -1px 0 $c15, 1px -1px 0 $c15, -1px 1px 0 $c15, 1px 1px 0 $c15;
+
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
@@ -69,7 +74,8 @@ header {
     }
     a {
       color: $c12;
-      text-decoration: none;
+      text-decoration: underline transparent;
+      transition: 0.2s ease-in-out text-decoration;
       &:hover {
         text-decoration: underline;
       }

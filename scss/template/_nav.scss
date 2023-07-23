@@ -18,6 +18,7 @@
     background-image: url("../images/climpek.png");
     transition: background-color 1s;
     background-color: $c3;
+    transition: 0.2s ease-in-out background-color;
     width: 100%;
     padding: 0;
     &:hover,
@@ -81,6 +82,7 @@ nav {
         margin: 4% 0;
         background-image: url("../images/climpek.png");
         background-color: $c3;
+        transition: 0.2s ease-in-out background-color;
         @media only Screen and (max-width: 576px) {
           margin: auto auto 10px auto;
           background-image: none;
