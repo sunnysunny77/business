@@ -44,7 +44,7 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
-  @media only Screen and (max-width: 576px) {
+  @media only Screen and (max-width: 768px) {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
@@ -61,8 +61,8 @@ header {
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
-    @media only Screen and (max-width: 576px) {
-      font-size: 1.25em;
+    @media only Screen and (max-width: 1023px) {
+      font-size: 17px;
     }
     &:hover {
       text-shadow: -1px -1px 1px $c7, 1px -1px 1px $c7, -1px 1px 1px $c7, 1px 1px 1px $c7;
@@ -362,7 +362,7 @@ article {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 9%;
+  margin: 9% 0;
   @media only Screen and (max-width: 1023px) {
     flex-direction: column;
     margin: 5% auto auto auto;

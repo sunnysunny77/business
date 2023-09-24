@@ -269,7 +269,7 @@ header {
   box-sizing: border-box;
   background-attachment: fixed;
 }
-@media only Screen and (max-width: 576px) {
+@media only Screen and (max-width: 768px) {
   header {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
@@ -289,9 +289,9 @@ header h1 {
   font-style: oblique;
   font-size: 1.75em;
 }
-@media only Screen and (max-width: 576px) {
+@media only Screen and (max-width: 1023px) {
   header h1 {
-    font-size: 1.25em;
+    font-size: 17px;
   }
 }
 header h1:hover {
@@ -620,7 +620,7 @@ article p q {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 9%;
+  margin: 9% 0;
 }
 @media only Screen and (max-width: 1023px) {
   #section3 {
