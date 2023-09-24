@@ -283,19 +283,15 @@ header h1 {
   bottom: 12.5%;
   right: 5%;
   width: fit-content;
-  transition: text-shadow 0.2s ease-in-out;
-  text-shadow: -1px -1px 1px #9c2c07, 1px -1px 1px #9c2c07, -1px 1px 1px #9c2c07, 1px 1px 1px #9c2c07;
   border-radius: 5px;
   font-style: oblique;
   font-size: 1.75em;
+  text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
 }
 @media only Screen and (max-width: 1023px) {
   header h1 {
     font-size: 17px;
   }
-}
-header h1:hover {
-  text-shadow: -1px -1px 1px #dd4b39, 1px -1px 1px #dd4b39, -1px 1px 1px #dd4b39, 1px 1px 1px #dd4b39;
 }
 header h1 svg {
   width: 100%;
@@ -304,12 +300,17 @@ header h1 svg {
 }
 header h1 svg .font {
   font-size: 17px;
-  fill: #f9e9d2;
-  font-style: initial;
+  font-style: normal;
+  font-weight: 100;
+  fill: #303030;
 }
 header h1 a {
-  color: #f9e9d2;
+  color: #303030;
   text-decoration: none;
+  font-weight: 100;
+}
+header h1 a:hover {
+  text-decoration: underline;
 }
 header .fab {
   padding: 7px 11px;

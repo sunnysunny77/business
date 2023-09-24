@@ -56,16 +56,12 @@ header {
     bottom: 12.5%;
     right: 5%;
     width: fit-content;
-    transition: text-shadow 0.2s ease-in-out;
-    text-shadow: -1px -1px 1px $c4, 1px -1px 1px $c4, -1px 1px 1px $c4, 1px 1px 1px $c4;
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
+    text-shadow: -1px -1px 1px $c3, 1px -1px 1px $c3, -1px 1px 1px $c3, 1px 1px 1px $c3;
     @media only Screen and (max-width: 1023px) {
       font-size: 17px;
-    }
-    &:hover {
-      text-shadow: -1px -1px 1px $c7, 1px -1px 1px $c7, -1px 1px 1px $c7, 1px 1px 1px $c7;
     }
     svg {
       width: 100%;
@@ -73,13 +69,18 @@ header {
       height: auto;
       .font {
         font-size: 17px;
-        fill: $c12;
-        font-style: initial;
+        font-style: normal;
+        font-weight: 100;
+        fill: $c2;
       }
     }
     a {
-      color: $c12;
+      color: $c2;
       text-decoration: none;
+      font-weight: 100;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .fab {
