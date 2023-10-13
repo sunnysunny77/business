@@ -731,12 +731,13 @@ article p q {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 8% 4%;
+  padding: 0 4% 4% 4%;
 }
 @media only Screen and (max-width: 576px) {
   #section4 {
     height: unset;
     flex-direction: column;
+    padding: 8% 4%;
   }
 }
 #section4 p {
@@ -773,7 +774,7 @@ article p q {
 /* #section5 */
 #section5 {
   width: 100%;
-  padding: 35px 0;
+  padding: 35px 0 70px 0;
   background-color: rgba(156, 44, 7, 0.025);
 }
 @media only Screen and (max-width: 1023px) {
