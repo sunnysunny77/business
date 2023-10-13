@@ -361,11 +361,6 @@ article p {
   color: #9c2c07;
   padding: 25px;
 }
-@media only Screen and (max-width: 1023px) {
-  article p {
-    padding: 1.5%;
-  }
-}
 article p q {
   opacity: 0.95;
 }
