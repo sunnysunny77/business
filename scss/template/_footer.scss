@@ -18,11 +18,7 @@ footer {
   }
   ul ~ ul {
     text-align: right;
-    li:nth-child(3) {
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 10px;
-    }
+  
     li {
       padding-right: 10px;
     }
@@ -46,5 +42,21 @@ footer {
         color: $c15;
       }
     }
+  }
+  hr {
+    width: 60%;
+    margin:  20px 20% 0 20%;
+    @media only Screen and (max-width: 576px) {
+      width: 90%;
+      margin:  20px 5% 0 5%;
+    }
+  }
+  p {
+      width: 100%;
+      color: $c3;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
   }
 }
