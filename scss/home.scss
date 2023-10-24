@@ -44,16 +44,18 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
+  border-bottom: 1px solid rgba($c2,0.275);
   @media only Screen and (max-width: 768px) {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
     min-height: 200px;
-    background-size: cover;
+    background-size: 75%;
+    background-position: center left;
     background-attachment: initial;
   }
   h1 {
     position: absolute;
-    bottom: 12.5%;
+    bottom: 10%;
     right: 5%;
     width: fit-content;
     border-radius: 5px;
@@ -65,7 +67,7 @@ header {
     }
     svg {
       width: 100%;
-      max-width: 100px;
+      max-width: 75px;
       height: auto;
       .font {
         font-size: 17px;
@@ -290,7 +292,7 @@ article {
     &:nth-child(3) {
       @media only Screen and (max-width: 1023px) {
         order: 2;
-        margin: 5% auto 10% auto;
+        margin: 5% auto 12% auto;
       }
     }
     figure {
@@ -326,6 +328,11 @@ article {
         color: $c3;
         width: 50%;
         z-index: 1;
+        @media only Screen and (max-width: 576px) {
+          width: 75%;
+          top: 20%;
+          font-size: 90%;
+        }
         b {
           font-family: $font2;
           font-size: 110%;
@@ -358,33 +365,6 @@ article {
   justify-content: space-evenly;
   align-items: center;
   margin: 9% 0;
-  @media only Screen and (max-width: 1023px) {
-    flex-direction: column;
-    margin: 5% auto auto auto;
-    align-items: center;
-    article:nth-child(1) {
-      order: 2;
-      h3 {
-        margin-left: 3%;
-      }
-    }
-    div:nth-child(2) {
-      order: 3;
-      margin: 6% auto 3% auto;
-      padding: 27% 0;
-    }
-    div:nth-child(3) {
-      order: 1;
-      margin-bottom: 3%;
-      padding: 27% 0;
-    }
-    article:nth-child(4) {
-      order: 4;
-      h3 {
-        margin-right: 3%;
-      }
-    }
-  }
   article,
   div {
     width: 40%;
@@ -405,7 +385,7 @@ article {
   }
   div {
     position: relative;
-    padding: 12% 0;
+    padding: 24%   0 0 0;
     background-size: contain;
     background-repeat: no-repeat;
     p {
@@ -450,14 +430,43 @@ article {
     }
     &:nth-child(2) {
       background-image: url(../images/job.jpg);
+      margin-bottom: 25px;
     }
     &:nth-child(3) {
       background-image: url(../images/startup.jpg);
+      margin-top: 25px;
       p {
         text-align: right;
         span {
           align-self: end;
         }
+      }
+    }
+  }
+  @media only Screen and (max-width: 1023px) {
+    flex-direction: column;
+    margin: 5% auto auto auto;
+    align-items: center;
+    article:nth-child(1) {
+      order: 2;
+      h3 {
+        margin-left: 3%;
+      }
+    }
+    div:nth-child(2) {
+      order: 3;
+      margin: 15% 0 3% 0;
+      padding: 27% 0;
+    }
+    div:nth-child(3) {
+      order: 1;
+      margin: 0 0 3% 0;
+      padding: 27% 0;
+    }
+    article:nth-child(4) {
+      order: 4;
+      h3 {
+        margin-right: 3%;
       }
     }
   }
@@ -474,7 +483,7 @@ article {
   @media only Screen and (max-width: 576px) {
     height: unset;
     flex-direction: column;
-    padding: 8% 4%;
+    padding: 15% 4%;
   }
   p {
     width: 25%;
