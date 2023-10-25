@@ -40,14 +40,14 @@ header {
   position: relative;
   width: 100%;
   text-align: right;
-  padding-top: 100vh;
+  padding: 50vh 0;
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
   border-bottom: 1px solid rgba($c2,0.275);
   @media only Screen and (max-width: 1023px) {
     background-image: url(../images/headerm.webp);
-    padding-top: 43%;
+    padding: 22.5% 0;
     min-height: 200px;
     background-size: 75%;
     background-position: center left;
