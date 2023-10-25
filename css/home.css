@@ -265,7 +265,7 @@ header {
   background-image: url(../images/header.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   position: relative;
   width: 100%;
   text-align: right;
@@ -275,7 +275,7 @@ header {
   background-attachment: fixed;
   border-bottom: 1px solid rgba(48, 48, 48, 0.275);
 }
-@media only Screen and (max-width: 768px) {
+@media only Screen and (max-width: 1023px) {
   header {
     background-image: url(../images/headerm.webp);
     padding-top: 43%;
@@ -323,10 +323,15 @@ header .fab {
   padding: 7px 11px;
   position: absolute;
   text-decoration: none;
-  bottom: -14px;
+  bottom: 14px;
   right: 15px;
   border-radius: 50%;
   z-index: 3;
+}
+@media only Screen and (max-width: 1023px) {
+  header .fab {
+    bottom: -14px;
+  }
 }
 @media only Screen and (max-width: 576px) {
   header .fab {
