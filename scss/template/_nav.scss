@@ -47,7 +47,7 @@ nav {
     justify-content: space-around;
     @media only Screen and (max-width: 576px) {
       flex-direction: column;
-      transition: height 0.4s;
+      transition: height 0.65s;
       height: 0;
     }
     li {

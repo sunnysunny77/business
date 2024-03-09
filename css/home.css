@@ -101,7 +101,7 @@ nav ul {
 @media only Screen and (max-width: 576px) {
   nav ul {
     flex-direction: column;
-    transition: height 0.4s;
+    transition: height 0.65s;
     height: 0;
   }
 }
