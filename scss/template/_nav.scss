@@ -54,7 +54,7 @@ nav {
       list-style-type: none;
       display: inline-block;
       @media only Screen and (max-width: 576px) {
-        transition: transform 0.25s;
+        transition: transform 0.65s;
         transform: translateY(-129px);
         display: list-item;
       }
