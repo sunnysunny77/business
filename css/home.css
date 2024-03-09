@@ -76,7 +76,7 @@ nav {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: white;
-    transition: 0.4s ease background-color;
+    transition: 0.25s ease background-color;
     width: 100%;
     padding: 0;
   }
@@ -101,7 +101,7 @@ nav ul {
 @media only Screen and (max-width: 576px) {
   nav ul {
     flex-direction: column;
-    transition: height 0.25s;
+    transition: height 0.4s;
     height: 0;
   }
 }

@@ -24,7 +24,7 @@ nav {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: $c3;
-    transition: 0.4s ease background-color;
+    transition: 0.25s ease background-color;
     width: 100%;
     padding: 0;
     &:hover,
@@ -47,7 +47,7 @@ nav {
     justify-content: space-around;
     @media only Screen and (max-width: 576px) {
       flex-direction: column;
-      transition: height 0.25s;
+      transition: height 0.4s;
       height: 0;
     }
     li {
