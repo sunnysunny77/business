@@ -76,7 +76,7 @@ nav {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: white;
-    transition: 0.2s ease-in-out background-color;
+    transition: 0.2s ease background-color;
     width: 100%;
     padding: 0;
   }
@@ -84,10 +84,13 @@ nav {
     background-color: lightgray;
   }
   nav:hover ul, nav:focus ul {
-    height: 129px;
+    height: 169px;
   }
   nav:hover ul li, nav:focus ul li {
     transform: translateY(0);
+  }
+  nav:hover ul li:last-child, nav:focus ul li:last-child {
+    margin-bottom: 40px;
   }
 }
 nav ul {
@@ -124,7 +127,7 @@ nav ul li a {
   margin: 4% 0;
   background-image: url("../images/climpek.png");
   background-color: white;
-  transition: 0.2s ease-in-out background-color, color 0.2s ease-in-out;
+  transition: 0.2s ease background-color, color 0.2s ease;
 }
 @media only Screen and (max-width: 576px) {
   nav ul li a {
@@ -706,26 +709,28 @@ article p q {
     align-items: center;
   }
   #section3 article:nth-child(1) {
-    order: 2;
+    order: 1;
   }
   #section3 article:nth-child(1) h3 {
     margin-left: 3%;
+    order: 0;
   }
   #section3 div:nth-child(2) {
-    order: 3;
-    margin: 15% 0 3% 0;
+    order: 2;
+    margin: 7.5% 0 15% 0;
     padding: 27% 0;
   }
   #section3 div:nth-child(3) {
-    order: 1;
-    margin: 0 0 3% 0;
+    order: 4;
+    margin: 7.5% 0 3% 0;
     padding: 27% 0;
   }
   #section3 article:nth-child(4) {
-    order: 4;
+    order: 3;
   }
   #section3 article:nth-child(4) h3 {
     margin-right: 3%;
+    order: 0;
   }
 }
 

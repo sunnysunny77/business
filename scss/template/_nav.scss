@@ -24,16 +24,19 @@ nav {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: $c3;
-    transition: 0.2s ease-in-out background-color;
+    transition: 0.2s ease background-color;
     width: 100%;
     padding: 0;
     &:hover,
     &:focus {
       background-color: $c9;
       ul {
-        height: 129px;
+        height: 169px;
         li {
           transform: translateY(0);
+          &:last-child  {
+            margin-bottom: 40px;
+          }
         }
       }
     }
@@ -46,6 +49,7 @@ nav {
       flex-direction: column;
       transition: height 1s;
       height: 0;
+      
     }
     li {
       list-style-type: none;
@@ -67,8 +71,8 @@ nav {
         background-image: url("../images/climpek.png");
         background-color: $c3;
         transition:
-          0.2s ease-in-out background-color,
-          color 0.2s ease-in-out;
+          0.2s ease background-color,
+          color 0.2s ease;
         @media only Screen and (max-width: 576px) {
           margin: auto auto 10px auto;
           background-image: none;

@@ -451,25 +451,27 @@ article {
     margin: 5% auto auto auto;
     align-items: center;
     article:nth-child(1) {
-      order: 2;
+      order: 1;
       h3 {
         margin-left: 3%;
+        order: 0;
       }
     }
     div:nth-child(2) {
-      order: 3;
-      margin: 15% 0 3% 0;
+      order: 2;
+      margin: 7.5% 0 15% 0;
       padding: 27% 0;
     }
     div:nth-child(3) {
-      order: 1;
-      margin: 0 0 3% 0;
+      order: 4;
+      margin: 7.5% 0 3% 0;
       padding: 27% 0;
     }
     article:nth-child(4) {
-      order: 4;
+      order: 3;
       h3 {
         margin-right: 3%;
+        order: 0;
       }
     }
   }
