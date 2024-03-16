@@ -81,7 +81,7 @@ nav {
     padding: 0;
   }
   nav:hover, nav:focus {
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: lightgrey;
   }
   nav:hover ul, nav:focus ul {
     height: 159.2px;
@@ -382,7 +382,7 @@ article p q {
   border-radius: 5px;
   display: block;
   margin: auto;
-  border: 1px solid rgba(211, 211, 211, 0.5);
+  border: 1px solid lightgrey;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 img {
@@ -817,7 +817,7 @@ article p q {
 #section5 div img {
   margin: auto 1.5% auto 1.5%;
   filter: grayscale(100%);
-  border: 1px solid rgba(211, 211, 211, 0.5);
+  border: 1px solid lightgrey;
   clip-path: xywh(0 5px 100% 75% round 15% 0);
 }
 @media only Screen and (max-width: 1023px) {
