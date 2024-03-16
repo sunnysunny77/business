@@ -34,9 +34,6 @@ nav {
         height: 159.2px;
         li {
           transform: translateY(0);
-          &:last-child {
-            margin-bottom: 40px;
-          }
         }
       }
     }
@@ -57,7 +54,10 @@ nav {
         transition: transform 0.65s;
         transform: translateY(-79.2px);
         display: list-item;
-      }
+        &:last-child {
+          margin-bottom: 40px;
+        }
+      }  
       a {
         color: inherit;
         width: fit-content;
