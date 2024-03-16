@@ -481,14 +481,9 @@ article p q {
   #section1 aside {
     justify-content: space-between;
     position: static;
-    width: 70%;
+    width: 90%;
     margin: 4% auto;
     height: initial;
-  }
-}
-@media only Screen and (max-width: 576px) {
-  #section1 aside {
-    width: 90%;
   }
 }
 #section1 aside h2 {
@@ -769,16 +764,11 @@ article p q {
 #section4 {
   height: 388px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1% 4% 1%;
+  padding: 0 6.25% 4% 6.25%;
 }
-@media only Screen and (max-width: 1023px) {
-  #section4 {
-    padding: 0 3% 4% 3%;
-  }
-}
-@media only Screen and (max-width: 576px) {
+@media only Screen and (max-width: 767px) {
   #section4 {
     height: unset;
     flex-direction: column;
@@ -797,12 +787,12 @@ article p q {
   text-align: center;
   position: relative;
 }
-@media only Screen and (max-width: 576px) {
+@media only Screen and (max-width: 767px) {
   #section4 p {
     width: 94%;
-    margin: 10% 0;
+    margin: 7.5% 0;
     height: unset;
-    min-height: 10vh;
+    min-height: 100px;
   }
 }
 #section4 p::after {

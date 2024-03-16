@@ -238,12 +238,9 @@ article {
     @media only Screen and (max-width: 1023px) {
       justify-content: space-between;
       position: static;
-      width: 70%;
+      width: 90%;
       margin: 4% auto;
       height: initial;
-    }
-    @media only Screen and (max-width: 576px) {
-      width: 90%;
     }
     h2 {
       width: 100%;
@@ -520,13 +517,10 @@ article {
 #section4 {
   height: 388px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1% 4% 1%;
-  @media only Screen and (max-width: 1023px) {
-    padding: 0 3% 4% 3%;
-  }
-  @media only Screen and (max-width: 576px) {
+  padding: 0 6.25% 4% 6.25%;
+  @media only Screen and (max-width: 767px) {
     height: unset;
     flex-direction: column;
     padding: 15% 4.5%;
@@ -542,11 +536,11 @@ article {
     justify-content: center;
     text-align: center;
     position: relative;
-    @media only Screen and (max-width: 576px) {
+    @media only Screen and (max-width: 767px) {
       width: 94%;
-      margin: 10% 0;
+      margin: 7.5% 0;
       height: unset;
-      min-height: 10vh;
+      min-height: 100px;
     }
     &::after {
       position: absolute;
