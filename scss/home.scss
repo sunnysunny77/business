@@ -84,8 +84,11 @@ header {
       color: $c2;
       text-decoration: none;
       font-weight: 100;
+      transition: text-decoration-color 0.2s ease;
+      text-decoration: underline;
+      text-decoration-color: transparent;
       &:hover {
-        text-decoration: underline;
+        text-decoration-color: $c2;
       }
     }
   }
