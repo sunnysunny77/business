@@ -36,9 +36,6 @@ h2 {
 main {
   display: flex;
   flex-direction: column;
-  @media only Screen and (min-width: 576px) {
-    padding-top: 39.656;
-  }
 }
 
 @import "nav";

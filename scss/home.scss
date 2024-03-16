@@ -44,7 +44,7 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
-  border-bottom: 1px solid rgba($c2,0.275);
+  border-bottom: 1px solid rgba($c2, 0.275);
   @media only Screen and (max-width: 1023px) {
     background-image: url(../images/headerm.webp);
     padding: 22.5% 0;
@@ -61,7 +61,11 @@ header {
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
-    text-shadow: -1px -1px 1px $c3, 1px -1px 1px $c3, -1px 1px 1px $c3, 1px 1px 1px $c3;
+    text-shadow:
+      -1px -1px 1px $c3,
+      1px -1px 1px $c3,
+      -1px 1px 1px $c3,
+      1px 1px 1px $c3;
     @media only Screen and (max-width: 1023px) {
       font-size: 17px;
     }
@@ -136,11 +140,20 @@ article {
 
 #section1 {
   position: relative;
+  height: 100vw;
+  max-height: 1230px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 10% auto 0 auto;
   @media only Screen and (max-width: 1023px) {
     position: static;
+    height: initial;
+    max-height: initial;
+    max-width: initial;
+    margin: auto;
   }
   img {
-    position: relative;
+    position: absolute;
     border-radius: 5px;
     display: block;
     margin: auto;
@@ -154,39 +167,52 @@ article {
       bottom: unset;
     }
     &:nth-child(1) {
-      bottom: -350px;
+      top: 16%;
       z-index: 1;
-      left: 225px;
+      left: 50%;
+      width: 44%;
+      height: auto;
       @media only Screen and (max-width: 1023px) {
         width: 60%;
       }
     }
     &:nth-child(2) {
-      bottom: 200px;
-      left: -125px;
+      top: 0;
+      width: 52.5%;
+      height: auto;
+      left: 6%;
       @media only Screen and (max-width: 1023px) {
         width: 60%;
       }
     }
     &:nth-child(4) {
-      left: -245px;
-      bottom: 100px;
+      left: 6%;
+      bottom: 0;
+      width: 48.5%;
+      height: auto;
       @media only Screen and (max-width: 1023px) {
-        width: 90%;
+        width: 80%;
         margin-bottom: 10%;
       }
     }
   }
   img + p {
-    width: 300px;
+    width: 35.5%;
     margin: auto;
-    position: relative;
-    top: -150px;
-    left: -175px;
+    position: absolute;
+    top: 37%;
+    bottom: 34%;
+    left: 18.75%;
     border: 2px solid $c4;
     color: $c4;
-    padding: 25px;
+    padding: 3.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     @media only Screen and (max-width: 1023px) {
+      justify-content: flex-start;
       position: static;
       width: 87%;
       margin: 4% auto 10% auto;
@@ -194,22 +220,27 @@ article {
     }
     q {
       opacity: 0.95;
+      @media only Screen and (max-width: 1023px) {
+        margin-bottom: 30px;
+      }
     }
   }
   aside {
-    width: 425px;
+    width: 36%;
     position: absolute;
-    left: calc(50% + 65px);
-    top: calc(50% + 45px);
+    left: 58%;
+    top: 44%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
+    height: 56%;
     @media only Screen and (max-width: 1023px) {
       justify-content: space-between;
       position: static;
       width: 70%;
       margin: 4% auto;
+      height: initial;
     }
     @media only Screen and (max-width: 576px) {
       width: 90%;
@@ -218,36 +249,43 @@ article {
       width: 100%;
       padding-top: 0;
       text-align: center;
-      + p {
-        width: 100%;
-        + p + h3 {
-          text-align: right;
-        }
-      }
     }
-    p {
-      width: 50%;
-      display: inline-block;
+    h2 + p {
+      width: 100%;
       margin: 1.5% 0;
     }
   }
-  h3 {
-    width: 48%;
-    display: inline-block;
-    align-self: center;
-    + p {
+  div:nth-child(2),
+  div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      width: 48%;
+      display: inline-block;
+      text-align: right;
+    }
+    p {
+      width: 48%;
+      text-align: left;
+      margin: 1.5% 0;
+    }
+  }
+  div:nth-child(3) {
+    h3 {
+      order: 1;
+      text-align: left;
+      @media only Screen and (max-width: 1023px) {
+        order: initial;
+        text-align: right;
+      }
+    }
+    p {
       order: 2;
       text-align: right;
       @media only Screen and (max-width: 1023px) {
-        order: unset;
+        order: initial;
         text-align: left;
-      }
-      + h3 {
-        order: 1;
-        @media only Screen and (max-width: 1023px) {
-          order: unset;
-          text-align: right;
-        }
       }
     }
   }
@@ -256,7 +294,7 @@ article {
 /* #section2 */
 
 #section2 {
-  width: 75%;
+  width: 87.5%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -388,7 +426,7 @@ article {
   }
   div {
     position: relative;
-    padding: 24%   0 0 0;
+    padding: 24% 0 0 0;
     background-size: contain;
     background-repeat: no-repeat;
     p {
@@ -482,13 +520,16 @@ article {
 #section4 {
   height: 388px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 4% 4% 4%;
+  padding: 0 1% 4% 1%;
+  @media only Screen and (max-width: 1023px) {
+    padding: 0 3% 4% 3%;
+  }
   @media only Screen and (max-width: 576px) {
     height: unset;
     flex-direction: column;
-    padding: 15% 4%;
+    padding: 15% 4.5%;
   }
   p {
     width: 25%;
@@ -531,13 +572,13 @@ article {
   }
   h2 {
     text-align: left;
-    margin: auto auto 40px 8%;
+    margin: auto auto 40px 7%;
   }
   div {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: auto;
     flex-wrap: wrap;
     @media only Screen and (max-width: 1023px) {
@@ -548,27 +589,30 @@ article {
       flex-wrap: nowrap;
     }
     img {
-      margin: auto 0 auto 3%;
+      margin: auto 2.5% auto auto;
+      max-width: 220px;
+      width: 21%;
+      height: auto;
       filter: grayscale(100%);
       border: 1px solid $c9;
       clip-path: xywh(0 5px 100% 75% round 15% 0);
       @media only Screen and (max-width: 1023px) {
         display: block;
-        margin: 2% auto auto 8%;
+        margin: 2% auto auto 5%;
+        width: 50%;
+        height: 50%;
       }
       @media only Screen and (max-width: 576px) {
         margin: 2% auto;
-        width: 50%;
-        height: 50%;
       }
     }
     div {
       display: flex;
       flex-direction: column;
       width: 19%;
-      margin: 1% 3%;
+      margin: 1% 4% 1% 0;
       @media only Screen and (max-width: 1023px) {
-        width: 40%;
+        width: 50%;
         margin: 5% auto;
       }
       @media only Screen and (max-width: 576px) {

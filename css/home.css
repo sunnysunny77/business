@@ -43,11 +43,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media only Screen and (min-width: 576px) {
-  main {
-    padding-top: 39.656;
-  }
-}
 
 /* nav */
 .sticky {
@@ -371,14 +366,23 @@ article p q {
 /* #section1  */
 #section1 {
   position: relative;
+  height: 100vw;
+  max-height: 1230px;
+  max-width: 1230px;
+  width: 100%;
+  margin: 10% auto 0 auto;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 {
     position: static;
+    height: initial;
+    max-height: initial;
+    max-width: initial;
+    margin: auto;
   }
 }
 #section1 img {
-  position: relative;
+  position: absolute;
   border-radius: 5px;
   display: block;
   margin: auto;
@@ -395,9 +399,11 @@ article p q {
   }
 }
 #section1 img:nth-child(1) {
-  bottom: -350px;
+  top: 16%;
   z-index: 1;
-  left: 225px;
+  left: 50%;
+  width: 44%;
+  height: auto;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 img:nth-child(1) {
@@ -405,8 +411,10 @@ article p q {
   }
 }
 #section1 img:nth-child(2) {
-  bottom: 200px;
-  left: -125px;
+  top: 0;
+  width: 52.5%;
+  height: auto;
+  left: 6%;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 img:nth-child(2) {
@@ -414,27 +422,36 @@ article p q {
   }
 }
 #section1 img:nth-child(4) {
-  left: -245px;
-  bottom: 100px;
+  left: 6%;
+  bottom: 0;
+  width: 48.5%;
+  height: auto;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 img:nth-child(4) {
-    width: 90%;
+    width: 80%;
     margin-bottom: 10%;
   }
 }
 #section1 img + p {
-  width: 300px;
+  width: 35.5%;
   margin: auto;
-  position: relative;
-  top: -150px;
-  left: -175px;
+  position: absolute;
+  top: 37%;
+  bottom: 34%;
+  left: 18.75%;
   border: 2px solid #9c2c07;
   color: #9c2c07;
-  padding: 25px;
+  padding: 3.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 img + p {
+    justify-content: flex-start;
     position: static;
     width: 87%;
     margin: 4% auto 10% auto;
@@ -444,15 +461,21 @@ article p q {
 #section1 img + p q {
   opacity: 0.95;
 }
+@media only Screen and (max-width: 1023px) {
+  #section1 img + p q {
+    margin-bottom: 30px;
+  }
+}
 #section1 aside {
-  width: 425px;
+  width: 36%;
   position: absolute;
-  left: calc(50% + 65px);
-  top: calc(50% + 45px);
+  left: 58%;
+  top: 44%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
+  height: 56%;
 }
 @media only Screen and (max-width: 1023px) {
   #section1 aside {
@@ -460,6 +483,7 @@ article p q {
     position: static;
     width: 70%;
     margin: 4% auto;
+    height: initial;
   }
 }
 @media only Screen and (max-width: 576px) {
@@ -474,43 +498,50 @@ article p q {
 }
 #section1 aside h2 + p {
   width: 100%;
-}
-#section1 aside h2 + p + p + h3 {
-  text-align: right;
-}
-#section1 aside p {
-  width: 50%;
-  display: inline-block;
   margin: 1.5% 0;
 }
-#section1 h3 {
+#section1 div:nth-child(2),
+#section1 div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#section1 div:nth-child(2) h3,
+#section1 div:nth-child(3) h3 {
   width: 48%;
   display: inline-block;
-  align-self: center;
+  text-align: right;
 }
-#section1 h3 + p {
+#section1 div:nth-child(2) p,
+#section1 div:nth-child(3) p {
+  width: 48%;
+  text-align: left;
+  margin: 1.5% 0;
+}
+#section1 div:nth-child(3) h3 {
+  order: 1;
+  text-align: left;
+}
+@media only Screen and (max-width: 1023px) {
+  #section1 div:nth-child(3) h3 {
+    order: initial;
+    text-align: right;
+  }
+}
+#section1 div:nth-child(3) p {
   order: 2;
   text-align: right;
 }
 @media only Screen and (max-width: 1023px) {
-  #section1 h3 + p {
-    order: unset;
+  #section1 div:nth-child(3) p {
+    order: initial;
     text-align: left;
-  }
-}
-#section1 h3 + p + h3 {
-  order: 1;
-}
-@media only Screen and (max-width: 1023px) {
-  #section1 h3 + p + h3 {
-    order: unset;
-    text-align: right;
   }
 }
 
 /* #section2 */
 #section2 {
-  width: 75%;
+  width: 87.5%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
@@ -738,15 +769,20 @@ article p q {
 #section4 {
   height: 388px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 4% 4% 4%;
+  padding: 0 1% 4% 1%;
+}
+@media only Screen and (max-width: 1023px) {
+  #section4 {
+    padding: 0 3% 4% 3%;
+  }
 }
 @media only Screen and (max-width: 576px) {
   #section4 {
     height: unset;
     flex-direction: column;
-    padding: 15% 4%;
+    padding: 15% 4.5%;
   }
 }
 #section4 p {
@@ -793,13 +829,13 @@ article p q {
 }
 #section5 h2 {
   text-align: left;
-  margin: auto auto 40px 8%;
+  margin: auto auto 40px 7%;
 }
 #section5 div {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
   flex-wrap: wrap;
 }
@@ -815,7 +851,10 @@ article p q {
   }
 }
 #section5 div img {
-  margin: auto 0 auto 3%;
+  margin: auto 2.5% auto auto;
+  max-width: 220px;
+  width: 21%;
+  height: auto;
   filter: grayscale(100%);
   border: 1px solid lightgrey;
   clip-path: xywh(0 5px 100% 75% round 15% 0);
@@ -823,25 +862,25 @@ article p q {
 @media only Screen and (max-width: 1023px) {
   #section5 div img {
     display: block;
-    margin: 2% auto auto 8%;
+    margin: 2% auto auto 5%;
+    width: 50%;
+    height: 50%;
   }
 }
 @media only Screen and (max-width: 576px) {
   #section5 div img {
     margin: 2% auto;
-    width: 50%;
-    height: 50%;
   }
 }
 #section5 div div {
   display: flex;
   flex-direction: column;
   width: 19%;
-  margin: 1% 3%;
+  margin: 1% 4% 1% 0;
 }
 @media only Screen and (max-width: 1023px) {
   #section5 div div {
-    width: 40%;
+    width: 50%;
     margin: 5% auto;
   }
 }
