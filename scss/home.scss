@@ -377,11 +377,14 @@ article {
         b {
           font-family: $font2;
           font-size: 110%;
+          transition: text-decoration-color 0.2s ease;
+          text-decoration: underline;
+          text-decoration-color: transparent;
         }
       }
       &:hover figcaption b,
       &:focus figcaption b {
-        text-decoration: underline;
+        text-decoration-color: $c3;
       }
     }
   }

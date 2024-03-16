@@ -631,9 +631,12 @@ article p q {
 #section2 a figure figcaption b {
   font-family: Tahoma, sans-serif;
   font-size: 110%;
+  transition: text-decoration-color 0.2s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 }
 #section2 a figure:hover figcaption b, #section2 a figure:focus figcaption b {
-  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .block {
