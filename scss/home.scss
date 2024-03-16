@@ -527,7 +527,7 @@ article {
   padding: 35px 0 70px 0;
   background-color: $c10;
   @media only Screen and (max-width: 1023px) {
-    padding: 0 0 35px 0;
+    padding: 35px 0 35px 0;
   }
   h2 {
     text-align: left;
@@ -536,7 +536,9 @@ article {
   div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
     flex-wrap: wrap;
     @media only Screen and (max-width: 1023px) {
       justify-content: space-evenly;
@@ -546,16 +548,16 @@ article {
       flex-wrap: nowrap;
     }
     img {
-      border-radius: 50%;
       margin: auto 1.5% auto 1.5%;
       filter: grayscale(100%);
       border: 1px solid $c9;
+      clip-path: xywh(0 5px 100% 75% round 15% 0);
       @media only Screen and (max-width: 1023px) {
         display: block;
         margin: 2% auto auto 8%;
       }
       @media only Screen and (max-width: 576px) {
-        margin: auto;
+        margin: 2% auto;
         width: 50%;
         height: 50%;
       }
@@ -564,17 +566,17 @@ article {
       display: flex;
       flex-direction: column;
       width: 222px;
-      margin: auto 1% auto 1%;
+      margin: 1%;
       @media only Screen and (max-width: 1023px) {
         width: 40%;
-        margin: auto;
+        margin: 5% auto;
       }
       @media only Screen and (max-width: 576px) {
         width: 60%;
       }
       h3 {
         margin: 0;
-        text-align: right;
+        text-align: center;
         width: 222px;
         @media only Screen and (max-width: 1023px) {
           text-align: center;
@@ -598,8 +600,8 @@ article {
           height: initial;
         }
         span:nth-child(1) {
-          text-align: right;
           display: inline-block;
+          text-align: right;
           color: $c2;
           opacity: 0.95;
           @media only Screen and (max-width: 1023px) {
@@ -610,6 +612,7 @@ article {
         }
         span:nth-child(2) {
           display: inline-block;
+          text-align: right;
           height: 111px;
           @media only Screen and (max-width: 1023px) {
             text-align: center;
