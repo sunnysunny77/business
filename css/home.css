@@ -847,20 +847,18 @@ article p q {
   }
 }
 #section5 div img {
-  margin: auto 2.5% auto auto;
+  margin: auto auto;
   max-width: 220px;
   width: 21%;
-  height: auto;
+  height: 100%;
   filter: grayscale(100%);
   border: 1px solid lightgrey;
-  clip-path: xywh(0 5px 100% 75% round 15% 0);
+  clip-path: inset(10px 10px 25px round 25px 0);
 }
 @media only Screen and (max-width: 1023px) {
   #section5 div img {
-    display: block;
     margin: 2% auto auto 5%;
     width: 50%;
-    height: 50%;
   }
 }
 @media only Screen and (max-width: 576px) {
