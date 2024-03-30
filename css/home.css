@@ -254,7 +254,7 @@ footer p {
 /* header */
 header {
   background-image: url(../images/header.webp);
-  background-size: auto 66%;
+  background-size: 66%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -266,7 +266,7 @@ header {
   background-attachment: fixed;
   border-bottom: 1px solid rgba(48, 48, 48, 0.275);
 }
-@media only Screen and (max-width: 1023px) {
+@media only Screen and (max-width: 1400px) {
   header {
     background-image: url(../images/headerm.webp);
     padding: 22.5% 0;
@@ -274,6 +274,7 @@ header {
     background-size: 67%;
     background-position: center left;
     background-attachment: initial;
+    background-size: auto 66%;
   }
 }
 header h1 {
@@ -305,12 +306,14 @@ header h1 svg .font {
 header h1 a {
   color: #303030;
   font-weight: 100;
-  transition: text-decoration-color 0.2s ease;
-  text-decoration: underline;
-  text-decoration-color: transparent;
+  text-decoration: none;
 }
-header h1 a:hover {
-  text-decoration-color: #303030;
+header h1 a span {
+  transition: border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+header h1 a span:hover {
+  border-bottom: 2px solid #303030;
 }
 header .fab {
   padding: 7px 11px;
