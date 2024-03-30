@@ -62,11 +62,6 @@ header {
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
-    text-shadow:
-      -1px -1px 1px $c3,
-      1px -1px 1px $c3,
-      -1px 1px 1px $c3,
-      1px 1px 1px $c3;
     @media only Screen and (max-width: 1023px) {
       font-size: 17px;
     }
@@ -84,13 +79,11 @@ header {
     a {
       color: $c2;
       font-weight: 100;
-      text-decoration: none;
-      span {
-        transition: border-bottom 0.2s ease;
-        border-bottom: 2px solid transparent;
-        &:hover {
-          border-bottom: 2px solid  $c2;
-        }
+      transition: text-decoration-color 0.2s ease;
+      text-decoration: underline;
+      text-decoration-color: $c3;
+      &:hover {
+        text-decoration-color: $c2;
       }
     }
   }
