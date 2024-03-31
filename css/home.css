@@ -3,6 +3,11 @@
   src: url(./Poppins-Regular.ttf);
   font-display: swap;
 }
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(./Poppins-Medium.ttf);
+  font-display: swap;
+}
 /* template */
 html {
   -webkit-text-size-adjust: 100%;
@@ -133,7 +138,7 @@ nav ul li a {
 }
 nav ul li a:hover, nav ul li a:focus {
   color: white;
-  background-color: rgba(156, 44, 7, 0.95);
+  background-color: #9c2c07;
   background-image: none;
 }
 nav span.fas {
@@ -165,7 +170,7 @@ nav .fab {
 footer {
   display: flex;
   font-family: Tahoma, sans-serif;
-  background-color: rgba(156, 44, 7, 0.95);
+  background-color: #9c2c07;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
@@ -545,6 +550,13 @@ article p q {
   align-items: center;
   height: 100vh;
 }
+#section2.animation img {
+  transform: scale(1.035);
+  opacity: 0.975;
+}
+#section2.animation img + figcaption b {
+  text-decoration-color: white;
+}
 @media only Screen and (max-width: 1023px) {
   #section2 {
     flex-direction: column;
@@ -598,6 +610,13 @@ article p q {
   #section2 a figure {
     min-width: unset;
   }
+  #section2 a figure.animation img {
+    transform: scale(1.035);
+    opacity: 0.975;
+  }
+  #section2 a figure.animation img + figcaption b {
+    text-decoration-color: white;
+  }
 }
 #section2 a figure img {
   display: block;
@@ -606,11 +625,7 @@ article p q {
   margin: auto;
   width: 100%;
   height: 100%;
-  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
-}
-#section2 a figure:hover img, #section2 a figure:focus img {
-  transform: scale(1.035);
-  opacity: 0.975;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 #section2 a figure figcaption {
   position: absolute;
@@ -630,12 +645,9 @@ article p q {
 #section2 a figure figcaption b {
   font-family: Tahoma, sans-serif;
   font-size: 110%;
-  transition: text-decoration-color 0.2s ease;
+  transition: text-decoration-color 0.5s ease;
   text-decoration: underline;
   text-decoration-color: transparent;
-}
-#section2 a figure:hover figcaption b, #section2 a figure:focus figcaption b {
-  text-decoration-color: white;
 }
 
 .block {
@@ -696,7 +708,8 @@ article p q {
   right: 2%;
   bottom: 2%;
   left: 2%;
-  transition: background-color 0.4s linear, opacity 0.4s linear, top 0.4s linear, right 0.4s linear, bottom 0.4s linear, left 0.4s linear;
+  font-family: Poppins-Medium;
+  transition: background-color 0.5s linear, opacity 0.5s linear, top 0.5s linear, right 0.5s linear, bottom 0.5s linear, left 0.5s linear;
 }
 #section3 div p span {
   margin: 5%;
@@ -708,15 +721,15 @@ article p q {
 #section3 div p b {
   margin: 5%;
 }
-#section3 div .scroll.animation {
-  background-color: rgba(156, 44, 7, 0.95);
-  opacity: 0.975;
+#section3 div .scrollTwo.animation {
+  background-color: #9c2c07;
+  opacity: 0.95;
   top: 7%;
-  right: 7%;
+  right: 5%;
   bottom: 7%;
-  left: 7%;
+  left: 5%;
 }
-#section3 div .scroll.animation span {
+#section3 div .scrollTwo.animation span {
   opacity: 1;
 }
 #section3 div:nth-child(2) {

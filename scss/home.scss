@@ -295,6 +295,13 @@ article {
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
+  &.animation img {
+    transform: scale(1.035);
+    opacity: 0.975;
+    + figcaption b {
+      text-decoration-color: $c3;
+    }
+  }
   @media only Screen and (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
@@ -340,6 +347,13 @@ article {
       min-width: 440px;
       @media only Screen and (max-width: 1023px) {
         min-width: unset;
+        &.animation img {
+          transform: scale(1.035);
+          opacity: 0.975;
+          + figcaption b {
+            text-decoration-color: $c3;
+          }
+        }
       }
       img {
         display: block;
@@ -349,13 +363,8 @@ article {
         width: 100%;
         height: 100%;
         transition:
-          transform 0.25s ease-out,
-          opacity 0.25s ease-out;
-      }
-      &:hover img,
-      &:focus img {
-        transform: scale(1.035);
-        opacity: 0.975;
+          transform 0.5s ease-out,
+          opacity 0.5s ease-out;
       }
       figcaption {
         position: absolute;
@@ -372,14 +381,10 @@ article {
         b {
           font-family: $font2;
           font-size: 110%;
-          transition: text-decoration-color 0.2s ease;
+          transition: text-decoration-color 0.5s ease;
           text-decoration: underline;
           text-decoration-color: transparent;
         }
-      }
-      &:hover figcaption b,
-      &:focus figcaption b {
-        text-decoration-color: $c3;
       }
     }
   }
@@ -403,7 +408,7 @@ article {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin:  0 0 9% 0;
+  margin: 0 0 9% 0;
   article,
   div {
     width: 40%;
@@ -437,13 +442,14 @@ article {
       right: 2%;
       bottom: 2%;
       left: 2%;
+      font-family: Poppins-Medium;
       transition:
-        background-color 0.4s linear,
-        opacity 0.4s linear,
-        top 0.4s linear,
-        right 0.4s linear,
-        bottom 0.4s linear,
-        left 0.4s linear;
+        background-color 0.5s linear,
+        opacity 0.5s linear,
+        top 0.5s linear,
+        right 0.5s linear,
+        bottom 0.5s linear,
+        left 0.5s linear;
       span {
         margin: 5%;
         opacity: 0;
@@ -453,15 +459,16 @@ article {
       }
       b {
         margin: 5%;
+
       }
     }
-    .scroll.animation {
+    .scrollTwo.animation {
       background-color: $c14;
-      opacity: 0.975;
+      opacity: 0.95;
       top: 7%;
-      right: 7%;
+      right: 5%;
       bottom: 7%;
-      left: 7%;
+      left: 5%;
       span {
         opacity: 1;
       }

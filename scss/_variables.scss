@@ -11,7 +11,7 @@ $c10: rgba(156, 44, 7, 0.025);
 $c11: rgba(156, 44, 7, 0.5);
 $c12: darken(antiquewhite,1);
 $c13: rgba(245, 245, 245, 0.75);
-$c14: rgba(156, 44, 7, 0.95);
+$c14: #9c2c07;
 $c15: black;
 
 @font-face {
@@ -20,7 +20,14 @@ $c15: black;
     font-display: swap;
 }
 
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./Poppins-Medium.ttf);
+    font-display: swap;
+}
+
 $font1: Poppins-Regular;
 $font2: Tahoma, sans-serif;
+$font3: Poppins-Medium;
 
 @import "template/style";
