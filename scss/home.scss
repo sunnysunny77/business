@@ -52,7 +52,6 @@ header {
     background-size: 67%;
     background-position: center left;
     background-attachment: initial;
-    background-size: auto 66%;
   }
   h1 {
     position: absolute;
@@ -296,11 +295,8 @@ article {
   align-items: center;
   height: 100vh;
   &.animation img {
-    transform: scale(1.035);
+    transform: scale(1.05);
     opacity: 0.975;
-    + figcaption b {
-      text-decoration-color: $c3;
-    }
   }
   @media only Screen and (max-width: 1023px) {
     flex-direction: column;
@@ -345,16 +341,6 @@ article {
       border: 3px solid $c11;
       border-radius: 10px;
       min-width: 440px;
-      @media only Screen and (max-width: 1023px) {
-        min-width: unset;
-        &.animation img {
-          transform: scale(1.035);
-          opacity: 0.975;
-          + figcaption b {
-            text-decoration-color: $c3;
-          }
-        }
-      }
       img {
         display: block;
         position: relative;
@@ -384,6 +370,21 @@ article {
           transition: text-decoration-color 0.5s ease;
           text-decoration: underline;
           text-decoration-color: transparent;
+        }
+      }
+      @media only Screen and (min-width: 1024px) {
+        &:hover figcaption b {
+          text-decoration-color: $c3;
+        }
+      }
+      @media only Screen and (max-width: 1023px) {
+        min-width: unset;
+        &.animation img {
+          transform: scale(1.05);
+          opacity: 0.975;
+          + figcaption b {
+            text-decoration-color: $c3;
+          }
         }
       }
     }
@@ -459,7 +460,6 @@ article {
       }
       b {
         margin: 5%;
-
       }
     }
     .scrollTwo.animation {

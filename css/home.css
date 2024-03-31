@@ -279,7 +279,6 @@ header {
     background-size: 67%;
     background-position: center left;
     background-attachment: initial;
-    background-size: auto 66%;
   }
 }
 header h1 {
@@ -551,11 +550,8 @@ article p q {
   height: 100vh;
 }
 #section2.animation img {
-  transform: scale(1.035);
+  transform: scale(1.05);
   opacity: 0.975;
-}
-#section2.animation img + figcaption b {
-  text-decoration-color: white;
 }
 @media only Screen and (max-width: 1023px) {
   #section2 {
@@ -606,18 +602,6 @@ article p q {
   border-radius: 10px;
   min-width: 440px;
 }
-@media only Screen and (max-width: 1023px) {
-  #section2 a figure {
-    min-width: unset;
-  }
-  #section2 a figure.animation img {
-    transform: scale(1.035);
-    opacity: 0.975;
-  }
-  #section2 a figure.animation img + figcaption b {
-    text-decoration-color: white;
-  }
-}
 #section2 a figure img {
   display: block;
   position: relative;
@@ -648,6 +632,23 @@ article p q {
   transition: text-decoration-color 0.5s ease;
   text-decoration: underline;
   text-decoration-color: transparent;
+}
+@media only Screen and (min-width: 1024px) {
+  #section2 a figure:hover figcaption b {
+    text-decoration-color: white;
+  }
+}
+@media only Screen and (max-width: 1023px) {
+  #section2 a figure {
+    min-width: unset;
+  }
+  #section2 a figure.animation img {
+    transform: scale(1.05);
+    opacity: 0.975;
+  }
+  #section2 a figure.animation img + figcaption b {
+    text-decoration-color: white;
+  }
 }
 
 .block {
