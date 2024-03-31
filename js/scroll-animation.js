@@ -12,7 +12,7 @@ const handleScrollAnimation = () => {
 
   const outer = document.querySelector(".outer");
 
-  let scrollPosOuter = window.scrollY + (window.innerHeight /  2) - (outer.offsetHeight / 6);
+  let scrollPosOuter = window.scrollY + (window.innerHeight /  2) - (outer.offsetHeight / 4);
 
   if (scrollPosOuter > getPosition(outer)  && !outer.classList.contains("animation") && window.innerWidth > 1023) {
 
@@ -24,7 +24,7 @@ const handleScrollAnimation = () => {
     outer.classList.remove("animation");
   }
 
-  let scrollPosOuterTwo = window.scrollY + (window.innerHeight /  3) - (outer.offsetHeight / 1.5);
+  let scrollPosOuterTwo = window.scrollY + (window.innerHeight /  3) - (outer.offsetHeight / 1.75);
 
 
   if (scrollPosOuterTwo > getPosition(outer)  && outer.classList.contains("animation") && window.innerWidth > 1023) {
