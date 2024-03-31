@@ -708,15 +708,15 @@ article p q {
 #section3 div p b {
   margin: 5%;
 }
-#section3 div:hover p, #section3 div:focus p {
+#section3 div .scroll.animation {
   background-color: rgba(156, 44, 7, 0.95);
-  opacity: 0.85;
+  opacity: 0.975;
   top: 7%;
   right: 7%;
   bottom: 7%;
   left: 7%;
 }
-#section3 div:hover p span, #section3 div:focus p span {
+#section3 div .scroll.animation span {
   opacity: 1;
 }
 #section3 div:nth-child(2) {

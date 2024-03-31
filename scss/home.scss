@@ -455,10 +455,9 @@ article {
         margin: 5%;
       }
     }
-    &:hover p,
-    &:focus p {
+    .scroll.animation {
       background-color: $c14;
-      opacity: 0.85;
+      opacity: 0.975;
       top: 7%;
       right: 7%;
       bottom: 7%;
