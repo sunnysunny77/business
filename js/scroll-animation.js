@@ -37,7 +37,7 @@ const handleScrollAnimation = () => {
 
   for (let i in image) {
 
-    let scrollPos = window.scrollY + window.innerHeight  - image[i].offsetHeight - (image[i].offsetHeight / 2);
+    let scrollPos = window.scrollY + window.innerHeight  - image[i].offsetHeight - (image[i].offsetHeight / 6);
 
     if (scrollPos > getPosition(image[i]) && !image[i].classList.contains("animation") && window.innerWidth < 1023) {
 
