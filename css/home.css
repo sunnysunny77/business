@@ -549,10 +549,6 @@ article p q {
   align-items: center;
   height: 100vh;
 }
-#section2.animation img {
-  transform: scale(1.05);
-  opacity: 0.975;
-}
 @media only Screen and (max-width: 1023px) {
   #section2 {
     flex-direction: column;
@@ -568,33 +564,41 @@ article p q {
     text-align: justify;
   }
 }
-#section2 a {
+#section2 .top {
   align-self: flex-start;
   position: sticky;
   /* quater 100vh */
   top: 25vh;
   /* anything */
   margin: 20vh 0 20vh 8%;
+  display: flex;
+  flex-direction: column;
 }
 @media only Screen and (max-width: 1023px) {
-  #section2 a {
-    position: relative;
-    top: unset;
-  }
-}
-@media only Screen and (max-width: 1023px) {
-  #section2 a:nth-child(2) {
+  #section2 .top a:nth-child(1) {
     order: 1;
     margin: 10% auto 2% auto;
   }
 }
 @media only Screen and (max-width: 1023px) {
-  #section2 a:nth-child(3) {
+  #section2 .top a:nth-child(2) {
     order: 2;
     margin: 5% auto 12% auto;
   }
 }
-#section2 a figure {
+@media only Screen and (max-width: 1023px) {
+  #section2 .top {
+    position: relative;
+    top: unset;
+    margin: auto;
+  }
+}
+#section2 .top a {
+  overflow: hidden;
+  display: flex;
+}
+
+figure {
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -602,7 +606,7 @@ article p q {
   border-radius: 10px;
   min-width: 440px;
 }
-#section2 a figure img {
+figure img {
   display: block;
   position: relative;
   z-index: 0;
@@ -611,7 +615,7 @@ article p q {
   height: 100%;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
-#section2 a figure figcaption {
+figure figcaption {
   position: absolute;
   top: 35%;
   left: 5%;
@@ -620,13 +624,13 @@ article p q {
   z-index: 1;
 }
 @media only Screen and (max-width: 576px) {
-  #section2 a figure figcaption {
+  figure figcaption {
     width: 66%;
     top: 12%;
     font-size: 90%;
   }
 }
-#section2 a figure figcaption b {
+figure figcaption b {
   font-family: Tahoma, sans-serif;
   font-size: 110%;
   transition: text-decoration-color 0.5s ease;
@@ -634,33 +638,40 @@ article p q {
   text-decoration-color: transparent;
 }
 @media only Screen and (min-width: 1024px) {
-  #section2 a figure:hover figcaption b {
+  figure:hover figcaption b {
     text-decoration-color: white;
   }
 }
 @media only Screen and (max-width: 1023px) {
-  #section2 a figure {
+  figure {
     min-width: unset;
   }
-  #section2 a figure.animation img {
-    transform: scale(1.05);
-    opacity: 0.975;
-  }
-  #section2 a figure.animation img + figcaption b {
-    text-decoration-color: white;
+}
+
+.scroll-animation-desktop img {
+  transform: scale(1.05);
+  opacity: 0.975;
+}
+
+.scroll-animation-mobile img {
+  transform: scale(1.05);
+  opacity: 0.975;
+}
+.scroll-animation-mobile img + figcaption b {
+  text-decoration-color: white;
+}
+
+@media only Screen and (min-width: 1024px) {
+  .d-lg-has-height {
+    height: initial;
+    width: inherit;
   }
 }
 
-.block {
-  display: block;
-}
-
-.none {
-  display: none;
-}
-@media only Screen and (max-width: 1023px) {
-  .none {
-    display: block;
+@media only Screen and (min-width: 1024px) {
+  .d-lg-0-height {
+    height: 0;
+    width: 0;
   }
 }
 

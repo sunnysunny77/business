@@ -1,3 +1,7 @@
+const outer = document.querySelector(".outer");
+const image = document.querySelectorAll(".scroll");
+const imageTwo = document.querySelectorAll(".scrollTwo");
+
 const getPosition = (element) => {
   let yPosition = 0;
   while (element) {
@@ -7,67 +11,73 @@ const getPosition = (element) => {
   return yPosition;
 };
 
-// eslint-disable-next-line complexity
-const handleScrollAnimation = () => {
-
-  const outer = document.querySelector(".outer");
-
-  let scrollPosOuter = window.scrollY + (window.innerHeight /  2) - (outer.offsetHeight / 4);
-
-  if (scrollPosOuter > getPosition(outer)  && !outer.classList.contains("animation") && window.innerWidth > 1023) {
-
-    outer.classList.add("animation");
+const handleScrollAnimationMobile = () => {
+  if (window.innerWidth > 1023) {
+    return;
   }
+  for (const index of image) {
+    const position = getPosition(index);
+    const contains = index.classList.contains("scroll-animation-mobile");
+    const height = index.getBoundingClientRect().height;
+    const scroll_mobile =
+      window.scrollY + window.innerHeight - height - (height / 6);
 
-  if (scrollPosOuter < getPosition(outer)  && outer.classList.contains("animation") && window.innerWidth > 1023) {
-
-    outer.classList.remove("animation");
-  }
-
-  let scrollPosOuterTwo = window.scrollY + (window.innerHeight /  3) - (outer.offsetHeight / 1.75);
-
-
-  if (scrollPosOuterTwo > getPosition(outer)  && outer.classList.contains("animation") && window.innerWidth > 1023) {
-
-    outer.classList.remove("animation");
-
-  }
-
-  const image = document.querySelectorAll(".scroll");
-
-  for (let i in image) {
-
-    let scrollPos = window.scrollY + window.innerHeight  - image[i].offsetHeight - (image[i].offsetHeight / 6);
-
-    if (scrollPos > getPosition(image[i]) && !image[i].classList.contains("animation") && window.innerWidth < 1023) {
-
-      image[i].classList.add("animation");
-    }
-    if (scrollPos < getPosition(image[i]) && image[i].classList.contains("animation") && window.innerWidth < 1023) {
-
-      image[i].classList.remove("animation");
+    if (scroll_mobile > position && !contains) {
+      index.classList.add("scroll-animation-mobile");
     }
 
-  }
-
-  const imageTwo = document.querySelectorAll(".scrollTwo");
-
-  for (let i in imageTwo) {
-
-    let scrollPos = window.scrollY + window.innerHeight - imageTwo[i].offsetHeight - (imageTwo[i].offsetHeight / 3);
-
-    if (scrollPos > getPosition(imageTwo[i]) && !imageTwo[i].classList.contains("animation")) {
-
-      imageTwo[i].classList.add("animation");
-    }
-    if (scrollPos < getPosition(imageTwo[i]) && imageTwo[i].classList.contains("animation")) {
-
-      imageTwo[i].classList.remove("animation");
+    if (scroll_mobile < position && contains) {
+      index.classList.remove("scroll-animation-mobile");
     }
   }
-
 };
 
-window.addEventListener("scroll", handleScrollAnimation);
+const handleScrollAnimationDesktop = () => {
+  if (window.innerWidth < 1024) {
+    return;
+  }
+  const position = getPosition(outer);
+  const contains = outer.classList.contains(
+    "scroll-animation-desktop"
+  );
+  const height = outer.getBoundingClientRect().height;
+  const scroll_desktop = window.scrollY;
+  const top = position;
+  const bottom = position + (height / 2.5);
 
+  if (scroll_desktop < top && contains) {
+    outer.classList.remove("scroll-animation-desktop");
+  }
+
+  if (scroll_desktop > top && scroll_desktop < bottom && !contains) {
+    outer.classList.add("scroll-animation-desktop");
+  }
+
+  if (scroll_desktop > bottom && contains) {
+    outer.classList.remove("scroll-animation-desktop");
+  }
+};
+
+const handleScrollAnimation = () => {
+  for (const index of imageTwo) {
+    const contains = index.classList.contains("animation");
+    const height = index.getBoundingClientRect().height;
+    const scrollPos = window.scrollY + window.innerHeight - height - (height / 3);
+    const top = getPosition(index);
+
+    if (scrollPos > top && !contains) {
+      index.classList.add("animation");
+    }
+
+    if (scrollPos < top && contains) {
+      index.classList.remove("animation");
+    }
+  }
+};
+
+window.addEventListener("scroll", handleScrollAnimationMobile);
+window.addEventListener("scroll", handleScrollAnimationDesktop);
+window.addEventListener("resize", handleScrollAnimationMobile);
+window.addEventListener("resize", handleScrollAnimationDesktop);
+window.addEventListener("scroll", handleScrollAnimation);
 window.addEventListener("resize", handleScrollAnimation);

@@ -3,15 +3,26 @@ function handleScroll() {
   const figureTwo = document.querySelector("#figureTwo");
   const section = document.querySelector("#section2");
   //top quater sticky height 25vh, + 25vh / 100vh = 50vh, minus half the figure height to find the middle
-  const line = section.offsetTop + (section.offsetHeight * 0.25) - (figureOne.offsetHeight / 2) - (figureTwo.offsetHeight / 2);
+  if (window.innerWidth < 992) {
+    return;
+  }
+  const line =
+    section.offsetTop +
+    (section.getBoundingClientRect().height * 0.25) -
+    (figureOne.getBoundingClientRect().height / 2) -
+    (figureTwo.getBoundingClientRect().height / 2);
   let scrollY = window.scrollY;
   if (scrollY < line) {
-    figureOne.setAttribute("class", "block");
-    figureTwo.setAttribute("class", "none");
+    figureTwo.classList.remove("d-lg-has-height");
+    figureTwo.classList.add("d-lg-0-height");
+    figureOne.classList.remove("d-lg-0-height");
+    figureOne.classList.add("d-lg-has-height");
   }
   if (scrollY > line) {
-    figureOne.setAttribute("class", "none");
-    figureTwo.setAttribute("class", "block");
+    figureOne.classList.remove("d-lg-has-height");
+    figureOne.classList.add("d-lg-0-height");
+    figureTwo.classList.remove("d-lg-0-height");
+    figureTwo.classList.add("d-lg-has-height");
   }
 }
 
