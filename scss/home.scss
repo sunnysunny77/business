@@ -353,72 +353,81 @@ article {
     a {
       overflow: hidden;
       display: flex;
+      figure {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border: 3px solid $c11;
+        border-radius: 10px;
+        min-width: 440px;
+        @media only Screen and (max-width: 1023px) {
+          min-width: unset;
+        }
+        img {
+          display: block;
+          position: relative;
+          z-index: 0;
+          margin: auto;
+          width: 100%;
+          height: 100%;
+        }
+        figcaption {
+          position: absolute;
+          top: 35%;
+          left: 5%;
+          color: $c3;
+          width: 50%;
+          z-index: 1;
+          @media only Screen and (max-width: 576px) {
+            width: 66%;
+            top: 12%;
+            font-size: 90%;
+          }
+          b {
+            font-family: $font2;
+            font-size: 110%;
+          }
+        }
+      }
     }
   }
 }
 
-figure {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border: 3px solid $c11;
-  border-radius: 10px;
-  min-width: 440px;
+.scroll {
   img {
-    display: block;
-    position: relative;
-    z-index: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
     transition:
       transform 0.5s ease-out,
       opacity 0.5s ease-out;
-      transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
-  figcaption {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    color: $c3;
-    width: 50%;
-    z-index: 1;
-    @media only Screen and (max-width: 576px) {
-      width: 66%;
-      top: 12%;
-      font-size: 90%;
-    }
-    b {
-      font-family: $font2;
-      font-size: 110%;
-      transition: text-decoration-color 0.5s ease;
-      text-decoration: underline;
-      text-decoration-color: transparent;
-    }
+  b {
+    transition: text-decoration-color 0.5s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
   }
   @media only Screen and (min-width: 1024px) {
-    &:hover figcaption b {
+    &:hover b {
       text-decoration-color: $c3;
     }
-  }
-  @media only Screen and (max-width: 1023px) {
-    min-width: unset;
   }
 }
 
 .scroll-animation-desktop img {
   @media only Screen and (min-width: 1024px) {
-  transform: scale(1.1);
-  opacity: 0.975;
+    transform: scale(1.1);
+    opacity: 0.95;
   }
 }
 
-.scroll-animation-mobile img {
+.scroll-animation-mobile.scroll {
   @media only Screen and (max-width: 1023px) {
-  transform: scale(1.1);
-  opacity: 0.975;
-  + figcaption b {
-    text-decoration-color: $c3;
+    img {
+      transform: scale(1.1);
+      opacity: 0.95;
+    }
+    b {
+      text-decoration-color: $c3;
     }
   }
 }
@@ -429,6 +438,7 @@ figure {
     width: inherit;
   }
 }
+
 .d-lg-0-height {
   @media only Screen and (min-width: 1024px) {
     height: 0;
