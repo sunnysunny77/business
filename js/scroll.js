@@ -13,16 +13,12 @@ function handleScroll() {
     (figureTwo.getBoundingClientRect().height / 2);
   let scrollY = window.scrollY;
   if (scrollY < line) {
-    figureTwo.classList.remove("d-lg-has-height");
-    figureTwo.classList.add("d-lg-0-height");
-    figureOne.classList.remove("d-lg-0-height");
-    figureOne.classList.add("d-lg-has-height");
+    figureTwo.classList.replace("d-lg-has-height", "d-lg-0-height");
+    figureOne.classList.replace("d-lg-0-height", "d-lg-has-height");
   }
   if (scrollY > line) {
-    figureOne.classList.remove("d-lg-has-height");
-    figureOne.classList.add("d-lg-0-height");
-    figureTwo.classList.remove("d-lg-0-height");
-    figureTwo.classList.add("d-lg-has-height");
+    figureOne.classList.replace("d-lg-has-height", "d-lg-0-height");
+    figureTwo.classList.replace("d-lg-0-height", "d-lg-has-height");
   }
 }
 
