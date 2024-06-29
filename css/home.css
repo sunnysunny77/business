@@ -50,14 +50,18 @@ main {
 }
 
 /* nav */
-.sticky {
-  position: sticky;
-  background-image: url("../images/climpek.png");
-  background-color: white;
+@media only Screen and (min-width: 576px) {
+  .sticky {
+    position: sticky;
+    background-image: url("../images/climpek.png");
+    background-color: white;
+  }
 }
 
-.absolute {
-  position: absolute;
+@media only Screen and (min-width: 576px) {
+  .absolute {
+    position: absolute;
+  }
 }
 
 nav {

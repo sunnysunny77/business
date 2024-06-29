@@ -1,13 +1,17 @@
 /* nav */
 
 .sticky {
-  position: sticky;
-  background-image: url("../images/climpek.png");
-  background-color: $c3;
+  @media only Screen and (min-width: 576px) {
+    position: sticky;
+    background-image: url("../images/climpek.png");
+    background-color: $c3;
+  }
 }
 
 .absolute {
-  position: absolute;
+  @media only Screen and (min-width: 576px) {
+    position: absolute;
+  }
 }
 
 nav {
@@ -57,7 +61,7 @@ nav {
         &:last-child {
           margin-bottom: 40px;
         }
-      }  
+      }
       a {
         color: inherit;
         width: fit-content;
