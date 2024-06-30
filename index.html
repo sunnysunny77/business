@@ -6,19 +6,7 @@
     <link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff" crossorigin="">
     <link rel="preload" href="images/skyscraper.jpg" as="image">
     <link rel="preload" href="images/office.jpg" as="image">
-    <script>
-      let head = document.querySelector("head");
-      let link = document.createElement("link");
-      link.rel = "preload";
-      link.as = "image";
-      if (window.screen.width > 576) {
-        link.href = "./images/header.webp";
-        head.append(link);
-      } else {
-        link.href = "./images/headerm.webp";
-        head.append(link);
-      }
-     </script>
+    <script src="./js/preload.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Business Web" />
     <meta name="keywords" content="Business Web Template" />
@@ -29,7 +17,7 @@
     <link href="css/all.min.css" rel="stylesheet"/> 
     <link href="css/home.css" rel="stylesheet" type="text/css" />
   </head>
-  <body tabindex="1">
+  <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
     <header>
       <h1>
@@ -57,14 +45,14 @@
       </h1>
       <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
     </header>
-    <nav tabindex="2" id="nav">
+    <nav tabindex="0" id="nav">
       <span id="menu" role="button" aria-label="Menu" class="fas fa-dot-circle"></span>
       <ul>
         <li><a class="button" accesskey="1" href="./index.html">Home</a></li>
-        <div>
+        <li>
           <li><a class="button" accesskey="t" href="tel:123-456-7890">123-456-7890</a></li>
           <li><a class="button" accesskey="m" href="mailto:name@email.com">lorem@email.com</a></li>
-        </div>
+        </li>
       </ul>
       <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
     </nav>
