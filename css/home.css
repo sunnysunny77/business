@@ -106,6 +106,18 @@ nav ul {
     height: 0;
   }
 }
+nav ul .li-around {
+  width: 66%;
+}
+nav ul .li-around ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only Screen and (max-width: 576px) {
+  nav ul .li-around {
+    width: initial;
+  }
+}
 nav ul li {
   list-style-type: none;
   display: inline-block;

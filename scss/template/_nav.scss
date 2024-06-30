@@ -51,6 +51,16 @@ nav {
       transition: height 0.65s;
       height: 0;
     }
+    .li-around {
+      width: 66%;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      @media only Screen and (max-width: 576px) {
+        width: initial;
+      }
+    }
     li {
       list-style-type: none;
       display: inline-block;
