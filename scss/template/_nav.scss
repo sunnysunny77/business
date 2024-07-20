@@ -100,7 +100,7 @@ nav {
       }
     }
   }
-  span.fas {
+  .fa-circle-dot {
     color: $c4;
     padding: 10px;
     align-self: baseline;
@@ -108,13 +108,14 @@ nav {
       display: none;
     }
   }
-  .fab {
-    padding: 7px 11px;
+  .fa-facebook-f {
+    padding: 8px 11px;
     position: absolute;
     text-decoration: none;
     bottom: -14px;
     right: 15px;
     border-radius: 50%;
+    font-size: initial;
     z-index: 3;
     @media only Screen and (min-width: 576px) {
       display: none;

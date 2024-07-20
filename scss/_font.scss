@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../font/Poppins-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../font/Poppins-Medium.ttf);
+    font-display: swap;
+}
+
+$font1: Poppins-Regular;
+$font2: Tahoma, sans-serif;
+$font3: Poppins-Medium;

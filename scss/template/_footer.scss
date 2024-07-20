@@ -8,6 +8,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   font-size: larger;
+  padding: 20px 0;
   ul:nth-child(1) {
     padding: 30px 0;
     > li:nth-child(1) {
@@ -54,7 +55,7 @@ footer {
       color: $c3;
       text-align: center;
       padding: 10px 0;
-      margin-top: 10px;
+      margin-top: 25px;
       margin-bottom: 10px;
   }
 }

@@ -1,12 +1,10 @@
-@import "variables.scss";
-
 /* icons */
 
-.fab {
-  transition: 0.25s ease-in-out background;
+.fa-facebook-f {
+  transition: 0.25s ease-in-out background-color;
   &:hover,
   &:focus {
-    background: $c4;
+    background-color: $c4;
   }
 }
 
@@ -15,19 +13,24 @@
   color: $c3;
 }
 
-.fa-twitter {
-  background: $c6;
-  color: $c3;
+.fa-square-facebook {
+  background: $c3;
+  color: $c5;
 }
 
-.fa-google {
-  background: $c7;
-  color: $c3;
+.fa-square-twitter {
+  background: $c3;
+  color: $c6;
 }
 
-.fa-linkedin {
-  background: $c8;
-  color: $c3;
+.fa-square-google-plus {
+  background: $c3;
+  color: $c7;
+}
+
+.fa-square-share-nodes {
+  background: $c3;
+  color: $c8;
 }
 
 /* header */
@@ -86,10 +89,11 @@ header {
       }
     }
   }
-  .fab {
-    padding: 7px 11px;
+  .fa-facebook-f {
+    padding: 8px 11px;
     position: absolute;
     text-decoration: none;
+    font-size: inherit;
     bottom: 14px;
     right: 15px;
     border-radius: 50%;
@@ -451,12 +455,12 @@ article {
 #section3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 0 9% 0;
+  margin: 0 6.25% 9% 6.35%;
   article,
   div {
-    width: 40%;
+    width: 45%;
     margin: 0;
     height: fit-content;
     @media only Screen and (max-width: 1023px) {
@@ -474,7 +478,7 @@ article {
   }
   div {
     position: relative;
-    padding: 24% 0 0 0;
+    padding: 27% 0 0 0;
     background-size: contain;
     background-repeat: no-repeat;
     p {
@@ -570,11 +574,13 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 6.25% 4% 6.25%;
+  padding: 0 12.5%;
+  @media only Screen and (max-width: 1200px) {
+    padding: 6.25%;
+  }
   @media only Screen and (max-width: 767px) {
     height: unset;
     flex-direction: column;
-    padding: 15% 4.5%;
   }
   p {
     width: 25%;
@@ -607,8 +613,163 @@ article {
 }
 
 /* #section5 */
-
 #section5 {
+  @media only screen and (min-width: 1200px) {
+    margin: 2% calc(12.5% - 26px) 12.5% calc(12.5% - 26px);
+  }
+}
+
+.slider_1-outer {
+  padding: 12.5% 0 25% 0;
+  margin: auto;
+  @media only screen and (min-width: 576px) {
+    width: calc(100% - 104px);
+    padding: 0 0 12.5%  0;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: calc(100% - 52px);
+    padding: 0;
+  }
+}
+
+.slider_1-row {
+  overflow: hidden;
+}
+
+.slider_1-item {
+  position: absolute;
+  will-change: transform;
+  @media only screen and (min-width: 768px) {
+    width: calc((100% + 34px) / 2);
+  }
+  @media only screen and (min-width: 1200px) {
+    width: calc((100% + 34px) / 3);
+  }
+}
+
+.slider_1-item-padding {
+  @media only screen and (min-width: 768px) {
+    padding: 0 34px 0 0;
+  }
+}
+
+.slider_1-item-body {
+  box-sizing: border-box;
+  border: 1px solid $c4;
+  background-color: $c3;
+  width: calc(100% - 104px);
+  margin: auto;
+  padding: 22px 33px 104px 33px;
+  @media only screen and (min-width: 576px) {
+    width: 70%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+  }
+  h3 {
+    font-size: clamp(22px, 2.75vw, 28px);
+  }
+  b {
+    font-weight: 600;
+  }
+  p,
+  b {
+    font-size: 14.5px;
+  }
+}
+
+.slider_1-item-body:after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background-color: $c4;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.slider_1-item-heading,
+.slider_1-item-bold,
+.slider_1-item-content {
+  transition: opacity 0.25s ease-in-out;
+  will-change: opacity;
+  opacity: 1;
+}
+
+.slider_1-item-has-opacity {
+  .slider_1-item-heading,
+  .slider_1-item-bold,
+  .slider_1-item-content {
+    opacity: 0.5;
+  }
+}
+
+.slider_1-button {
+  top: calc(50% - 52px);
+  right: -26px;
+  transition: right 0.5s ease-in-out;
+  @media only screen and (min-width: 1200px) {
+    right: -26px;
+    will-change: right;
+  }
+}
+
+.c-custom-1 {
+  margin: 0;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  svg {
+    position: relative;
+    z-index: 1;
+    color: $white;
+    transition:
+      transform 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
+    will-change: transform, opacity;
+    opacity: 1;
+    transform: scale(1);
+  }
+  &::after {
+    content: " ";
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: $c4;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+    transform: scale(1);
+    position: absolute;
+    justify-content: center;
+    color: $white;
+    font-size: xx-large;
+  }
+  &:hover {
+    &::after {
+      transform: scale(0.95);
+    }
+    svg {
+      transform: scale(0.95);
+      opacity: 0.75;
+    }
+  }
+}
+
+/* #section6 */
+
+#section6 {
   width: 100%;
   padding: 35px 0 70px 0;
   background-color: $c10;
@@ -670,9 +831,11 @@ article {
           height: initial;
           padding: 3% 0;
         }
-        span {
+        .fa-circle-dot {
           display: inline;
           color: $c4;
+          margin-right: 5px;
+          font-size: 17px;
         }
       }
       p {
@@ -718,10 +881,15 @@ article {
         @media only Screen and (max-width: 1023px) {
           width: 100%;
         }
-        .fab {
-          padding: 7px 9px;
+        .svg-inline--fa {
           margin: auto 3%;
+          font-size: 32.5px;
           text-decoration: none;
+          transition: 0.25s ease-in-out color;
+          &:hover,
+          &:focus {
+            color: $c4;
+          }
           @media only Screen and (max-width: 1023px) {
             margin: auto 0;
           }
@@ -733,7 +901,7 @@ article {
 
 /* slick */
 
-.slk {
+.carousel {
   display: flex;
   justify-content: flex-end;
   background-color: $c12;
@@ -741,7 +909,7 @@ article {
   @media only Screen and (max-width: 1023px) {
     justify-content: center;
   }
-  div {
+  .carousel-inner {
     width: 200px;
     margin-right: 10%;
     @media only Screen and (max-width: 1023px) {

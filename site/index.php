@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
-    <link rel="preload" href="/webfonts/fa-regular-400.woff2" as="font" type="font/woff" crossorigin="">
-    <link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff" crossorigin="">
-    <link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff" crossorigin="">
     <link rel="preload" href="images/skyscraper.jpg" as="image">
     <link rel="preload" href="images/office.jpg" as="image">
-    <script src="./js/preload.js"></script>
     <meta charset="utf-8" />
     <meta name="description" content="Business Web" />
     <meta name="keywords" content="Business Web Template" />
     <meta name="author" content="D.C" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Wep Page - Home</title>
-    <link href="css/slick.css" rel="stylesheet"/> 
-    <link href="css/all.min.css" rel="stylesheet"/> 
-    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="./css/app.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
@@ -43,10 +36,10 @@
             Lorem ipsum dolor sit
         </a> 
       </h1>
-      <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
+      <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
     </header>
     <nav tabindex="0" id="nav">
-      <span id="menu" role="button" aria-label="Menu" class="fas fa-dot-circle"></span>
+      <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
       <ul>
         <li><a class="button" accesskey="1" href="./index.html">Home</a></li>
         <li class="li-around">
@@ -56,7 +49,7 @@
           </ul>
         </li>
       </ul>
-      <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
+      <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
     </nav>
     <main id="main">
       <article>
@@ -241,7 +234,66 @@
         Sed do ipiscing eli eiusmod sit amet tempor.
       </p>
     </div>
-    <section id="section5">
+    <div id="section5">
+
+      <div class="slider_1-outer position-relative">
+
+        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-md d-none d-md-flex d-xl-none"><i class="fa-solid fa-arrow-right"></i></button>
+
+        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-lg d-none d-xl-flex"><i class="fa-solid fa-arrow-right"></i></button>
+
+        <div class="slider-container slider_1-row row d-flex align-items-start justify-content-center justify-content-sm-between position-relative g-0">
+          
+          <?php
+
+            $index = 1;
+
+            while ($index < 5) {
+
+              ?>
+
+                <div class="slider-item slider_1-item">
+
+                  <div class="slider_1-item-padding slider-padding">
+
+                    <div class="slider-body slider_1-item-body position-relative">
+
+                      <h2 class="slider_1-item-heading mb-1">
+
+                        Lorem ipsum 
+
+                      </h2>
+
+                      <b class="slider_1-item-bold d-block mb-3"> Integer id suscipit </b>
+
+                      <p class="slider_1-item-content mb-0">
+                        
+                        <?php echo str_repeat("Quisque in tellus lorem. Donec at elementum est. Integer id suscipit felis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.", 3); ?>
+
+                      </p>
+
+                      <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next d-md-none"><i class="fa-solid fa-arrow-right"></i></button>
+
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+              <?php
+
+              $index++;
+
+            }
+
+          ?>
+
+        </div>
+
+      </div>
+
+    </div>
+    <section id="section6">
       <h2>Lorem ipsum ..</h2>
       <div>
         <img
@@ -251,7 +303,7 @@
           alt="Persona 1"
         />
         <div>
-          <h3><span class="fas fa-dot-circle">&nbsp;</span>Ut enim ad</h3>
+          <h3><span class="fa-solid fa-circle-dot">&nbsp;</span>Ut enim ad</h3>
           <p>
             <span>veniam</span>
             <span>
@@ -260,10 +312,10 @@
             </span>
           </p>
           <span>
-            <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
-            <a href="#" aria-label="twitter" class="fab fa-twitter"></a>
-            <a href="#" aria-label="google" class="fab fa-google"></a>
-            <a href="#" aria-label="linkedin" class="fab fa-linkedin"></a>
+            <a href="#" aria-label="facebook" class="fa-brands fa-square-facebook"></a>
+            <a href="#" aria-label="twitter" class="fa-brands fa-square-twitter"></a>
+            <a href="#" aria-label="google" class="fa-brands fa-square-google-plus"></a>
+            <a href="#" aria-label="linkedin" class="fa-solid fa-square-share-nodes"></a>
           </span>
         </div>
         <img
@@ -273,7 +325,7 @@
           alt="Persona 2"
         />
         <div>
-          <h3><span class="fas fa-dot-circle">&nbsp;</span>Ut enim ad</h3>
+          <h3><span class="fa-solid fa-circle-dot">&nbsp;</span>Ut enim ad</h3>
           <p>
             <span>veniam</span>
             <span>
@@ -282,10 +334,10 @@
             </span>
           </p>
           <span>
-            <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
-            <a href="#" aria-label="twitter" class="fab fa-twitter"></a>
-            <a href="#" aria-label="google" class="fab fa-google"></a>
-            <a href="#" aria-label="linkedin" class="fab fa-linkedin"></a>
+            <a href="#" aria-label="facebook" class="fa-brands fa-square-facebook"></a>
+            <a href="#" aria-label="twitter" class="fa-brands fa-square-twitter"></a>
+            <a href="#" aria-label="google" class="fa-brands fa-square-google-plus"></a>
+            <a href="#" aria-label="linkedin" class="fa-solid fa-square-share-nodes"></a>
           </span>
         </div>
       </div>
@@ -297,7 +349,7 @@
           alt="Persona 3"
         />
         <div>
-          <h3><span class="fas fa-dot-circle">&nbsp;</span>Ut enim ad</h3>
+          <h3><span class="fa-solid fa-circle-dot">&nbsp;</span>Ut enim ad</h3>
           <p>
             <span>veniam</span>
             <span>
@@ -306,10 +358,10 @@
             </span>
           </p>
           <span>
-            <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
-            <a href="#" aria-label="twitter" class="fab fa-twitter"></a>
-            <a href="#" aria-label="google" class="fab fa-google"></a>
-            <a href="#" aria-label="linkedin" class="fab fa-linkedin"></a>
+            <a href="#" aria-label="facebook" class="fa-brands fa-square-facebook"></a>
+            <a href="#" aria-label="twitter" class="fa-brands fa-square-twitter"></a>
+            <a href="#" aria-label="google" class="fa-brands fa-square-google-plus"></a>
+            <a href="#" aria-label="linkedin" class="fa-solid fa-square-share-nodes"></a>
           </span>
         </div>
         <img
@@ -319,7 +371,7 @@
           alt="Persona 4"
         />
         <div>
-          <h3><span class="fas fa-dot-circle">&nbsp;</span>Ut enim ad</h3>
+          <h3><span class="fa-solid fa-circle-dot">&nbsp;</span>Ut enim ad</h3>
           <p>
             <span>veniam</span>
             <span>
@@ -328,24 +380,26 @@
             </span>
           </p>
           <span>
-            <a href="#" aria-label="facebook" class="fab fa-facebook-f"></a>
-            <a href="#" aria-label="twitter" class="fab fa-twitter"></a>
-            <a href="#" aria-label="google" class="fab fa-google"></a>
-            <a href="#" aria-label="linkedin" class="fab fa-linkedin"></a>
+            <a href="#" aria-label="facebook" class="fa-brands fa-square-facebook"></a>
+            <a href="#" aria-label="twitter" class="fa-brands fa-square-twitter"></a>
+            <a href="#" aria-label="google" class="fa-brands fa-square-google-plus"></a>
+            <a href="#" aria-label="linkedin" class="fa-solid fa-square-share-nodes"></a>
           </span>
         </div>
       </div>
     </section>
-    <div class="slk">
-      <div><img src="images/logo.png" width="200" height="200" alt="bing"/></div>
-      <div><img src="images/mortarboard.png" width="200" height="200" alt="mortarboard"/></div>
-      <div><img src="images/slack.png" width="200" height="200" alt="slack"/></div>
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><img src="images/logo.png" width="200" height="200" alt="bing"/></div>
+        <div class="carousel-item"><img src="images/mortarboard.png" width="200" height="200" alt="mortarboard"/></div>
+        <div class="carousel-item"><img src="images/slack.png" width="200" height="200" alt="slack"/></div>
+      </div>
     </div>
     </main>
     <footer>
       <ul>
         <li>
-          <i class="fas fa-link"></i>
+          <i class="fa-solid fa-link"></i>
           <ul>
             <li><a href="./index.html">Home</a></li>
           </ul>
@@ -356,13 +410,8 @@
         <li><a href="tel:123-456-7890">123-456-7890</a></li>
       </ul>
       <hr>
-      <p> <i class="far fa-copyright"></i>&nbsp;D.C</p>
+      <p> <i class="far fa-copyright"></i></p>
     </footer>
-    <script src="js/jq.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/scroll-animation.js"></script>
+    <script src="./js/app.min.js" defer></script>
   </body>
 </html>
