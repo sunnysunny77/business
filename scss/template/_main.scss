@@ -501,14 +501,22 @@ article {
         bottom 0.5s linear,
         left 0.5s linear;
       span {
-        margin: 5%;
+        margin: 5% 5% 0 5%;
         opacity: 0;
         transition: opacity 0.25s linear;
         height: fit-content;
-        width: 200px;
+        font-size: clamp(15px, 1.2vw, 20px);
+        width: 42.5%;
+        @media only Screen and (max-width: 1200px) {
+          width: 33%;
+        }
+        @media only Screen and (max-width: 576px) {
+          width: 80%;
+          }
       }
       b {
         margin: 5%;
+        font-size: clamp(15px, 1.4vw, 18px);
       }
     }
     .scrollTwo.animation {
