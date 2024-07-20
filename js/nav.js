@@ -14,7 +14,9 @@ export const nav = () => {
 
       nav.classList.add("absolute");
       nav.classList.remove("sticky");
-      main.style.marginTop = `${nav.offsetHeight  }px`;
+      main.style.marginTop = `${ nav.offsetHeight  }px`;
+    } else if (window.innerWidth <= 576 ) {
+      main.style.marginTop = 0;
     }
   }
 
