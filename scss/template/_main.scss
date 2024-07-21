@@ -201,7 +201,7 @@ article {
       @media only Screen and (max-width: 767px) {
         width: 87.5%;
         order: 4;
-        margin-top: 12.5%;
+        margin-top: 10%;
       }
     }
   }
@@ -498,17 +498,14 @@ article {
         left 0.5s linear;
       span {
         margin: 5% 5% 0 5%;
-        opacity: 0;
-        transition: opacity 0.25s linear;
+        opacity: 0
+       ; transition: opacity 0.25s linear;
         height: fit-content;
         font-size: clamp(15px, 1.2vw, 20px);
-        width: 42.5%;
-        @media only Screen and (max-width: 1200px) {
-          width: 33%;
-        }
+        width: 290px;
         @media only Screen and (max-width: 576px) {
-          width: 80%;
-          }
+          width: 82.5%;
+        }
       }
       b {
         margin: 5%;
@@ -630,7 +627,7 @@ article {
   margin: auto;
   @media only screen and (min-width: 576px) {
     width: 87.5%;
-    padding: 0 0 17%  0;
+    padding: 0 0 17% 0;
   }
   @media only screen and (min-width: 1200px) {
     width: calc(100% - 52px);
