@@ -1,7 +1,7 @@
 /* nav */
 
 .sticky {
-  @media only Screen and (min-width: 576px) {
+   @include min_sm {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: $c3;
@@ -9,7 +9,7 @@
 }
 
 .absolute {
-  @media only Screen and (min-width: 576px) {
+   @include min_sm {
     position: absolute;
   }
 }
@@ -24,7 +24,7 @@ nav {
   font-size: larger;
   color: $c15;
   z-index: 2;
-  @media only Screen and (max-width: 576px) {
+   @include max_sm {
     position: sticky;
     background-image: url("../images/climpek.png");
     background-color: $c3;
@@ -46,7 +46,7 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    @media only Screen and (max-width: 576px) {
+     @include max_sm {
       flex-direction: column;
       transition: height 0.65s;
       height: 0;
@@ -57,14 +57,14 @@ nav {
         display: flex;
         justify-content: space-evenly;
       }
-      @media only Screen and (max-width: 576px) {
+       @include max_sm {
         width: initial;
       }
     }
     li {
       list-style-type: none;
       display: inline-block;
-      @media only Screen and (max-width: 576px) {
+       @include max_sm {
         transition: transform 0.65s;
         transform: translateY(-79.2px);
         display: list-item;
@@ -86,7 +86,7 @@ nav {
         transition:
           0.1s ease background-color,
           color 0.1s ease;
-        @media only Screen and (max-width: 576px) {
+         @include max_sm {
           margin: auto auto 10px auto;
           background-image: none;
           background-color: unset;
@@ -104,7 +104,7 @@ nav {
     color: $c4;
     padding: 10px;
     align-self: baseline;
-    @media only Screen and (min-width: 576px) {
+     @include min_sm {
       display: none;
     }
   }
@@ -117,7 +117,7 @@ nav {
     border-radius: 50%;
     font-size: initial;
     z-index: 3;
-    @media only Screen and (min-width: 576px) {
+     @include min_sm {
       display: none;
     }
   }

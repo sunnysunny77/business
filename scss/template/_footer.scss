@@ -26,7 +26,7 @@ footer {
   ul {
     list-style-type: none;
     color: $c3;
-    @media only Screen and (max-width: 576px) {
+     @include max_sm {
       width: 100%;
     }
     a {
@@ -46,7 +46,7 @@ footer {
   hr {
     width: 100%;
     margin:  20px calc(25% - 55px) 0 calc(25% - 55px);
-    @media only Screen and (max-width: 576px) {
+     @include max_sm {
       margin:  60px calc(33% - 30px) 30px calc(33% - 30px);
     }
   }

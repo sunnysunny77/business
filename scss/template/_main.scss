@@ -48,7 +48,7 @@ header {
   box-sizing: border-box;
   background-attachment: fixed;
   border-bottom: 1px solid rgba($c2, 0.275);
-  @media only Screen and (max-width: 1400px) {
+   @include max_xxxl {
     background-image: url(../images/headerm.webp);
     padding: 22.5% 0;
     min-height: 200px;
@@ -64,7 +64,7 @@ header {
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       font-size: 17px;
     }
     svg {
@@ -98,10 +98,10 @@ header {
     right: 15px;
     border-radius: 50%;
     z-index: 3;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       bottom: -14px;
     }
-    @media only Screen and (max-width: 576px) {
+     @include max_sm {
       display: none;
     }
   }
@@ -112,12 +112,12 @@ header {
 article {
   width: 55%;
   margin: auto;
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     width: 90%;
   }
   h2 {
     margin: calc(65px + 4%) auto 2% 4%;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       margin: 17% auto 2% 2%;
     }
   }
@@ -147,7 +147,7 @@ article {
   max-width: 1230px;
   width: 100%;
   margin: 10% auto 0 auto;
-  @media only Screen and (max-width: 767px) {
+   @include max_md {
     padding-bottom: initial;
     position: static;
     height: initial;
@@ -163,7 +163,7 @@ article {
     display: block;
     margin: auto;
     border: 1px solid $c9;
-    @media only Screen and (max-width: 767px) {
+     @include max_md {
       position: static;
       margin: 4% auto;
       height: 100%;
@@ -178,7 +178,7 @@ article {
       width: 44%;
       height: auto;
       margin-bottom: 0;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         width: 60%;
         order: 1;
       }
@@ -188,7 +188,7 @@ article {
       width: 52.5%;
       height: auto;
       left: 6%;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         width: 60%;
         order: 2;
       }
@@ -198,7 +198,7 @@ article {
       bottom: 0;
       width: 48.5%;
       height: auto;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         width: 87.5%;
         order: 4;
         margin-top: 10%;
@@ -221,7 +221,7 @@ article {
     flex-wrap: wrap;
     box-sizing: border-box;
     font-size: clamp(14px, 1.6vw, 16px);
-    @media only Screen and (max-width: 767px) {
+     @include max_md {
       justify-content: flex-start;
       position: static;
       width: 87%;
@@ -231,7 +231,7 @@ article {
     }
     q {
       opacity: 0.95;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         margin-bottom: 30px;
       }
     }
@@ -247,7 +247,7 @@ article {
     align-items: center;
     height: 56%;
     font-size: clamp(12px, 1.6vw, 16px);
-    @media only Screen and (max-width: 767px) {
+     @include max_md {
       font-size: 16px;
       justify-content: space-between;
       position: static;
@@ -286,7 +286,7 @@ article {
     h3 {
       order: 1;
       text-align: left;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         order: initial;
         text-align: right;
       }
@@ -294,7 +294,7 @@ article {
     p {
       order: 2;
       text-align: right;
-      @media only Screen and (max-width: 767px) {
+       @include max_md {
         order: initial;
         text-align: left;
       }
@@ -312,7 +312,7 @@ article {
   align-items: center;
   height: 125vh;
   padding: 12.5vh 0;
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -320,7 +320,7 @@ article {
     padding: initial;
   }
   p {
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       order: 1;
       margin: 10% 0 0 0;
       text-align: justify;
@@ -334,18 +334,18 @@ article {
     display: flex;
     flex-direction: column;
     a:nth-child(1) {
-      @media only Screen and (max-width: 1023px) {
+       @include max_xl {
         order: 1;
         margin: 20% auto 2% auto;
       }
     }
     a:nth-child(2) {
-      @media only Screen and (max-width: 1023px) {
+       @include max_xl {
         order: 2;
         margin: 5% auto 12% auto;
       }
     }
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       position: relative;
       top: unset;
       margin: auto;
@@ -361,7 +361,7 @@ article {
         border: 3px solid $c11;
         border-radius: 10px;
         min-width: 440px;
-        @media only Screen and (max-width: 1023px) {
+         @include max_xl {
           min-width: unset;
         }
         img {
@@ -379,7 +379,7 @@ article {
           color: $c3;
           width: 50%;
           z-index: 1;
-          @media only Screen and (max-width: 576px) {
+           @include max_sm {
             width: 66%;
             top: 12%;
             font-size: 90%;
@@ -407,7 +407,7 @@ article {
     text-decoration: underline;
     text-decoration-color: transparent;
   }
-  @media only Screen and (min-width: 1024px) {
+   @include min_xl {
     &:hover b {
       text-decoration-color: $c3;
     }
@@ -415,14 +415,14 @@ article {
 }
 
 .scroll-animation-desktop img {
-  @media only Screen and (min-width: 1024px) {
+   @include min_xl {
     transform: scale(1.1);
     opacity: 0.95;
   }
 }
 
 .scroll-animation-mobile.scroll {
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     img {
       transform: scale(1.1);
       opacity: 0.95;
@@ -434,14 +434,14 @@ article {
 }
 
 .d-lg-has-height {
-  @media only Screen and (min-width: 1024px) {
+   @include min_xl {
     height: initial;
     width: inherit;
   }
 }
 
 .d-lg-0-height {
-  @media only Screen and (min-width: 1024px) {
+   @include min_xl {
     height: 0;
     width: 0;
   }
@@ -460,7 +460,7 @@ article {
     width: 45%;
     margin: 0;
     height: fit-content;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       width: 90%;
       border-radius: 5px;
     }
@@ -503,7 +503,7 @@ article {
         height: fit-content;
         font-size: clamp(15px, 1.2vw, 20px);
         width: 290px;
-        @media only Screen and (max-width: 576px) {
+         @include max_sm {
           width: 82.5%;
         }
       }
@@ -538,7 +538,7 @@ article {
       }
     }
   }
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     flex-direction: column;
     margin: 5% auto auto auto;
     align-items: center;
@@ -577,10 +577,10 @@ article {
   justify-content: space-between;
   align-items: center;
   padding: 0 12.5%;
-  @media only Screen and (max-width: 1200px) {
+   @include max_xxl {
     padding: 6.25%;
   }
-  @media only Screen and (max-width: 767px) {
+   @include max_md {
     height: unset;
     flex-direction: column;
     padding: 17% 5% 5% 5%;
@@ -596,7 +596,7 @@ article {
     justify-content: center;
     text-align: center;
     position: relative;
-    @media only Screen and (max-width: 767px) {
+     @include max_md {
       width: 94%;
       margin: 7.5% 0;
       height: unset;
@@ -617,7 +617,7 @@ article {
 
 /* #section5 */
 #section5 {
-  @media only screen and (min-width: 1200px) {
+   @include min_xxl {
     margin: 2% calc(12.5% - 26px) 12.5% calc(12.5% - 26px);
   }
 }
@@ -625,11 +625,11 @@ article {
 .slider_1-outer {
   padding: 12.5% 0 25% 0;
   margin: auto;
-  @media only screen and (min-width: 576px) {
+   @include min_sm {
     width: 87.5%;
     padding: 0 0 17% 0;
   }
-  @media only screen and (min-width: 1200px) {
+   @include min_xxl {
     width: calc(100% - 52px);
     padding: 0;
   }
@@ -642,16 +642,16 @@ article {
 .slider_1-item {
   position: absolute;
   will-change: transform;
-  @media only screen and (min-width: 768px) {
+   @include min_md {
     width: calc((100% + 34px) / 2);
   }
-  @media only screen and (min-width: 1200px) {
+   @include min_xxl {
     width: calc((100% + 34px) / 3);
   }
 }
 
 .slider_1-item-padding {
-  @media only screen and (min-width: 768px) {
+   @include min_md {
     padding: 0 34px 0 0;
   }
 }
@@ -663,10 +663,10 @@ article {
   width: calc(100% - 104px);
   margin: auto;
   padding: 22px 33px 104px 33px;
-  @media only screen and (min-width: 576px) {
+   @include min_sm {
     width: 70%;
   }
-  @media only screen and (min-width: 768px) {
+   @include min_md {
     width: calc(100% - 1px);
   }
   h3 {
@@ -715,10 +715,10 @@ article {
   top: calc(50% - 54px);
   right: -26px;
   transition: right 0.5s ease-in-out;
-  @media only screen and (min-width: 768px) {
+   @include min_md {
     top: calc(50% - 104px);
   }
-  @media only screen and (min-width: 1200px) {
+   @include min_xxl {
     right: -26px;
     will-change: right;
     top: calc(50% - 54px);
@@ -780,7 +780,7 @@ article {
   width: 100%;
   padding: 35px 0 70px 0;
   background-color: $c10;
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     padding: 35px 0 35px 0;
   }
   h2 {
@@ -794,10 +794,10 @@ article {
     max-width: 1600px;
     margin: auto;
     flex-wrap: wrap;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       justify-content: space-evenly;
     }
-    @media only Screen and (max-width: 576px) {
+     @include max_sm {
       flex-direction: column;
       flex-wrap: nowrap;
     }
@@ -809,11 +809,11 @@ article {
       filter: grayscale(100%);
       border: 1px solid $c9;
       clip-path: inset(10px 10px 25px round 25px 0);
-      @media only Screen and (max-width: 1023px) {
+       @include max_xl {
         margin: 2% auto auto 5%;
         width: 50%;
       }
-      @media only Screen and (max-width: 576px) {
+       @include max_sm {
         margin: 2% auto;
       }
     }
@@ -822,18 +822,18 @@ article {
       flex-direction: column;
       width: 19%;
       margin: 1% 4% 1% 0;
-      @media only Screen and (max-width: 1023px) {
+       @include max_xl {
         width: 50%;
         margin: 5% auto;
       }
-      @media only Screen and (max-width: 576px) {
+       @include max_sm {
         width: 60%;
       }
       h3 {
         margin: 0;
         text-align: center;
         width: 100%;
-        @media only Screen and (max-width: 1023px) {
+         @include max_xl {
           text-align: center;
           height: initial;
           padding: 3% 0;
@@ -852,7 +852,7 @@ article {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        @media only Screen and (max-width: 1023px) {
+         @include max_xl {
           width: 100%;
           height: initial;
         }
@@ -861,7 +861,7 @@ article {
           text-align: right;
           color: $c2;
           opacity: 0.95;
-          @media only Screen and (max-width: 1023px) {
+           @include max_xl {
             text-align: center;
             height: initial;
             padding: 3% 0;
@@ -871,11 +871,11 @@ article {
           display: inline-block;
           text-align: right;
           height: 111px;
-          @media only Screen and (max-width: 1023px) {
+           @include max_xl {
             text-align: center;
             padding: 3% 0;
           }
-          @media only Screen and (max-width: 576px) {
+           @include max_sm {
             height: initial;
           }
         }
@@ -885,7 +885,7 @@ article {
         width: 100%;
         text-align: center;
         margin: 11px auto 50px auto;
-        @media only Screen and (max-width: 1023px) {
+         @include max_xl {
           width: 100%;
         }
         .svg-inline--fa {
@@ -897,7 +897,7 @@ article {
           &:focus {
             color: $c4;
           }
-          @media only Screen and (max-width: 1023px) {
+           @include max_xl {
             margin: auto 0;
           }
         }
@@ -913,13 +913,13 @@ article {
   justify-content: flex-end;
   background-color: $c12;
   padding: 25px 0;
-  @media only Screen and (max-width: 1023px) {
+   @include max_xl {
     justify-content: center;
   }
   .carousel-inner {
     width: 200px;
     margin-right: 10%;
-    @media only Screen and (max-width: 1023px) {
+     @include max_xl {
       margin: 0;
     }
   }

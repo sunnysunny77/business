@@ -1,5 +1,5 @@
 .slider_1-outer {    
-    @media only screen and (min-width: 768px) {
+     @include min_md {
         width: calc(100% - 104px);
     }
 }
@@ -12,16 +12,16 @@
     position: absolute;
     box-sizing: border-box;
     will-change: transform;
-    @media only screen and (min-width: 768px) {
+     @include min_md {
         width: calc((100% + 34px) / 2);
     }
-    @media only screen and (min-width: 1200px) {
+     @include min_xxl {{
         width: calc((100% + 34px) / 3);
     }
 }
 
 .slider_1-item-padding {
-    @media only screen and (min-width: 768px) {
+     @include min_md {
         padding: 0 34px 0 0;
     }
 }
@@ -33,10 +33,10 @@
     width: calc(100% - 104px);
     margin: auto;
     padding: 22px 33px 20% 33px;
-    @media only screen and (min-width: 576px) {
+     @include min_sm {
         width: 70%;
     }
-    @media only screen and (min-width: 768px) {
+     @include min_md {
         width: 100%;
         padding: 22px 33px 156px 33px;
     }
@@ -85,7 +85,7 @@
     top: calc(50% - 52px);
     right: -26px;
     transition: right 0.5s ease-in-out;
-    @media only screen and (min-width: 1200px) {
+     @include min_xxl {{
         right: -26px;
         will-change: right;
     }

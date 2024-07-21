@@ -14,7 +14,7 @@ body {
   font-family: $font1;
   max-width: 1920px;
   margin: auto;
-  @media only screen and (min-width: 1921px) {
+   @include min_xxxxl {
     box-shadow: 1px 0 $c1, -1px 0 $c1;
   }
 }

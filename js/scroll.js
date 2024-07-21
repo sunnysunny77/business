@@ -3,7 +3,7 @@ export const scroll = () => {
     const figureOne = document.querySelector("#figureOne");
     const figureTwo = document.querySelector("#figureTwo");
     const section = document.querySelector("#section2");
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1023) {
       return;
     }
     const line =
