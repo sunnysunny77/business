@@ -1,7 +1,7 @@
 export const scroll_animation = () => {
   const outer = document.querySelector(".outer");
-  const image = document.querySelectorAll(".scroll");
-  const imageTwo = document.querySelectorAll(".scrollTwo");
+  const scroll = document.querySelectorAll(".scroll");
+  const scroll_two = document.querySelectorAll(".scroll-two");
 
   const getPosition = (element) => {
     let yPosition = 0;
@@ -12,11 +12,11 @@ export const scroll_animation = () => {
     return yPosition;
   };
 
-  const handleScrollAnimationMobile = () => {
+  const handle_scroll_animation_mobile = () => {
     if (window.innerWidth > 1023) {
       return;
     }
-    for (const index of image) {
+    for (const index of scroll) {
       const position = getPosition(index);
       const contains = index.classList.contains("scroll-animation-mobile");
       const height = index.getBoundingClientRect().height;
@@ -33,7 +33,7 @@ export const scroll_animation = () => {
     }
   };
 
-  const handleScrollAnimationDesktop = () => {
+  const handle_scroll_animation_desktop = () => {
     if (window.innerWidth < 1024) {
       return;
     }
@@ -59,8 +59,8 @@ export const scroll_animation = () => {
     }
   };
 
-  const handleScrollAnimation = () => {
-    for (const index of imageTwo) {
+  const handle_scroll_animation = () => {
+    for (const index of scroll_two) {
       const contains = index.classList.contains("animation");
       const height = index.getBoundingClientRect().height;
       const scrollPos = window.scrollY + window.innerHeight - height - (height / 3);
@@ -76,10 +76,10 @@ export const scroll_animation = () => {
     }
   };
 
-  window.addEventListener("scroll", handleScrollAnimationMobile);
-  window.addEventListener("scroll", handleScrollAnimationDesktop);
-  window.addEventListener("resize", handleScrollAnimationMobile);
-  window.addEventListener("resize", handleScrollAnimationDesktop);
-  window.addEventListener("scroll", handleScrollAnimation);
-  window.addEventListener("resize", handleScrollAnimation);
+  window.addEventListener("scroll", handle_scroll_animation_mobile);
+  window.addEventListener("scroll", handle_scroll_animation_desktop);
+  window.addEventListener("resize", handle_scroll_animation_mobile);
+  window.addEventListener("resize", handle_scroll_animation_desktop);
+  window.addEventListener("scroll", handle_scroll_animation);
+  window.addEventListener("resize", handle_scroll_animation);
 };

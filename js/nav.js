@@ -2,7 +2,7 @@ export const nav = () => {
   const nav = document.querySelector("#nav");
   const main = document.querySelector("main");
 
-  function handleNav() {
+  function handle_nav() {
     let scrollY = window.scrollY;
 
     if (scrollY >= main.offsetTop - nav.offsetHeight && window.innerWidth > 575) {
@@ -19,8 +19,6 @@ export const nav = () => {
       main.style.marginTop = 0;
     }
   }
-
-  window.addEventListener("scroll", handleNav);
-
-  window.addEventListener("resize", handleNav);
+  window.addEventListener("scroll", handle_nav);
+  window.addEventListener("resize", handle_nav);
 };

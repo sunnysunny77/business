@@ -1,0 +1,44 @@
+#section-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5% 12.5% 7.5% 12.5%;
+    @include max_xxl {
+        padding: 7.5% 6.25% 7.5% 6.25%;
+    }
+    @include max_xl {
+        padding: 17% 6.25% 7.5% 6.25%;
+    }
+    @include max_md {
+        flex-direction: column;
+        padding: 17% 5% 17% 5%;
+    }
+    p {
+        width: 25%;
+        height: 150px;
+        border: 2px solid $c4;
+        color: $c4;
+        padding: 2.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        @include max_md {
+            width: 94%;
+            margin: 7.5% 0;
+            height: initial;
+            min-height: 100px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: -50px;
+            left: calc(50% - 25px);
+            border-top: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 25px solid $c4;
+            border-left: 25px solid transparent;
+        }
+    }
+}

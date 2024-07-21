@@ -1,14 +1,14 @@
 export const scroll = () => {
-  const handleScroll = () => {
-    const figureOne = document.querySelector("#figureOne");
-    const figureTwo = document.querySelector("#figureTwo");
-    const section = document.querySelector("#section2");
+  const handle_scroll = () => {
+    const figureOne = document.querySelector("#figure-one");
+    const figureTwo = document.querySelector("#figure-two");
+    const outer = document.querySelector(".outer");
     if (window.innerWidth < 1023) {
       return;
     }
     const line =
-      section.offsetTop +
-      (section.getBoundingClientRect().height * 0.25) -
+      outer.offsetTop +
+      (outer.getBoundingClientRect().height * 0.25) -
       (figureOne.getBoundingClientRect().height / 2) -
       (figureTwo.getBoundingClientRect().height / 2);
     let scrollY = window.scrollY;
@@ -21,5 +21,5 @@ export const scroll = () => {
       figureTwo.classList.replace("d-lg-0-height", "d-lg-has-height");
     }
   }
-  window.addEventListener("scroll", handleScroll, { passive: true });
+  window.addEventListener("scroll", handle_scroll, { passive: true });
 };

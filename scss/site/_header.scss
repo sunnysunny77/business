@@ -3,7 +3,7 @@
 .sticky {
    @include min_sm {
     position: sticky;
-    background-image: url("../images/climpek.png");
+    background-image: url("../images/nav-texture.png");
     background-color: $c3;
   }
 }
@@ -26,7 +26,7 @@ nav {
   z-index: 2;
    @include max_sm {
     position: sticky;
-    background-image: url("../images/climpek.png");
+    background-image: url("../images/nav-texture.png");
     background-color: $c3;
     transition: 0.25s ease background-color;
     width: 100%;
@@ -81,7 +81,7 @@ nav {
         outline: none;
         display: block;
         margin: 4% 0;
-        background-image: url("../images/climpek.png");
+        background-image: url("../images/nav-texture.png");
         background-color: $c3;
         transition:
           0.1s ease background-color,
@@ -118,6 +118,80 @@ nav {
     font-size: initial;
     z-index: 3;
      @include min_sm {
+      display: none;
+    }
+  }
+}
+
+/* header */
+
+header {
+  background-image: url(../images/header.webp);
+  background-size: 66%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding: 50vh 0;
+  min-height: 300px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba($c2, 0.275);
+   @include max_xxxl {
+    background-image: url(../images/header-mobile.webp);
+    padding: 22.5% 0;
+    min-height: 200px;
+    background-size: 67%;
+    background-position: center left;
+    background-attachment: initial;
+  }
+  h1 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: fit-content;
+    border-radius: 5px;
+    font-style: oblique;
+    font-size: 1.75em;
+     @include max_xl {
+      font-size: 17px;
+    }
+    svg {
+      width: 100%;
+      max-width: 75px;
+      height: auto;
+      .font {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 100;
+        fill: $c2;
+      }
+    }
+    a {
+      color: $c2;
+      font-weight: 100;
+      transition: text-decoration-color 0.2s ease;
+      text-decoration: underline;
+      text-decoration-color: $c3;
+      &:hover {
+        text-decoration-color: $c2;
+      }
+    }
+  }
+  .fa-facebook-f {
+    padding: 8px 11px;
+    position: absolute;
+    text-decoration: none;
+    font-size: inherit;
+    bottom: 14px;
+    right: 15px;
+    border-radius: 50%;
+    z-index: 3;
+     @include max_xl {
+      bottom: -14px;
+    }
+     @include max_sm {
       display: none;
     }
   }

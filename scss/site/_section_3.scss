@@ -1,0 +1,133 @@
+#section-3 {
+  width: 87.5%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 125vh;
+  padding: 12.5vh 0;
+  @include max_xl {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: initial;
+    padding: initial;
+  }
+  p {
+    @include max_xl {
+      order: 1;
+      margin: 17% 0 7.5% 0;
+      text-align: justify;
+    }
+  }
+  .scroll-container {
+    align-self: flex-start;
+    position: sticky;
+    top: 25vh;
+    margin: 20vh 0 20vh 8%;
+    display: flex;
+    flex-direction: column;
+    @include max_xl {
+      position: relative;
+      top: initial;
+      margin: auto;
+      order: 2;
+    }
+    a {
+      overflow: hidden;
+      display: flex;
+      @include max_xl {
+        margin: 10% auto auto auto;
+      }
+      figure {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border: 3px solid $c11;
+        border-radius: 10px;
+        min-width: 440px;
+        @include max_xl {
+          min-width: initial;
+        }
+        img {
+          display: block;
+          position: relative;
+          z-index: 0;
+          margin: auto;
+          width: 100%;
+          height: 100%;
+        }
+        figcaption {
+          position: absolute;
+          top: 35%;
+          left: 5%;
+          color: $c3;
+          width: 50%;
+          z-index: 1;
+          @include max_sm {
+            width: 66%;
+            top: 12%;
+            font-size: 90%;
+          }
+          b {
+            font-family: $font2;
+            font-size: 110%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll {
+  img {
+    transition:
+      transform 0.5s ease-out,
+      opacity 0.5s ease-out;
+    transform: scale(1);
+    opacity: 1;
+  }
+  b {
+    transition: text-decoration-color 0.5s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+  @include min_xl {
+    &:hover b {
+      text-decoration-color: $c3;
+    }
+  }
+}
+
+.scroll-animation-desktop img {
+  @include min_xl {
+    transform: scale(1.1);
+    opacity: 0.95;
+  }
+}
+
+.scroll-animation-mobile.scroll {
+  @include max_xl {
+    img {
+      transform: scale(1.1);
+      opacity: 0.95;
+    }
+    b {
+      text-decoration-color: $c3;
+    }
+  }
+}
+
+.d-lg-has-height {
+  @include min_xl {
+    height: initial;
+    width: inherit;
+  }
+}
+
+.d-lg-0-height {
+  @include min_xl {
+    height: 0;
+    width: 0;
+  }
+}

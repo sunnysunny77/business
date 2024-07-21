@@ -1,0 +1,25 @@
+#section-1 {
+  width: 60%;
+  margin: auto;
+  @include max_xl {
+    width: 90%;
+  }
+  h2 {
+    margin: calc(65px + 4%) auto 3% 4%;
+  }
+  span {
+    color: $c2;
+    text-align: justify;
+    display: inline-block;
+  }
+  p {
+    margin: 12.5% auto;
+    border: 2px solid $c4;
+    color: $c4;
+    padding: 25px;
+    font-size: clamp(14px, 1.6vw, 16px);
+    q {
+      opacity: 0.85;
+    }
+  }
+}

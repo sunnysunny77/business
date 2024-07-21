@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
-    <link rel="preload" href="images/skyscraper.jpg" as="image">
-    <link rel="preload" href="images/office.jpg" as="image">
     <meta charset="utf-8" />
     <meta name="description" content="Business Web" />
     <meta name="keywords" content="Business Web Template" />
@@ -52,7 +50,7 @@
       <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
     </nav>
     <main id="main">
-      <article>
+      <article id="section-1">
         <h2>Lorem ipsum ..</h2>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,15 +71,15 @@
           <br />Adipiscing elit
         </p>
       </article>
-      <div id="section1">
+      <div id="section-2">
         <img
-          src="./images/section1.jpg"
+          src="./images/section-2-1.jpg"
           width="500"
           height="287"
           alt="Business in Porgress One"
         />
         <img
-          src="./images/section2.jpg"
+          src="./images/section-2-2.jpg"
           width="700"
           height="468"
           alt="Business in Porgress Two"
@@ -95,7 +93,7 @@
           Adipiscing elit
         </p>
         <img
-          src="./images/section3.jpg"
+          src="./images/section-2-3.jpg"
           width="500"
           height="334"
           alt="Business in Porgress Three"
@@ -133,7 +131,7 @@
           </div>
         </aside>
       </div>
-      <div class="outer" id="section2">
+      <div class="outer" id="section-3">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -158,10 +156,10 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        <div class="top">
-          <a class="d-lg-has-height" id="figureOne" href="#">
+        <div class="scroll-container">
+          <a class="d-lg-has-height" id="figure-one" href="#">
             <figure class="scroll">
-                <img src="images/skyscraper.jpg" width="440" height="293" alt="skyscraper"/>
+                <img src="images/section-3-1.jpg" width="440" height="293" alt="skyscraper"/>
                 <figcaption>
                   <b>Dolor sit</b>
                   <br/>
@@ -171,9 +169,9 @@
                 </figcaption>
             </figure>
           </a>
-          <a class="d-lg-0-height" id="figureTwo" href="#">
+          <a class="d-lg-0-height" id="figure-two" href="#">
             <figure class="scroll">
-                <img src="images/office.jpg" width="440" height="293" alt="office"/>
+                <img src="images/section-3-2.jpg" width="440" height="293" alt="office"/>
                 <figcaption>
                   <b>Lorem ipsum</b>
                   <br/>
@@ -185,7 +183,7 @@
           </a>
         </div>
       </div>
-      <div id="section3">
+      <div id="section-4">
         <article>
           <h3>Lorem ipsum ..</h3>
           <p> 
@@ -198,7 +196,7 @@
           </p>
         </article>
        <div role="img" aria-label="job">
-        <p class="scrollTwo">   
+        <p class="scroll-two">   
           <span>  
             Lorem ipsum dolor sit amet consectetur adipiscing elit.
           </span>
@@ -206,7 +204,7 @@
         </p>
       </div>
        <div role="img" aria-label="startup">
-        <p class="scrollTwo">   
+        <p class="scroll-two">   
           <span>  
             Lorem ipsum dolor sit amet consectetur adipiscing elit.
           </span>
@@ -225,7 +223,7 @@
         </p>
       </article>
     </div>
-    <div id="section4">
+    <div id="section-5">
       <p>
         Consectetur adipiscing elit, sed do eiusmod.
       <p>
@@ -234,7 +232,7 @@
         Sed do ipiscing eli eiusmod sit amet tempor.
       </p>
     </div>
-    <div id="section5">
+    <div id="section-6">
 
       <div class="slider_1-outer position-relative">
 
@@ -293,11 +291,11 @@
       </div>
 
     </div>
-    <section id="section6">
+    <section id="section-7">
       <h2>Lorem ipsum ..</h2>
       <div>
         <img
-          src="./images/persona1.jpg"
+          src="./images/section-7-1.jpg"
           width="220"
           height="147"
           alt="Persona 1"
@@ -319,7 +317,7 @@
           </span>
         </div>
         <img
-          src="./images/persona2.jpg"
+          src="./images/section-7-2.jpg"
           width="220"
           height="147"
           alt="Persona 2"
@@ -343,7 +341,7 @@
       </div>
       <div>
         <img
-          src="./images/persona3.jpg"
+          src="./images/section-7-3.jpg"
           width="220"
           height="147"
           alt="Persona 3"
@@ -365,7 +363,7 @@
           </span>
         </div>
         <img
-          src="./images/persona4.jpg"
+          src="./images/section-7-4.jpg"
           width="220"
           height="147"
           alt="Persona 4"
@@ -388,11 +386,11 @@
         </div>
       </div>
     </section>
-    <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div id="section-8" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
       <div class="carousel-inner">
-        <div class="carousel-item active"><img src="images/logo.png" width="200" height="200" alt="bing"/></div>
-        <div class="carousel-item"><img src="images/mortarboard.png" width="200" height="200" alt="mortarboard"/></div>
-        <div class="carousel-item"><img src="images/slack.png" width="200" height="200" alt="slack"/></div>
+        <div class="carousel-item active"><img src="images/section-8-1.png" width="200" height="200" alt="bing"/></div>
+        <div class="carousel-item"><img src="images/section-8-2.png" width="200" height="200" alt="mortarboard"/></div>
+        <div class="carousel-item"><img src="images/section-8-3.png" width="200" height="200" alt="slack"/></div>
       </div>
     </div>
     </main>

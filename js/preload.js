@@ -7,7 +7,7 @@ export const preload = () => {
     link.href = "./images/header.webp";
     head.append(link);
   } else {
-    link.href = "./images/headerm.webp";
+    link.href = "./images/header-mobile.webp";
     head.append(link);
   }
 };
