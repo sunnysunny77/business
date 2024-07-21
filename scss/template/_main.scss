@@ -147,9 +147,6 @@ article {
   max-width: 1230px;
   width: 100%;
   margin: 10% auto 0 auto;
-  @media only Screen and (max-width: 1023px) {
-    margin: 10% auto 12.5vh auto;
-  }
   @media only Screen and (max-width: 767px) {
     padding-bottom: initial;
     position: static;
@@ -324,17 +321,15 @@ article {
   }
   p {
     @media only Screen and (max-width: 1023px) {
-      order: 3;
-      margin: 10% 0 17% 0;
+      order: 1;
+      margin: 10% 0 0 0;
       text-align: justify;
     }
   }
   .top {
     align-self: flex-start;
     position: sticky;
-    /* quater 100vh */
     top: 25vh;
-    /* anything */
     margin: 20vh 0 20vh 8%;
     display: flex;
     flex-direction: column;
@@ -354,6 +349,7 @@ article {
       position: relative;
       top: unset;
       margin: auto;
+      order: 2;
     }
     a {
       overflow: hidden;

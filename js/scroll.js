@@ -3,7 +3,6 @@ export const scroll = () => {
     const figureOne = document.querySelector("#figureOne");
     const figureTwo = document.querySelector("#figureTwo");
     const section = document.querySelector("#section2");
-    //top quater sticky height 25vh, + 25vh / 100vh = 50vh, minus half the figure height to find the middle
     if (window.innerWidth < 992) {
       return;
     }
