@@ -28,8 +28,8 @@
         margin: auto;
         height: 100%;
         display: block;
-        left: unset;
-        bottom: unset;
+        left: initial;
+        bottom: initial;
       }
       &:nth-child(1) {
         top: 16%;

@@ -89,7 +89,7 @@ nav {
          @include max_sm {
           margin: auto auto 10px auto;
           background-image: none;
-          background-color: unset;
+          background-color: initial;
         }
         &:hover,
         &:focus {
