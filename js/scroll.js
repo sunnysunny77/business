@@ -20,6 +20,6 @@ export const scroll = () => {
       figureOne.classList.replace("d-lg-has-height", "d-lg-0-height");
       figureTwo.classList.replace("d-lg-0-height", "d-lg-has-height");
     }
-  }
+  };
   window.addEventListener("scroll", handle_scroll, { passive: true });
 };
