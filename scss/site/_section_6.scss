@@ -45,8 +45,9 @@
   background-color: $c3;
   width: calc(100% - 104px);
   margin: auto;
-  padding: 22px 33px 104px 33px;
+  padding: 22px 33px 33px 33px;
   @include min_sm {
+    padding: 22px 33px 66px 33px;
     width: 70%;
   }
   @include min_md {

@@ -1,7 +1,7 @@
 /* nav */
 
 .sticky {
-   @include min_sm {
+  @include min_sm {
     position: sticky;
     background-image: url("../images/nav-texture.png");
     background-color: $c3;
@@ -9,7 +9,7 @@
 }
 
 .absolute {
-   @include min_sm {
+  @include min_sm {
     position: absolute;
   }
 }
@@ -24,7 +24,7 @@ nav {
   font-size: larger;
   color: $c15;
   z-index: 2;
-   @include max_sm {
+  @include max_sm {
     position: sticky;
     background-image: url("../images/nav-texture.png");
     background-color: $c3;
@@ -34,11 +34,16 @@ nav {
     &:hover,
     &:focus {
       background-color: $c9;
-      ul {
+      .menu {
         height: 159.2px;
         li {
           transform: translateY(0);
         }
+      }
+    }
+    @include max_sm {
+      .menu {
+        height: 0;
       }
     }
   }
@@ -46,10 +51,10 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-     @include max_sm {
-      flex-direction: column;
-      transition: height 0.65s;
-      height: 0;
+    @include max_sm {
+        flex-direction: column;
+        transition: height 0.65s;
+        justify-content: center;
     }
     .li-around {
       width: 66%;
@@ -57,20 +62,17 @@ nav {
         display: flex;
         justify-content: space-evenly;
       }
-       @include max_sm {
+      @include max_sm {
         width: initial;
       }
     }
     li {
       list-style-type: none;
       display: inline-block;
-       @include max_sm {
+      @include max_sm {
         transition: transform 0.65s;
         transform: translateY(-79.2px);
         display: list-item;
-        &:last-child {
-          margin-bottom: 40px;
-        }
       }
       a {
         color: inherit;
@@ -86,8 +88,8 @@ nav {
         transition:
           0.1s ease background-color,
           color 0.1s ease;
-         @include max_sm {
-          margin: auto auto 10px auto;
+        @include max_sm {
+          margin: auto auto 20px auto;
           background-image: none;
           background-color: initial;
         }
@@ -104,7 +106,7 @@ nav {
     color: $c4;
     padding: 10px;
     align-self: baseline;
-     @include min_sm {
+    @include min_sm {
       display: none;
     }
   }
@@ -117,7 +119,7 @@ nav {
     border-radius: 50%;
     font-size: initial;
     z-index: 3;
-     @include min_sm {
+    @include min_sm {
       display: none;
     }
   }
@@ -138,7 +140,7 @@ header {
   box-sizing: border-box;
   background-attachment: fixed;
   border-bottom: 1px solid rgba($c2, 0.275);
-   @include max_xxxl {
+  @include max_xxxl {
     background-image: url(../images/header-mobile.webp);
     padding: 22.5% 0;
     min-height: 200px;
@@ -154,7 +156,7 @@ header {
     border-radius: 5px;
     font-style: oblique;
     font-size: 1.75em;
-     @include max_xl {
+    @include max_xl {
       font-size: 17px;
     }
     svg {
@@ -188,10 +190,10 @@ header {
     right: 15px;
     border-radius: 50%;
     z-index: 3;
-     @include max_xl {
+    @include max_xl {
       bottom: -14px;
     }
-     @include max_sm {
+    @include max_sm {
       display: none;
     }
   }
