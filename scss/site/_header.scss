@@ -29,6 +29,7 @@ nav {
     background-image: url("../images/nav-texture.png");
     background-color: $c3;
     transition: 0.25s ease background-color;
+    will-change: height;
     width: 100%;
     padding: 0;
     > ul {
