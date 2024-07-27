@@ -34,16 +34,11 @@ nav {
     &:hover,
     &:focus {
       background-color: $c9;
-      .menu {
+      ul.menu {
         height: 159.2px;
         li {
           transform: translateY(0);
         }
-      }
-    }
-    @include max_sm {
-      .menu {
-        height: 0;
       }
     }
   }
@@ -55,6 +50,9 @@ nav {
         flex-direction: column;
         transition: height 0.65s;
         justify-content: center;
+        &.menu {
+          height: 0;
+        }
     }
     .li-around {
       width: 66%;
