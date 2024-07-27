@@ -164,13 +164,13 @@ header {
       .font {
         font-size: 17px;
         font-style: normal;
-        font-weight: 100;
+        font-weight: 200;
         fill: $c2;
       }
     }
     a {
       color: $c2;
-      font-weight: 100;
+      font-weight: 300;
       transition: text-decoration-color 0.2s ease;
       text-decoration: underline;
       text-decoration-color: $c3;
