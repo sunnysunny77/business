@@ -38,7 +38,7 @@
     </header>
     <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
-      <ul class="menu">
+      <ul>
         <li><a class="button" accesskey="1" href="./index.html">Home</a></li>
         <li class="li-around">
           <ul>
