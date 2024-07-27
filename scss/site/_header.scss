@@ -31,10 +31,13 @@ nav {
     transition: 0.25s ease background-color;
     width: 100%;
     padding: 0;
+    > ul {
+      height: 0;
+    }
     &:hover,
     &:focus {
       background-color: $c9;
-      ul.menu {
+      > ul {
         height: 159.2px;
         li {
           transform: translateY(0);
@@ -50,9 +53,6 @@ nav {
         flex-direction: column;
         transition: height 0.65s;
         justify-content: center;
-        &.menu {
-          height: 0;
-        }
     }
     .li-around {
       width: 66%;
