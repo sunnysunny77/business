@@ -5,13 +5,12 @@
 }
 
 .slider_1-outer {
-  padding: 0 0 25% 0;
-  margin: auto;
+  margin: 0 auto 25% auto;
   @include min_sm {
     width: 87.5%;
   }
   @include min_md {
-    padding: 0 0 17% 0;
+    margin: 0 auto 17% auto;
   }
   @include min_xxl {
     width: calc(100% - 52px);
@@ -99,9 +98,6 @@
   top: calc(50% - 54px);
   right: -26px;
   transition: right 0.5s ease-in-out;
-  @include min_md {
-    top: calc(50% - 132px);
-  }
 }
 
 .c-custom-1 {
