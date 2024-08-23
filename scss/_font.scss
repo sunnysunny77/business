@@ -61,5 +61,13 @@
     src: url(../font/Poppins-Black.ttf);
 }
 
+@font-face {
+    font-family: "OpenSans";
+    src: url(../font/OpenSans.ttf);
+    font-display: swap;
+}
+
+$font: "OpenSans";
+
 $font1: "Poppins";
-$font2: Tahoma, sans-serif;
+$font2: "OpenSans";
