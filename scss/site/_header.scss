@@ -140,13 +140,14 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
+  background-size: 50%;
   border-bottom: 1px solid rgba($c2, 0.275);
   @include max_xxxl {
     background-image: url(../images/header-mobile.webp);
     padding: 22.5% 0;
     min-height: 200px;
-    background-size: 67%;
-    background-position: center left;
+    background-size: 40%;
+    background-position: 17% 52.5%;
     background-attachment: initial;
   }
   h1 {
