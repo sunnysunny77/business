@@ -133,7 +133,6 @@ nav {
 
 header {
   background-image: url(../images/header.webp);
-  background-size: 66%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -143,7 +142,7 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
-  background-size: 50%;
+  background-size: 46%;
   border-bottom: 1px solid rgba($c2, 0.275);
   @include max_xxxl {
     background-image: url(../images/header-mobile.webp);
