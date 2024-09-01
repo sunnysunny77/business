@@ -5,12 +5,10 @@
 }
 
 .slider_1-outer {
-  margin: 0 auto 25% auto;
-  @include min_sm {
-    width: 87.5%;
-  }
+  margin: 0 0 25% 0;
   @include min_md {
     margin: 0 auto 17% auto;
+    width: 87.5%;
   }
   @include min_xxl {
     width: calc(100% - 52px);
@@ -23,6 +21,8 @@
 
 .slider_1-item {
   position: absolute;
+  left: 0;
+  right: 0;
   will-change: transform;
   @include min_md {
     width: calc((100% + 34px) / 2);
