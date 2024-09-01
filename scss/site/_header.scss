@@ -100,7 +100,7 @@ nav {
         &:hover,
         &:focus {
           color: $c3;
-          background-color: $c14;
+          background-color: $c4;
           background-image: none;
         }
       }
@@ -149,7 +149,7 @@ header {
     background-image: url(../images/header-mobile.webp);
     padding: 22.5% 0;
     min-height: 200px;
-    background-size: 40%;
+    background-size: 35%;
     background-position: 17% 52.5%;
     background-attachment: initial;
   }

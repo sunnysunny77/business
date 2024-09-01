@@ -15,6 +15,7 @@
   }
   p {
     @include max_xl {
+      width: 75%;
       order: 1;
       margin: 17% 0 7.5% 0;
       text-align: justify;
@@ -24,7 +25,7 @@
     align-self: flex-start;
     position: sticky;
     top: 25vh;
-    margin: 20vh 0 20vh 8%;
+    margin: 20vh 0 20vh 17vw;
     display: flex;
     flex-direction: column;
     @include max_xl {
@@ -48,6 +49,8 @@
         min-width: 440px;
         @include max_xl {
           min-width: initial;
+          width: 88%;
+          margin: auto;
         }
         img {
           display: block;
