@@ -41,7 +41,7 @@
         h3 {
             margin: 7.5% 0;
             @include max_xl {
-                margin-top: 17%;
+                margin-top: 23%;
             }
          }
         p {
@@ -65,7 +65,7 @@
         margin: 2.5% 0;
         @include max_xl {
             width: 90%;
-            padding: 27.5% 0;
+            padding: 27% 0;
             margin: 5% 0 0 0;
         }
         &:nth-child(2) {
