@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
+    <link rel="preload" href="./font/OpenSans.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Black.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-ExtraBold.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-ExtraLight.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Light.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin="" />
+    <link rel="preload" href="./font/Poppins-Thin.ttf" as="font" type="font/ttf" crossorigin="" />
     <meta charset="utf-8" />
     <meta name="description" content="Business Web" />
     <meta name="keywords" content="Business Web Template" />
