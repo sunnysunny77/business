@@ -25,6 +25,8 @@
       border: 2px solid $c11;
        @include max_md {
         position: static;
+        border: 2px solid $c4;
+        border-radius: 0;
         margin: auto;
         height: 100%;
         display: block;
@@ -60,7 +62,7 @@
         width: 48.5%;
         height: auto;
          @include max_md {
-          width: 87.5%;
+          width: 86%;
           order: 4;
           margin-bottom: 5%;
           margin-top: 7.5%;
