@@ -2,11 +2,14 @@
   width: 87.5%;
   margin: auto;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-between;
   height: 125vh;
-  padding: 12.5vh 0;
-  @include max_xl {
+  padding: 25vh 0;
+  @include max_xxl {
+    padding: 12.5vh 0;
+  }
+  @include max_md {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -14,7 +17,11 @@
     padding: initial;
   }
   p {
-    @include max_xl {
+    width: 50%;
+    @include max_xxl {
+      width: 40%;
+    }
+    @include max_md {
       width: 75%;
       order: 1;
       margin: 17% 0 7.5% 0;
@@ -22,33 +29,37 @@
     }
   }
   .scroll-container {
+    width: 40%;
     align-self: flex-start;
     position: sticky;
     top: 25vh;
-    margin: 20vh 0 20vh 17vw;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    @include max_xl {
+    @include max_xxl {
+      width: 50%;
+    }
+    @include max_md {
       position: relative;
       top: initial;
       margin: auto;
       order: 2;
+      width: 80%;
+      align-items: center;
     }
     a {
       overflow: hidden;
       display: flex;
-      @include max_xl {
+      width: 100%;
+      @include max_md {
         margin: 17% 5% auto 5%;
       }
       figure {
         position: relative;
         z-index: 1;
         overflow: hidden;
-        border: 3px solid $c11;
-        border-radius: 10px;
-        min-width: 440px;
-        @include max_xl {
-          min-width: initial;
+        border: 3px solid $c14;
+        @include max_md {
           margin: auto;
         }
         img {
@@ -61,14 +72,13 @@
         }
         figcaption {
           position: absolute;
-          top: 35%;
-          left: 5%;
+          top: 0;
+          right: 0;
+          left: 0;
           color: $c3;
-          width: 50%;
+          padding: 4%;
           z-index: 1;
-          @include max_xl {
-            width: 60%;
-            top: 5%;
+          @include max_sm {
             font-size: 85%;
           }
           b {
@@ -95,7 +105,7 @@
     text-decoration: underline;
     text-decoration-color: transparent;
   }
-  @include min_xl {
+  @include min_md {
     &:hover b {
       text-decoration-color: $c3;
     }
@@ -103,14 +113,14 @@
 }
 
 .scroll-animation-desktop img {
-  @include min_xl {
+  @include min_md {
     transform: scale(1.1);
     opacity: 0.95;
   }
 }
 
 .scroll-animation-mobile.scroll {
-  @include max_xl {
+  @include max_md {
     img {
       transform: scale(1.1);
       opacity: 0.95;
@@ -122,14 +132,14 @@
 }
 
 .d-lg-has-height {
-  @include min_xl {
+  @include min_md {
     height: initial;
     width: inherit;
   }
 }
 
 .d-lg-0-height {
-  @include min_xl {
+  @include min_md {
     height: 0;
     width: 0;
   }

@@ -63,6 +63,7 @@
         padding: 13.5% 0;
         height: fit-content;
         margin: 2.5% 0;
+        border: 2px solid $c4;
         @include max_xl {
             width: 90%;
             padding: 27% 0;
@@ -93,9 +94,9 @@
             color: $c3;
             position: absolute;
             top: 2%;
-            right: 2%;
+            right: 1%;
             bottom: 2%;
-            left: 2%;
+            left: 1%;
             transition:
                 background-color 0.5s linear,
                 opacity 0.5s linear,
@@ -106,10 +107,10 @@
             &.animation {
                 background-color: $c14;
                 opacity: 0.95;
-                top: 7%;
-                right: 5%;
-                bottom: 7%;
-                left: 5%;
+                top: 5%;
+                right: 3%;
+                bottom: 5%;
+                left: 3%;
                 span {
                     opacity: 1;
                 }

@@ -88,13 +88,13 @@
         <img
           src="./images/section-2-1.jpg"
           width="500"
-          height="287"
+          height="313"
           alt="Business in Porgress One"
         />
         <img
           src="./images/section-2-2.jpg"
           width="700"
-          height="468"
+          height="467"
           alt="Business in Porgress Two"
         />
         <p>
@@ -108,7 +108,7 @@
         <img
           src="./images/section-2-3.jpg"
           width="500"
-          height="334"
+          height="333"
           alt="Business in Porgress Three"
         />
         <aside>
@@ -172,7 +172,7 @@
         <div class="scroll-container">
           <a class="d-lg-has-height" id="figure-one" href="#">
             <figure class="scroll">
-                <img src="images/section-3-1.jpg" width="440" height="293" alt="skyscraper"/>
+                <img src="images/section-3-1.jpg" width="660" height="462" alt="skyscraper"/>
                 <figcaption>
                   <b>Dolor sit</b>
                   <br/>
@@ -184,7 +184,7 @@
           </a>
           <a class="d-lg-0-height" id="figure-two" href="#">
             <figure class="scroll">
-                <img src="images/section-3-2.jpg" width="440" height="293" alt="office"/>
+                <img src="images/section-3-2.jpg" width="660" height="462" alt="office"/>
                 <figcaption>
                   <b>Lorem ipsum</b>
                   <br/>

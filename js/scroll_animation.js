@@ -13,7 +13,7 @@ export const scroll_animation = () => {
   };
 
   const handle_scroll_animation_mobile = () => {
-    if (window.innerWidth > 1023) {
+    if (window.innerWidth > 767) {
       return;
     }
     for (const index of scroll) {
@@ -34,7 +34,7 @@ export const scroll_animation = () => {
   };
 
   const handle_scroll_animation_desktop = () => {
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth < 767) {
       return;
     }
     const position = getPosition(outer);
