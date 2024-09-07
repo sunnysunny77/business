@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
+    <script src="./js/preload.js"></script>
     <link rel="preload" href="./font/OpenSans.ttf" as="font" type="font/ttf" crossorigin="" />
     <link rel="preload" href="./font/Poppins-Black.ttf" as="font" type="font/ttf" crossorigin="" />
     <link rel="preload" href="./font/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin="" />
