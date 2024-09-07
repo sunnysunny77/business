@@ -8,6 +8,10 @@
   padding: 25vh 0;
   @include max_xxl {
     padding: 12.5vh 0;
+    height: initial;
+  }
+  @include max_xl {
+    padding: 25% 0 0 0;
   }
   @include max_md {
     flex-direction: column;
