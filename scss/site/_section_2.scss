@@ -78,7 +78,7 @@
       left: 18.75%;
       border: 2px solid $c4;
       color: $c4;
-      padding: 3.3vw;
+      padding: min(3.3vw, 63.35px);
       display: flex;
       justify-content: center;
       align-items: center;

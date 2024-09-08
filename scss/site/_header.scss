@@ -142,7 +142,7 @@ header {
   min-height: 300px;
   box-sizing: border-box;
   background-attachment: fixed;
-  background-size: 46%;
+  background-size: min(46%, 900px);
   border-bottom: 1px solid rgba($c2, 0.275);
   @include max_xxxl {
     background-image: url(../images/header-mobile.webp);

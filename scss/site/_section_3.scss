@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: space-between;
   height: 125vh;
-  padding: 25vh 0;
+  padding: min(25vh, 270px) 0;
+  max-height: 1350px;
+  max-width: 1680px;
   @include max_xxl {
     padding: 17%h 0;
     height: initial;
