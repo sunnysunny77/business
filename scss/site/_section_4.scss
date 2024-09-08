@@ -70,13 +70,13 @@
             margin: 5% 0 0 0;
         }
         &:nth-child(2) {
-            background-image: url(../images/section-4-1.jpg);
+            background-image: url(../images/section-4-1.webp);
             @include max_xl {
                 order: 2;
             }
         }
         &:nth-child(3) {
-            background-image: url(../images/section-4-2.jpg);
+            background-image: url(../images/section-4-2.webp);
             p {
                 text-align: right;
                 span {

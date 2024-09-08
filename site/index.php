@@ -18,6 +18,7 @@
     <meta name="author" content="D.C" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/app.min.css" rel="stylesheet" type="text/css" />
+    <title>Business</title>
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="images/pwa-logo-small.webp" />
   </head>
@@ -87,16 +88,16 @@
       <div id="section-2">
         <img
           data-aos="fade-left"
-          src="./images/section-2-1.jpg"
-          width="500"
-          height="313"
+          src="./images/section-2-1.webp"
+          width="541"
+          height="339"
           alt="Business in Porgress One"
         />
         <img
           data-aos="fade-right"
-          src="./images/section-2-2.jpg"
-          width="700"
-          height="467"
+          src="./images/section-2-2.webp"
+          width="646"
+          height="431"
           alt="Business in Porgress Two"
         />
         <p data-aos="zoom-in">
@@ -109,9 +110,9 @@
         </p>
         <img
           data-aos="fade-up"
-          src="./images/section-2-3.jpg"
-          width="500"
-          height="333"
+          src="./images/section-2-3.webp"
+          width="597"
+          height="397"
           alt="Business in Porgress Three"
         />
         <aside data-aos="fade-up">
@@ -175,7 +176,7 @@
         <div class="scroll-container">
           <a class="d-lg-has-height" id="figure-one" href="#">
             <figure class="scroll">
-                <img src="images/section-3-1.jpg" width="660" height="462" alt="skyscraper"/>
+                <img src="images/section-3-1.webp" width="661" height="463" alt="skyscraper"/>
                 <figcaption>
                   <b>Dolor sit</b>
                   <br/>
@@ -187,7 +188,7 @@
           </a>
           <a class="d-lg-0-height" id="figure-two" href="#">
             <figure class="scroll">
-                <img src="images/section-3-2.jpg" width="660" height="462" alt="office"/>
+                <img src="images/section-3-2.webp" width="661" height="463" alt="office"/>
                 <figcaption>
                   <b>Lorem ipsum</b>
                   <br/>
@@ -311,7 +312,7 @@
       <h2>Lorem ipsum ..</h2>
       <div>
         <img
-          src="./images/section-7-1.jpg"
+          src="./images/section-7-1.webp"
           width="220"
           height="147"
           alt="Persona 1"
@@ -333,7 +334,7 @@
           </span>
         </div>
         <img
-          src="./images/section-7-2.jpg"
+          src="./images/section-7-2.webp"
           width="220"
           height="147"
           alt="Persona 2"
@@ -357,7 +358,7 @@
       </div>
       <div>
         <img
-          src="./images/section-7-3.jpg"
+          src="./images/section-7-3.webp"
           width="220"
           height="147"
           alt="Persona 3"
@@ -379,7 +380,7 @@
           </span>
         </div>
         <img
-          src="./images/section-7-4.jpg"
+          src="./images/section-7-4.webp"
           width="220"
           height="147"
           alt="Persona 4"
@@ -404,9 +405,9 @@
     </section>
     <div id="section-8" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
       <div class="carousel-inner">
-        <div class="carousel-item active"><img src="images/section-8-1.png" width="200" height="200" alt="bing"/></div>
-        <div class="carousel-item"><img src="images/section-8-2.png" width="200" height="200" alt="mortarboard"/></div>
-        <div class="carousel-item"><img src="images/section-8-3.png" width="200" height="200" alt="slack"/></div>
+        <div class="carousel-item active"><img src="images/section-8-1.webp" width="200" height="200" alt="bing"/></div>
+        <div class="carousel-item"><img src="images/section-8-2.webp" width="200" height="200" alt="mortarboard"/></div>
+        <div class="carousel-item"><img src="images/section-8-3.webp" width="200" height="200" alt="slack"/></div>
       </div>
     </div>
     </main>

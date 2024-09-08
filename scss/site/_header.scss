@@ -22,14 +22,14 @@ nav {
   }
   &.navigation-fixed,
   &.navigation-top {
-    background-image: url("../images/nav-texture.png");
+    background-image: url("../images/nav-texture.webp");
     background-color: $c3;
     right: 0;
     left: 0;
   }
   @include max_sm {
     position: sticky;
-    background-image: url("../images/nav-texture.png");
+    background-image: url("../images/nav-texture.webp");
     background-color: $c3;
     transition: 0.25s ease background-color;
     will-change: background-color;
@@ -87,7 +87,7 @@ nav {
         outline: none;
         display: block;
         margin: 4% 0;
-        background-image: url("../images/nav-texture.png");
+        background-image: url("../images/nav-texture.webp");
         background-color: $c3;
         transition:
           0.1s ease background-color,
