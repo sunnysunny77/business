@@ -86,18 +86,20 @@
       </article>
       <div id="section-2">
         <img
+          data-aos="fade-left"
           src="./images/section-2-1.jpg"
           width="500"
           height="313"
           alt="Business in Porgress One"
         />
         <img
+          data-aos="fade-right"
           src="./images/section-2-2.jpg"
           width="700"
           height="467"
           alt="Business in Porgress Two"
         />
-        <p>
+        <p data-aos="zoom-in">
           <q>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
@@ -106,12 +108,13 @@
           Adipiscing elit
         </p>
         <img
+          data-aos="fade-up"
           src="./images/section-2-3.jpg"
           width="500"
           height="333"
           alt="Business in Porgress Three"
         />
-        <aside>
+        <aside data-aos="fade-up">
           <div>
             <h2>
               Lorem ipsum dolor sit amet

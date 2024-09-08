@@ -9,8 +9,10 @@
   max-height: 1350px;
   max-width: 1680px;
   @include max_xxl {
-    padding: 17%h 0;
+    padding: 17% 0;
     height: initial;
+    max-height:  initial;
+    max-width:  initial;
   }
   @include max_xl {
     padding: 25% 0 0 0;

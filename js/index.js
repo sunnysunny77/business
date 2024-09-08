@@ -10,6 +10,7 @@ import "../node_modules/bootstrap/js/dist/carousel";
 //import "../node_modules/bootstrap/js/dist/tab";
 ///import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
+import  AOS from "../node_modules/aos/dist/aos.js";
 import "../node_modules/@fortawesome/fontawesome-free/js/all.min.js";
 import { service_worker } from "./service_worker.js";
 import { nav } from "./nav.js";
@@ -19,6 +20,9 @@ import { slider_1 } from "./slider_1.js";
 
 window.onload = () => {
 
+  AOS.init({
+    once: true
+  });
   nav();
   section_3();
   section_4();
