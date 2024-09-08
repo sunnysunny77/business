@@ -128,9 +128,11 @@
     img {
       transform: scale(1.1);
       opacity: 0.95;
+      transition-delay: 0.5s;
     }
     b {
       text-decoration-color: $c3;
+      transition-delay: 0.5s;
     }
   }
 }

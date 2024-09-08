@@ -10,18 +10,18 @@ import "../node_modules/bootstrap/js/dist/carousel";
 //import "../node_modules/bootstrap/js/dist/tab";
 ///import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
-import { service_worker } from "./service_worker.js";
 import "../node_modules/@fortawesome/fontawesome-free/js/all.min.js";
+import { service_worker } from "./service_worker.js";
 import { nav } from "./nav.js";
-import { scroll } from "./scroll.js";
-import { scroll_animation } from "./scroll_animation.js";
+import { section_3 } from "./section_3.js";
+import { section_4 } from "./section_4.js";
 import { slider_1 } from "./slider_1.js";
 
 window.onload = () => {
 
   nav();
-  scroll();
-  scroll_animation();
+  section_3();
+  section_4();
   slider_1();
   service_worker();
 };

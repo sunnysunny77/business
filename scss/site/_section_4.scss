@@ -97,6 +97,7 @@
             right: 1%;
             bottom: 2%;
             left: 1%;
+
             transition:
                 background-color 0.5s linear,
                 opacity 0.5s linear,
@@ -105,6 +106,7 @@
                 bottom 0.5s linear,
                 left 0.5s linear;
             &.animation {
+                transition-delay: 0.5s;
                 background-color: $c14;
                 opacity: 0.95;
                 top: 5%;

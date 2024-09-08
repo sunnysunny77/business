@@ -1,6 +1,14 @@
+import { events } from "./utillites.js";
+
 export const nav = () => {
+
   const navigation = document.querySelector("#nav");
   const main = document.querySelector("main");
+
+  if (!navigation || !main) {
+
+    return;
+  }
 
   let scrollY = 0;
 
@@ -42,6 +50,7 @@ export const nav = () => {
     }
 
   }
-  window.addEventListener("scroll", handle_nav);
-  window.addEventListener("resize", handle_nav);
+
+  events(window, "scroll", handle_nav, {passive: true});
+  events(window, "resize", handle_nav, {passive: true});
 };
