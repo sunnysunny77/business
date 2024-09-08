@@ -1,3 +1,5 @@
+import { events } from "./utillites.js";
+
 export const slider_1 = () => {
   const slider_items = document.querySelectorAll(".slider-item");
   const slider_next = document.querySelectorAll(".slider-next");
@@ -43,7 +45,7 @@ export const slider_1 = () => {
   calc_min_height();
 
   for (const index of slider_next) {
-    index.addEventListener("click", (event) => {
+    events(index, "click", (event) => {
       event.target.disabled = "true";
       count++;
 
@@ -87,7 +89,9 @@ export const slider_1 = () => {
     });
   }
 
-  window.addEventListener("resize",  () => {
+
+  events(window, "resize",() => {
+
     calc_min_height();
   }, { passive: true });
 };
