@@ -132,25 +132,33 @@ nav {
 /* header */
 
 header {
-  background-image: url(../images/header.webp);
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   width: 100%;
   text-align: right;
   padding: 50vh 0;
   min-height: 300px;
   box-sizing: border-box;
-  background-attachment: fixed;
-  background-size: min(46%, 900px);
   border-bottom: 1px solid rgba($c2, 0.275);
   @include max_xxxl {
-    background-image: url(../images/header-mobile.webp);
     padding: 22.5% 0;
     min-height: 200px;
-    background-size: 35%;
-    background-position: 17% 52.5%;
-    background-attachment: initial;
+  }
+  picture img {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: min(46%, 900px);
+    margin: auto;
+    @include max_xxxl {
+      position: absolute;
+      width: max(36%, 135px);
+      object-fit: contain;
+      margin: max(11%, 50px) 0 0 9.5%;
+      object-position: center;
+    }
   }
   h1 {
     position: absolute;

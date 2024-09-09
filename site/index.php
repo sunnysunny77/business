@@ -15,6 +15,16 @@
   <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
     <header>
+      <picture>
+        <source
+          media="(max-width: 1399px)"
+          srcset="./images/header-mobile.webp"
+        />
+        <img
+          src="./images/header.webp"
+          alt="header"
+        />
+      </picture>
       <h1>
         <a href="#">
           <svg aria-label="Georges Garden Shop" xmlns="http://www.w3.org/2000/svg"

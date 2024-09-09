@@ -26,7 +26,7 @@ const fonts = [
   "./webfonts/fa-solid-900.woff2",
 ];
 
-if (window.screen.width > 1200) {
+if (window.screen.width > 1399) {
 
   preload("./images/header.webp", "image");
 } else {
