@@ -2,16 +2,6 @@
 <html lang="zxx">
   <head>
     <script src="./js/preload.js"></script>
-    <link rel="preload" href="./font/OpenSans.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Black.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Bold.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-ExtraBold.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-ExtraLight.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Light.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Medium.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Regular.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin="" />
-    <link rel="preload" href="./font/Poppins-Thin.ttf" as="font" type="font/ttf" crossorigin="" />
     <meta charset="utf-8" />
     <meta name="description" content="Business Web" />
     <meta name="keywords" content="Business Web Template" />
@@ -53,7 +43,7 @@
     <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
       <ul>
-        <li><a class="button" accesskey="1" href="./index.html">Home</a></li>
+        <li><a class="button" accesskey="1" href="./index.php">Home</a></li>
         <li class="li-around">
           <ul>
             <li><a class="button" accesskey="t" href="tel:123-456-7890">123-456-7890</a></li>
@@ -416,7 +406,7 @@
         <li>
           <i class="fa-solid fa-link"></i>
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.php">Home</a></li>
           </ul>
         </li>
       </ul>
@@ -425,7 +415,7 @@
         <li><a href="tel:123-456-7890">123-456-7890</a></li>
       </ul>
       <hr>
-      <p> <i class="far fa-copyright"></i></p>
+      <p> <i class="fa-regular fa-copyright"></i></p>
     </footer>
     <script src="./js/app.min.js" defer></script>
   </body>

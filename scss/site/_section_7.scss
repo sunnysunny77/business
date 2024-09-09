@@ -111,7 +111,8 @@
            @include max_xl {
             width: 100%;
           }
-          .svg-inline--fa {
+          .fa-brands,
+          .fa-solid {
             margin: auto 3%;
             font-size: 32.5px;
             text-decoration: none;
