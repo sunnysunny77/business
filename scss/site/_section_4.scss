@@ -97,7 +97,7 @@
             right: 1%;
             bottom: 2%;
             left: 1%;
-
+            transition-delay: 0.5s;
             transition:
                 background-color 0.5s linear,
                 opacity 0.5s linear,
@@ -106,21 +106,21 @@
                 bottom 0.5s linear,
                 left 0.5s linear;
             &.animation {
-                transition-delay: 0.5s;
                 background-color: $c14;
                 opacity: 0.95;
                 top: 5%;
                 right: 3%;
                 bottom: 5%;
                 left: 3%;
-                span {
+                span,
+                b {
+                    transition: opacity 0.5s linear;
                     opacity: 1;
                 }
             }
             span {
-                margin: 5% 5% 0 5%;
                 opacity: 0;
-                transition: opacity 0.25s linear;
+                margin: 5% 5% 0 5%;
                 height: fit-content;
                 font-size: clamp(15px, 1.2vw, 20px);
                 width: 290px;
@@ -129,6 +129,7 @@
                 }
             }
             b {
+                opacity: 0;
                 margin: 5%;
                 font-size: clamp(15px, 1.4vw, 18px);
                 font-weight: 500;
