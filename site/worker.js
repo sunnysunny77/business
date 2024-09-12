@@ -41,7 +41,8 @@ const resources = [
   "./images/section-7-4.webp",
   "./images/section-8-1.webp",
   "./images/section-8-2.webp",
-  "./images/section-8-3.webp"
+  "./images/section-8-3.webp",
+  "./fallback.php"
 ];
 
 const installResources = async (resources) => {
