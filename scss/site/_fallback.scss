@@ -1,0 +1,34 @@
+#fallback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: $c15;
+        margin: 0 0 1rem 0;
+    }
+    #go-back {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        border: 1px solid $c15;
+        border-radius: 20px;
+        background: transparent;
+        outline: none;
+        color: $c15;
+        padding: 1px 6px;
+    }
+}

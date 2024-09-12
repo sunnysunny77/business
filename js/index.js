@@ -16,11 +16,13 @@ import { nav } from "./nav.js";
 import { section_3 } from "./section_3.js";
 import { section_4 } from "./section_4.js";
 import { slider_1 } from "./slider_1.js";
+import { fallback } from "./fallback.js";
 
 window.onload = () => {
 
   AOS.init({once: true});
   nav();
+  fallback();
   section_3();
   section_4();
   slider_1();
