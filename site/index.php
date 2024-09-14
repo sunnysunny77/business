@@ -174,7 +174,7 @@
           pariatur.
         </p>
         <div class="scroll-container">
-          <a class="d-lg-has-height" id="figure-one" href="#">
+          <a class="d-md-has-height" id="figure-one" href="#">
             <figure class="scroll">
                 <img src="images/section-3-1.webp" width="661" height="463" alt="skyscraper"/>
                 <figcaption>
@@ -186,7 +186,7 @@
                 </figcaption>
             </figure>
           </a>
-          <a class="d-lg-0-height" id="figure-two" href="#">
+          <a class="d-md-0-height" id="figure-two" href="#">
             <figure class="scroll">
                 <img src="images/section-3-2.webp" width="661" height="463" alt="office"/>
                 <figcaption>

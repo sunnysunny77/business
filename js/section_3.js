@@ -18,19 +18,16 @@ export const section_3 = () => {
       return;
     }
 
-    const line =
-      outer.offsetTop +
-      (outer.getBoundingClientRect().height * 0.25) -
-      (figureOne.getBoundingClientRect().height / 2) -
-      (figureTwo.getBoundingClientRect().height / 2);
-    let scrollY = window.scrollY;
+    const line = get_position(outer) + outer.getBoundingClientRect().height / 2;
+    let scrollY = window.scrollY + window.innerHeight / 2;
+
     if (scrollY < line) {
-      figureTwo.classList.replace("d-lg-has-height", "d-lg-0-height");
-      figureOne.classList.replace("d-lg-0-height", "d-lg-has-height");
+      figureTwo.classList.replace("d-md-has-height", "d-md-0-height");
+      figureOne.classList.replace("d-md-0-height", "d-md-has-height");
     }
     if (scrollY > line) {
-      figureOne.classList.replace("d-lg-has-height", "d-lg-0-height");
-      figureTwo.classList.replace("d-lg-0-height", "d-lg-has-height");
+      figureOne.classList.replace("d-md-has-height", "d-md-0-height");
+      figureTwo.classList.replace("d-md-0-height", "d-md-has-height");
     }
   };
 
@@ -82,6 +79,7 @@ export const section_3 = () => {
   };
 
   events(window, "scroll", handle_scroll, {passive: true});
+  events(window, "resize", handle_scroll, {passive: true});
   events(window, "scroll", handle_scroll_animation_mobile, {passive: true});
   events(window, "scroll", handle_scroll_animation_desktop, {passive: true});
   events(window, "resize", handle_scroll_animation_mobile, {passive: true});

@@ -14,15 +14,11 @@
     max-height:  initial;
     max-width:  initial;
   }
-  @include max_xl {
-    padding: 25% 0 0 0;
-  }
   @include max_md {
     flex-direction: column;
     align-items: center;
     width: 90%;
     height: initial;
-    padding: initial;
   }
   p {
     width: 50%;
@@ -32,7 +28,7 @@
     @include max_md {
       width: 75%;
       order: 1;
-      margin: 17% 0 7.5% 0;
+      margin: 3.75% 0 7.5% 0;
       text-align: justify;
     }
   }
@@ -142,14 +138,14 @@
   }
 }
 
-.d-lg-has-height {
+.d-md-has-height {
   @include min_md {
     height: initial;
     width: inherit;
   }
 }
 
-.d-lg-0-height {
+.d-md-0-height {
   @include min_md {
     height: 0;
     width: 0;

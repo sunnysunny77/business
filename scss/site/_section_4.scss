@@ -34,6 +34,7 @@
                 order: 3;
                 h3 {
                     margin-right: 3%;
+                    margin-top: 17%;
                     order: 0;
                 }
             }
@@ -41,7 +42,7 @@
         h3 {
             margin: 7.5% 0;
             @include max_xl {
-                margin-top: 23%;
+                margin-top: 0;
             }
          }
         p {
@@ -97,7 +98,6 @@
             right: 1%;
             bottom: 2%;
             left: 1%;
-            transition-delay: 0.5s;
             transition:
                 background-color 0.5s linear,
                 opacity 0.5s linear,
@@ -106,6 +106,7 @@
                 bottom 0.5s linear,
                 left 0.5s linear;
             &.animation {
+                transition-delay: 0.5s;
                 background-color: $c14;
                 opacity: 0.95;
                 top: 5%;
@@ -115,6 +116,7 @@
                 span,
                 b {
                     transition: opacity 0.5s linear;
+                    transition-delay: 0.5s;
                     opacity: 1;
                 }
             }
