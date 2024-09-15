@@ -9,6 +9,12 @@ const preload = (href, as) => {
   document.head.appendChild(preloadLink);
 };
 
+const images = [
+  "./images/header.webp",
+  "./images/header-mobile.webp",
+  "./images/nav-texture.webp"
+];
+
 const fonts = [
   "./font/OpenSans.ttf",
   "./font/Poppins-Black.ttf",
@@ -25,15 +31,10 @@ const fonts = [
   "./webfonts/fa-solid-900.woff2",
 ];
 
-if (window.screen.width > 1399) {
+for (const index of images) {
 
-  preload("./images/header.webp", "image");
-} else {
-
-  preload ("./images/header-mobile.webp", "image");
+  preload(index, "image");
 }
-
-preload ("./images/nav-texture.webp", "image");
 
 for (const index of fonts) {
 
