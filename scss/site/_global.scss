@@ -40,7 +40,7 @@ main {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  background-color: $c3;
+  border-top: 1px solid rgba($c2, 0.275);
 }
 
 /* icons */
