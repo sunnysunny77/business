@@ -53,6 +53,7 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     @include max_sm {
       flex-direction: column;
       transition: height 0.65s;
@@ -114,100 +115,53 @@ nav {
       display: none;
     }
   }
-  .fa-facebook-f {
-    padding: 8px 11px;
-    position: absolute;
-    text-decoration: none;
-    bottom: -14px;
-    right: 15px;
-    border-radius: 50%;
-    font-size: initial;
-    z-index: 3;
-    @include min_sm {
-      display: none;
-    }
-  }
 }
 
 /* header */
 
 header {
   position: relative;
-  width: 100%;
-  text-align: right;
-  padding: 50vh 0;
-  min-height: 300px;
-  box-sizing: border-box;
   clip-path: inset(0 0 0 0);
-  @include max_xxxl {
-    padding: 22.5% 0;
-    min-height: 200px;
-    clip-path: initial;
+  height: 25vh;
+  @include min_sm {
+    height: 50vh;
   }
-  picture img {
-    z-index: -1;
+  @include min_lg {
+    height: 100vh;
+  }
+  background-color: lighten($c4, 8%);
+  div {
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
+    height: 25vh;
     left: 0;
-    width: min(46%, 900px);
-    margin: auto;
-    @include max_xxxl {
+    width: 100%;
+    overflow: hidden;
+    border-bottom-left-radius: 50%;
+    @include min_sm {
+      height: 50vh;
+    }
+    @include min_lg {
+      height: 100vh;
+    }
+    span {
+      border-bottom-left-radius: 50%;
+      border-left: 125rem solid $c3;
       position: absolute;
-      width: max(36%, 135px);
-      object-fit: contain;
-      margin: max(11%, 50px) 0 0 9.5%;
-      object-position: center;
-    }
-  }
-  h1 {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    width: fit-content;
-    border-radius: 5px;
-    font-style: oblique;
-    font-size: 1.75em;
-    @include max_xl {
-      font-size: 17px;
-    }
-    svg {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      max-width: 75px;
-      height: auto;
-      .font {
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 200;
-        fill: $c2;
-      }
-    }
-    a {
-      color: $c2;
-      font-weight: 300;
-      transition: text-decoration-color 0.2s ease;
-      text-decoration: underline;
-      text-decoration-color: $c3;
-      &:hover {
-        text-decoration-color: $c2;
-      }
+      display: block;
     }
   }
-  .fa-facebook-f {
-    padding: 8px 11px;
-    position: absolute;
-    text-decoration: none;
-    font-size: inherit;
-    bottom: 14px;
-    right: 15px;
-    border-radius: 50%;
-    z-index: 3;
-    @include max_xl {
-      bottom: -14px;
-    }
-    @include max_sm {
-      display: none;
-    }
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    object-fit: cover;
   }
 }

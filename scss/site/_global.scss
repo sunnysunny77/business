@@ -40,18 +40,9 @@ main {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  border-top: 1px solid rgba($c2, 0.275);
 }
 
 /* icons */
-
-.fa-facebook-f {
-  transition: 0.25s ease-in-out background-color;
-  &:hover,
-  &:focus {
-    background-color: $c4;
-  }
-}
 
 .fa-facebook-f {
   background: $c5;

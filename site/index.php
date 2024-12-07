@@ -14,41 +14,20 @@
   </head>
   <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
-    <header>
-      <picture>
-        <source
-          media="(max-width: 1399px)"
-          srcset="./images/header-mobile.webp"
-        />
-        <img
-          src="./images/header.webp"
-          alt="header"
-        />
-      </picture>
-      <h1>
-        <a href="#">
-          <svg aria-label="Georges Garden Shop" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" width="100" height="100">
-            <defs>
-                <path 
-                    id="circle" 
-                    d="M 50, 50
-                    m -37, 0
-                    a 37,37 0 1,1 74,0
-                    a 37,37 0 1,1 -74,0" 
-                />
-            </defs>
-            <text class="font">
-                <textPath xlink:href="#circle">
-                  Nostrud .... Tempor .... Duis ....
-                </textPath>
-            </text>
-          </svg>
-          <br />
-            Lorem ipsum dolor sit
-        </a> 
-      </h1>
-      <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
+    <header>  
+      <div>
+        <picture>
+          <source
+            media="(max-width: 993px)"
+            srcset="./images/header-mobile.webp"
+          />
+          <img
+            src="./images/header.webp"
+            alt="header"
+          />
+        </picture>
+        <span></span> 
+      </div>
     </header>
     <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
@@ -61,7 +40,6 @@
           </ul>
         </li>
       </ul>
-      <a href="#" aria-label="facebook" class="fa-brands fa-facebook-f"></a>
     </nav>
     <main id="main">
       <article id="section-1">
@@ -403,27 +381,22 @@
         </div>
       </div>
     </section>
-    <div id="section-8" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active"><img src="images/section-8-1.webp" width="200" height="200" alt="bing"/></div>
-        <div class="carousel-item"><img src="images/section-8-2.webp" width="200" height="200" alt="mortarboard"/></div>
-        <div class="carousel-item"><img src="images/section-8-3.webp" width="200" height="200" alt="slack"/></div>
-      </div>
-    </div>
     </main>
     <footer>
       <ul>
-        <li>
-          <i class="fa-solid fa-link"></i>
-          <ul>
-            <li><a href="./index.php">Home</a></li>
-          </ul>
-        </li>
+        <li><a href="./index.php">Home</a></li>
       </ul>
       <ul>
         <li><a href="mailto:name@email.com">lorem@email.com</a></li>
         <li><a href="tel:123-456-7890">123-456-7890</a></li>
       </ul>
+      <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="images/footer-1.webp" width="200" height="200" alt="bing"/></div>
+          <div class="carousel-item"><img src="images/footer-2.webp" width="200" height="200" alt="mortarboard"/></div>
+          <div class="carousel-item"><img src="images/footer-3.webp" width="200" height="200" alt="slack"/></div>
+        </div>
+      </div>
       <hr>
       <p> <i class="fa-regular fa-copyright"></i></p>
     </footer>
