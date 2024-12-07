@@ -130,13 +130,14 @@ header {
     height: 100vh;
   }
   background-color: lighten($c4, 8%);
-  div {
+  picture {
     position: fixed;
     top: 0;
     right: 0;
     height: 25vh;
     left: 0;
     width: 100%;
+    display: flex;
     overflow: hidden;
     border-bottom-left-radius: 50%;
     @include min_sm {
@@ -144,17 +145,6 @@ header {
     }
     @include min_lg {
       height: 100vh;
-    }
-    span {
-      border-bottom-left-radius: 50%;
-      border-left: 125rem solid $c3;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: block;
     }
   }
   img {

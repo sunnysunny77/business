@@ -15,7 +15,6 @@
   <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
     <header>  
-      <div>
         <picture>
           <source
             media="(max-width: 993px)"
@@ -26,8 +25,6 @@
             alt="header"
           />
         </picture>
-        <span></span> 
-      </div>
     </header>
     <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
