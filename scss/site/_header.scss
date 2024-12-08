@@ -122,7 +122,7 @@ nav {
 header {
   position: relative;
   clip-path: inset(0 0 0 0);
-  height: 25vh;
+  height: 33vh;
   @include min_sm {
     height: 50vh;
   }
@@ -134,17 +134,18 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    height: 25vh;
+    height: calc(33vh - 40px);
     left: 0;
     width: 100%;
     display: flex;
     overflow: hidden;
+    z-index: 999;
     border-bottom-left-radius: 50%;
     @include min_sm {
-      height: 50vh;
+      height: calc(50vh - 60px);
     }
     @include min_lg {
-      height: 100vh;
+      height: calc(100vh - 90px);
     }
   }
   img {
@@ -153,5 +154,21 @@ header {
     height: 100%;
     z-index: 999;
     object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    padding: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $c3;
+    font-style: oblique;
+    font-size: 17px;
+    @include min_sm {
+      font-size: 22px;
+    }
+    @include min_lg {
+      font-size: 28px;
+    }
   }
 }

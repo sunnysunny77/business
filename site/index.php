@@ -25,6 +25,7 @@
             alt="header"
           />
         </picture>
+        <h1> Adipiscin </h1>
     </header>
     <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
