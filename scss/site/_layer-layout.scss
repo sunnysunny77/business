@@ -1,6 +1,6 @@
 
 
-#section-2 {
+#layer-layout {
     position: relative;
     height: 100vw;
     max-height: 1230px;
@@ -110,7 +110,7 @@
       flex-wrap: wrap;
       align-items: center;
       height: 56%;
-      font-size: clamp(12px, 1.5vw, 16px);
+      font-size: clamp(14px, 1.5vw, 16px);
        @include max_md {
         font-size: 16px;
         justify-content: space-between;

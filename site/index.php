@@ -40,7 +40,7 @@
       </ul>
     </nav>
     <main id="main">
-      <article id="section-1">
+      <article id="one-col-text">
         <h2>Lorem ipsum ..</h2>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,17 +61,17 @@
           <br />Adipiscing elit
         </p>
       </article>
-      <div id="section-2">
+      <div id="layer-layout">
         <img
           data-aos="fade-left"
-          src="./images/section-2-1.webp"
+          src="./images/layer-layout-1.webp"
           width="541"
           height="339"
           alt="Business in Porgress One"
         />
         <img
           data-aos="fade-right"
-          src="./images/section-2-2.webp"
+          src="./images/layer-layout-2.webp"
           width="646"
           height="431"
           alt="Business in Porgress Two"
@@ -86,7 +86,7 @@
         </p>
         <img
           data-aos="fade-up"
-          src="./images/section-2-3.webp"
+          src="./images/layer-layout-3.webp"
           width="597"
           height="397"
           alt="Business in Porgress Three"
@@ -105,8 +105,7 @@
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Lorem ipsum dolor sit ammet.
+              eiusmod tempor incididunt ut labore et dolore magna.
             </p>
             <h3 >
               Lorem ipsum ..
@@ -115,8 +114,7 @@
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Lorem ipsum dolor sit ammet.
+              eiusmod tempor incididunt ut labore.
             </p>
             <h3>
               Lorem ipsum ..
@@ -124,7 +122,7 @@
           </div>
         </aside>
       </div>
-      <div class="outer" id="section-3">
+      <div class="outer" id="slider-4">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -152,7 +150,7 @@
         <div class="scroll-container">
           <a class="d-md-has-height" id="figure-one" href="#">
             <figure class="scroll">
-                <img src="images/section-3-1.webp" width="661" height="463" alt="skyscraper"/>
+                <img src="images/slider-4-1.webp" width="661" height="463" alt="skyscraper"/>
                 <figcaption>
                   <b>Dolor sit</b>
                   <br/>
@@ -164,7 +162,7 @@
           </a>
           <a class="d-md-0-height" id="figure-two" href="#">
             <figure class="scroll">
-                <img src="images/section-3-2.webp" width="661" height="463" alt="office"/>
+                <img src="images/slider-4-2.webp" width="661" height="463" alt="office"/>
                 <figcaption>
                   <b>Lorem ipsum</b>
                   <br/>
@@ -176,7 +174,7 @@
           </a>
         </div>
       </div>
-      <div id="section-4">
+      <div id="slider-8">
         <article>
           <h3>Lorem ipsum ..</h3>
           <p> 
@@ -216,7 +214,7 @@
         </p>
       </article>
     </div>
-    <div id="section-5">
+    <div id="three-col-box">
       <p>
         Consectetur adipiscing elit, sed do eiusmod.
       <p>
@@ -225,7 +223,7 @@
         Sed do ipiscing eli eiusmod sit amet tempor.
       </p>
     </div>
-    <div id="section-6">
+    <div id="slider-1">
 
       <div class="slider_1-outer position-relative">
 
@@ -284,11 +282,11 @@
       </div>
 
     </div>
-    <section id="section-7">
+    <section id="four-col-cards">
       <h2>Lorem ipsum ..</h2>
       <div>
         <img
-          src="./images/section-7-1.webp"
+          src="./images/four-col-cards-1.webp"
           width="220"
           height="147"
           alt="Persona 1"
@@ -310,7 +308,7 @@
           </span>
         </div>
         <img
-          src="./images/section-7-2.webp"
+          src="./images/four-col-cards-2.webp"
           width="220"
           height="147"
           alt="Persona 2"
@@ -334,7 +332,7 @@
       </div>
       <div>
         <img
-          src="./images/section-7-3.webp"
+          src="./images/four-col-cards-3.webp"
           width="220"
           height="147"
           alt="Persona 3"
@@ -356,7 +354,7 @@
           </span>
         </div>
         <img
-          src="./images/section-7-4.webp"
+          src="./images/four-col-cards-4.webp"
           width="220"
           height="147"
           alt="Persona 4"

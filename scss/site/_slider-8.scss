@@ -1,4 +1,4 @@
-#section-4 {
+#slider-8 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -71,13 +71,13 @@
             margin: 5% 0 0 0;
         }
         &:nth-child(2) {
-            background-image: url(../images/section-4-1.webp);
+            background-image: url(../images/slider-8-1.webp);
             @include max_xl {
                 order: 2;
             }
         }
         &:nth-child(3) {
-            background-image: url(../images/section-4-2.webp);
+            background-image: url(../images/slider-8-2.webp);
             p {
                 text-align: right;
                 span {

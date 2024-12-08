@@ -1,6 +1,6 @@
 import { events, get_position } from "./utillites.js";
 
-export const section_4 = () => {
+export const slider_8 = () => {
 
   const scroll_two = document.querySelectorAll(".scroll-two");
 

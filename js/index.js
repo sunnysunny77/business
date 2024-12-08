@@ -13,8 +13,8 @@ import "../node_modules/bootstrap/js/dist/carousel";
 import  AOS from "../node_modules/aos/dist/aos.js";
 import { service_worker } from "./service_worker.js";
 import { nav } from "./nav.js";
-import { section_3 } from "./section_3.js";
-import { section_4 } from "./section_4.js";
+import { slider_4 } from "./slider_4.js";
+import { slider_8 } from "./slider_8.js";
 import { slider_1 } from "./slider_1.js";
 import { fallback } from "./fallback.js";
 
@@ -23,8 +23,8 @@ window.onload = () => {
   AOS.init({once: true});
   nav();
   fallback();
-  section_3();
-  section_4();
+  slider_4();
+  slider_8();
   slider_1();
   service_worker();
 };

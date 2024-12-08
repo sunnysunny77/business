@@ -1,6 +1,6 @@
 import { events, get_position } from "./utillites.js";
 
-export const section_3 = () => {
+export const slider_4 = () => {
 
   const figureOne = document.querySelector("#figure-one");
   const figureTwo = document.querySelector("#figure-two");

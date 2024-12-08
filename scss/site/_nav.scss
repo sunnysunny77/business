@@ -1,0 +1,116 @@
+nav {
+    position: absolute;
+    font-family: $font2;
+    max-width: 1920px;
+    width: 92%;
+    top: 0;
+    padding: 0 4%;
+    font-size: larger;
+    color: $c15;
+    z-index: 2;
+    &.navigation-fixed {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        transition: top 0.375s;
+        will-change: top;
+    }
+    &.navigation-top {
+        top: -65px;
+    }
+    &.navigation-fixed,
+    &.navigation-top {
+        background-image: url("../images/nav-texture.webp");
+        background-color: $c3;
+        right: 0;
+        left: 0;
+    }
+    @include max_sm {
+        position: sticky;
+        background-image: url("../images/nav-texture.webp");
+        background-color: $c3;
+        transition: 0.25s ease background-color;
+        will-change: background-color;
+        width: 100%;
+        padding: 0;
+        > ul {
+            height: 0;
+        }
+        &:hover,
+        &:focus {
+            background-color: $c9;
+            > ul {
+                height: 210px;
+                li {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    ul {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include max_sm {
+            flex-direction: column;
+            transition: height 0.65s;
+            justify-content: center;
+            will-change: height;
+        }
+        .li-around {
+            width: 66%;
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            @include max_sm {
+                width: initial;
+            }
+        }
+        li {
+            list-style-type: none;
+            display: inline-block;
+            @include max_sm {
+                will-change: transform;
+                transition: transform 0.65s ease;
+                transform: translateY(-42.3px);
+                display: list-item;
+            }
+            a {
+                color: inherit;
+                width: fit-content;
+                padding: 5px 7.5px;
+                text-decoration: none;
+                border-radius: 5px;
+                outline: none;
+                display: block;
+                margin: 4% 0;
+                background-image: url("../images/nav-texture.webp");
+                background-color: $c3;
+                transition:
+                    0.1s ease background-color,
+                    color 0.1s ease;
+                @include max_sm {
+                    margin: auto auto 20px auto;
+                    background-image: none;
+                    background-color: initial;
+                }
+                &:hover,
+                &:focus {
+                    color: $c3;
+                    background-color: $c4;
+                    background-image: none;
+                }
+            }
+        }
+    }
+    .fa-circle-dot {
+        color: $c4;
+        padding: 10px;
+        align-self: baseline;
+        @include min_sm {
+            display: none;
+        }
+    }
+}
