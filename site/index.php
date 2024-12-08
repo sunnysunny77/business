@@ -395,7 +395,6 @@
           <div class="carousel-item"><img src="images/footer-3.webp" width="200" height="200" alt="slack"/></div>
         </div>
       </div>
-      <hr>
       <p> <i class="fa-regular fa-copyright"></i></p>
     </footer>
     <script src="./js/app.min.js" defer></script>
