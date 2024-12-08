@@ -6,7 +6,7 @@ footer {
   font-family: $font2;
   background-color: lighten($c16, 8%);
   font-size: larger;
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
   ul ~ ul {
     text-align: right;
     li {
@@ -38,11 +38,5 @@ footer {
       width: 200px;
       margin: auto;
     }
-  }
-  p {
-    width: 100%;
-    color: $c2;
-    text-align: right;
-    margin: 15px auto;
   }
 }

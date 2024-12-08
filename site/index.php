@@ -387,6 +387,7 @@
       <ul>
         <li><a href="mailto:name@email.com">lorem@email.com</a></li>
         <li><a href="tel:123-456-7890">123-456-7890</a></li>
+        <li><i class="fa-regular fa-copyright"></i>&nbsp;<?php echo date("Y"); ?></li>
       </ul>
       <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
@@ -395,7 +396,6 @@
           <div class="carousel-item"><img src="images/footer-3.webp" width="200" height="200" alt="slack"/></div>
         </div>
       </div>
-      <p> <i class="fa-regular fa-copyright"></i></p>
     </footer>
     <script src="./js/app.min.js" defer></script>
   </body>
