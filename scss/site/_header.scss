@@ -2,6 +2,7 @@ header {
   position: relative;
   clip-path: inset(0 0 0 0);
   height: 33vh;
+  min-height: 320px;
   @include min_sm {
     height: 50vh;
   }
@@ -23,6 +24,7 @@ header {
     overflow: hidden;
     z-index: 999;
     border-bottom-left-radius: 50%;
+    min-height: 280px;
     @include min_sm {
       height: calc(50vh - 60px);
     }
