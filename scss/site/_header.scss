@@ -8,6 +8,9 @@ header {
   @include min_lg {
     height: 100vh;
   }
+  @include landscape {
+    height: 100vh;
+  }
   background-color: lighten($c4, 8%);
   picture {
     position: fixed;
@@ -25,6 +28,9 @@ header {
     }
     @include min_lg {
       height: calc(100vh - 90px);
+    }
+    @include landscape {
+      height: calc(100vh - 40px);
     }
   }
   img {
