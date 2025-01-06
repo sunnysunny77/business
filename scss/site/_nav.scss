@@ -3,41 +3,27 @@ nav {
     font-family: $font2;
     max-width: 1920px;
     width: 92%;
-    top: 0;
     padding: 0 4%;
     font-size: larger;
     color: $c15;
-    z-index: 2;
-    &.navigation-fixed {
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        transition: top 0.375s;
-        will-change: top;
-    }
-    &.navigation-top {
-        top: -65px;
-    }
-    &.navigation-fixed,
-    &.navigation-top {
-        background-image: url("../images/nav-texture.webp");
-        background-color: $c3;
-        right: 0;
-        left: 0;
-    }
+    will-change: top,  background-color;
+    z-index: 999;
+    width: 92%;
+    top: 0;
+    right: 0;
+    left: 0;
     @include max_sm {
         position: sticky;
-        background-image: url("../images/nav-texture.webp");
-        background-color: $c3;
-        transition: 0.25s ease background-color;
-        will-change: background-color;
         width: 100%;
         padding: 0;
+        background-color: $c3;
+        transition: background-color 0.2s ease;
+        background-image: url(../images/nav-texture.webp);
         > ul {
             height: 0;
         }
-        &:hover,
-        &:focus {
+        &.nav:hover,
+        &.nav:focus {
             background-color: $c9;
             > ul {
                 height: 210px;

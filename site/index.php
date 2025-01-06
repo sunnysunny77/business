@@ -27,7 +27,7 @@
         </picture>
         <h1> Adipiscin </h1>
     </header>
-    <nav tabindex="0" id="nav">
+    <nav class="nav" tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
       <ul>
         <li><a class="button" accesskey="1" href="./index.php">Home</a></li>

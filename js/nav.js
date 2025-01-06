@@ -18,8 +18,10 @@ export const nav = () => {
 
     if (window.innerWidth <= 576) {
 
-      navigation.classList.remove("navigation-top");
-      navigation.classList.remove("navigation-fixed");
+      Object.assign(navigation.style,{ position: "sticky", top: 0 });
+      navigation.style.removeProperty("transition");
+      navigation.style.removeProperty("background-image");
+      navigation.style.removeProperty("background-color");
       return;
     }
 
@@ -33,20 +35,23 @@ export const nav = () => {
 
     scrollY = window.scrollY;
 
+    const height = 51.59;
+
     if (scrollY < main.offsetTop + navigation.offsetHeight && scrollY > main.offsetTop && !positive) {
 
-      navigation.classList.add("navigation-top");
+      Object.assign(navigation.style,{ position: "fixed", top: `-${height}px`, transition: "top 0.375s", backgroundColor: "#FFFFFF", backgroundImage: "url(../images/nav-texture.webp)" });   
     } else if (scrollY > main.offsetTop && !positive) {
 
-      navigation.classList.remove("navigation-top");
-      navigation.classList.add("navigation-fixed");
+      Object.assign(navigation.style,{ position: "fixed", top: 0, transition: "top 0.375s", backgroundColor: "#FFFFFF", backgroundImage: "url(../images/nav-texture.webp)" });   
     } else if (scrollY > main.offsetTop && positive) {
 
-      navigation.classList.add("navigation-top");
-    } else if (navigation.classList.contains("navigation-top") || navigation.classList.contains("navigation-fixed")) {
+      Object.assign(navigation.style,{ position: "fixed", top: `-${height}px`, transition: "top 0.375s", backgroundColor: "#FFFFFF", backgroundImage: "url(../images/nav-texture.webp)" });   
+    } else {
 
-      navigation.classList.remove("navigation-top");
-      navigation.classList.remove("navigation-fixed");
+      Object.assign(navigation.style,{ position: "absolute", top: 0 });
+      navigation.style.removeProperty("transition");
+      navigation.style.removeProperty("background-image");
+      navigation.style.removeProperty("background-color");
     }
 
   }
