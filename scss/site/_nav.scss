@@ -1,29 +1,27 @@
-nav {
-    position: absolute;
+#nav {
+    background-color: $c3;
+    background-image: url(../images/nav-texture.webp);
+    padding: 5px 0;
+    width: 100%;
+    will-change: top;
+    display: flex;
+    flex-wrap: wrap;
     font-family: $font2;
     max-width: 1920px;
-    width: 92%;
-    padding: 0 4%;
-    font-size: larger;
     color: $c15;
-    will-change: top,  background-color;
+    font-size: larger;
     z-index: 999;
-    width: 92%;
-    top: 0;
-    right: 0;
-    left: 0;
+    clip-path: inset(100%);
     @include max_sm {
         position: sticky;
-        width: 100%;
+        clip-path: initial;
+        top: 0;
         padding: 0;
-        background-color: $c3;
-        transition: background-color 0.2s ease;
-        background-image: url(../images/nav-texture.webp);
         > ul {
             height: 0;
         }
-        &.nav:hover,
-        &.nav:focus {
+        &:hover,
+        &:focus {
             background-color: $c9;
             > ul {
                 height: 210px;
@@ -36,67 +34,67 @@ nav {
     ul {
         overflow: hidden;
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: flex-end;
+        width: calc(100% - 40px);
         @include max_sm {
             flex-direction: column;
             transition: height 0.65s;
-            justify-content: center;
             will-change: height;
+            justify-content: center;
+            width: 100%;
         }
-        .li-around {
-            width: 66%;
-            ul {
-                display: flex;
-                justify-content: space-evenly;
-            }
-            @include max_sm {
-                width: initial;
-            }
+    }
+    li {
+        list-style-type: none;
+        @include max_sm {
+            display: list-item;
+            will-change: transform;
+            transition: transform 0.65s ease;
+            transform: translateY(-105px);
         }
-        li {
-            list-style-type: none;
-            display: inline-block;
+        a {
+            color: inherit;
+            width: fit-content;
+            padding: 5px 7.5px;
+            text-decoration: none;
+            border-radius: 5px;
+            outline: none;
+            display: block;
+            margin: auto 25px;
             @include max_sm {
-                will-change: transform;
-                transition: transform 0.65s ease;
-                transform: translateY(-42.3px);
-                display: list-item;
-            }
-            a {
-                color: inherit;
-                width: fit-content;
-                padding: 5px 7.5px;
-                text-decoration: none;
-                border-radius: 5px;
-                outline: none;
+                margin: auto auto 20px auto;
                 display: block;
-                margin: 4% 0;
-                background-image: url("../images/nav-texture.webp");
-                background-color: $c3;
                 transition:
                     0.1s ease background-color,
                     color 0.1s ease;
+                will-change: background-color, color;
+            }
+            span.desktop {
                 @include max_sm {
-                    margin: auto auto 20px auto;
-                    background-image: none;
-                    background-color: initial;
+                    display: none;
                 }
-                &:hover,
-                &:focus {
-                    color: $c3;
-                    background-color: $c4;
-                    background-image: none;
+            }
+            span.mobile {
+                @include min_sm {
+                    display: none;
                 }
+            }
+            &:hover,
+            &:focus {
+                color: $c3;
+                background-color: $c4;
+                background-image: none;
             }
         }
     }
     .fa-circle-dot {
+        width: fit-content;
         color: $c4;
         padding: 10px;
         align-self: baseline;
-        @include min_sm {
-            display: none;
+        @include max_sm {
+            width: 100%;
         }
     }
 }

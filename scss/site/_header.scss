@@ -13,6 +13,60 @@ header {
     height: 100vh;
   }
   background-color: lighten($c4, 8%);
+  #header-list {
+   clip-path: inset(100%);
+    @include min_sm {
+      clip-path: initial;
+      font-family: $font2;
+      max-width: 1920px;
+      color: $c15;
+      font-size: larger;
+      z-index: 999;
+      top: 0;
+      right: 0;
+      left: 0;
+      position: absolute;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .li-around {
+      width: 66%;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+    li {
+      list-style-type: none;
+      display: inline-block;
+      margin: 0 2%;
+      a {
+        color: inherit;
+        width: fit-content;
+        padding: 5px 7.5px;
+        text-decoration: none;
+        border-radius: 5px;
+        outline: none;
+        display: block;
+        margin: 4% 0;
+        background-color: $c3;
+        background-image: url(../images/nav-texture.webp);
+        transition:
+          0.1s ease background-color,
+          color 0.1s ease;
+        &:hover,
+        &:focus {
+          color: $c3;
+          background-color: $c4;
+          background-image: none;
+        }
+      }
+    }
+  }
   picture {
     position: fixed;
     top: 0;
@@ -22,7 +76,7 @@ header {
     width: 100%;
     display: flex;
     overflow: hidden;
-    z-index: 999;
+    z-index: 998;
     border-bottom-left-radius: 50%;
     min-height: 280px;
     @include min_sm {
@@ -39,7 +93,7 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
     object-fit: cover;
   }
   h1 {

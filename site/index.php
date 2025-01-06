@@ -14,30 +14,37 @@
   </head>
   <body tabindex="0">
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
-    <header>  
-        <picture>
-          <source
-            media="(max-width: 993px)"
-            srcset="./images/header-mobile.webp"
-          />
-          <img
-            src="./images/header.webp"
-            alt="header"
-          />
-        </picture>
-        <h1> Adipiscin </h1>
+    <header>
+      <nav id="header-list">   
+        <ul>
+          <li><a accesskey="1" href="./index.php">Home</a></li>
+          <li class="li-around">
+            <ul>
+              <li><a accesskey="t" href="tel:123-456-7890">123-456-7890</a></li>
+              <li><a accesskey="m" href="mailto:name@email.com">lorem@email.com</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <picture>
+        <source
+          media="(max-width: 993px)"
+          srcset="./images/header-mobile.webp"
+        />
+        <img
+          src="./images/header.webp"
+          alt="header"
+        />
+      </picture>
+      <h1> Adipiscin </h1>
     </header>
-    <nav class="nav" tabindex="0" id="nav">
+    <nav tabindex="0" id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
       <ul>
-        <li><a class="button" accesskey="1" href="./index.php">Home</a></li>
-        <li class="li-around">
-          <ul>
-            <li><a class="button" accesskey="t" href="tel:123-456-7890">123-456-7890</a></li>
-            <li><a class="button" accesskey="m" href="mailto:name@email.com">lorem@email.com</a></li>
-          </ul>
-        </li>
-      </ul>
+        <li><a href="./index.php">Home</a></li>
+        <li><a href="tel:123-456-7890"><span class="mobile">123-456-7890</span><span class="desktop">Phone<span></a></li>
+        <li><a href="mailto:name@email.com"><span class="mobile">lorem@email.com</span><span class="desktop">Email</span></a></li>
+      </ul>     
     </nav>
     <main id="main">
       <article id="one-col-text">
