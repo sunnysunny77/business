@@ -12,6 +12,7 @@
     font-size: larger;
     z-index: 999;
     clip-path: inset(100%);
+    position: fixed;
     @include max_sm {
         position: sticky;
         clip-path: initial;

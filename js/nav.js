@@ -40,7 +40,7 @@ export const nav = () => {
 
     if (scrollY < main.offsetTop ) {
 
-      Object.assign(navigation.style,{ clipPath: "inset(100%)" });   
+      Object.assign(navigation.style,{ clipPath: "inset(100%)", position: "fixed", top: "initial"});   
     } else if(scrollY < main.offsetTop + navigation.offsetHeight && scrollY > main.offsetTop && !positive) {
 
       Object.assign(navigation.style,{ position: "fixed", top: `-${height}px` });   
