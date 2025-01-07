@@ -16,13 +16,14 @@ export const nav = () => {
 
     let positive = false;
 
-    if (window.innerWidth <= 576) {
+    let obj = {};
 
-      navigation.style.removeProperty("clip-path"); 
-      navigation.style.removeProperty("transition"); 
-      navigation.style.removeProperty("background-color"); 
-      navigation.style.removeProperty("background-image");
-      Object.assign(navigation.style,{ position: "sticky", top: 0 });   
+    if (window.innerWidth <= 576) {
+      obj.clipPath = "initial";
+      obj.position = "sticky";
+      obj.top = "0px";
+      obj.transition = "none";
+      Object.assign(navigation.style, obj);   
       return;
     }
 
@@ -40,17 +41,32 @@ export const nav = () => {
 
     if (scrollY < main.offsetTop ) {
 
-      Object.assign(navigation.style,{ clipPath: "inset(100%)", position: "fixed", top: "initial"});   
+      obj.clipPath = "inset(100%)";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "none";
+      Object.assign(navigation.style, obj);   
     } else if(scrollY < main.offsetTop + navigation.offsetHeight && scrollY > main.offsetTop && !positive) {
 
-      Object.assign(navigation.style,{ position: "fixed", top: `-${height}px` });   
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "top 0.375s";
+      Object.assign(navigation.style, obj);   
     } else if (scrollY > main.offsetTop && !positive) {
 
-      Object.assign(navigation.style,{ position: "fixed", top: 0 });   
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = "0px";
+      obj.transition = "top 0.375s";
+      Object.assign(navigation.style, obj);   
     } else if (scrollY > main.offsetTop && positive) {
 
-      Object.assign(navigation.style,{ clipPath: "initial", position: "fixed", zIndex: 999, top: `-${height}px`, transition: "top 0.375s", backgroundColor: "#FFFFFF", backgroundImage: "url(../images/nav-texture.webp)" });
-
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "top 0.375s";
+      Object.assign(navigation.style, obj);
     }
   }
 
