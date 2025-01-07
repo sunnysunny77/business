@@ -12,13 +12,20 @@ export const nav = () => {
 
   let scrollY = 0;
 
+  let obj = {};
+
   function handle_nav() {
 
     let positive = false;
 
-    let obj = {};
+    let scroll_pos = window.scrollY;
+
+    const main_top = main.offsetTop;
+
+    const navigation_top = navigation.scrollHeight;
 
     if (window.innerWidth <= 576) {
+
       obj.clipPath = "initial";
       obj.position = "sticky";
       obj.top = "0px";
@@ -27,47 +34,44 @@ export const nav = () => {
       return;
     }
 
-    if (window.scrollY > scrollY) {
+    if (scroll_pos > scrollY) {
 
       positive = true;
-    } else if (window.scrollY < scrollY)  {
+    } else if (scroll_pos < scrollY)  {
 
       positive = false;
     } 
 
-    scrollY = window.scrollY;
-
     const height = 51.59;
 
-    if (scrollY < main.offsetTop ) {
+    if (scroll_pos < main_top ) {
 
       obj.clipPath = "inset(100%)";
       obj.position = "fixed";
       obj.top = `-${height}px`;
       obj.transition = "none";
       Object.assign(navigation.style, obj);   
-    } else if(scrollY < main.offsetTop + navigation.offsetHeight && scrollY > main.offsetTop && !positive) {
+    } 
+    
+    if ((scroll_pos < main_top + navigation_top && scroll_pos > main_top && !positive) || (scroll_pos > main_top + navigation_top && positive)) {
 
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = `-${height}px`;
-      obj.transition = "top 0.375s";
-      Object.assign(navigation.style, obj);   
-    } else if (scrollY > main.offsetTop && !positive) {
+      obj.transition = "top 0.375s";   
+    } 
+    
+    if (scroll_pos > main_top + navigation_top && !positive) {
 
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = "0px";
       obj.transition = "top 0.375s";
-      Object.assign(navigation.style, obj);   
-    } else if (scrollY > main.offsetTop && positive) {
+    } 
 
-      obj.clipPath = "initial";
-      obj.position = "fixed";
-      obj.top = `-${height}px`;
-      obj.transition = "top 0.375s";
-      Object.assign(navigation.style, obj);
-    }
+    Object.assign(navigation.style, obj);
+
+    scrollY = window.scrollY;
   }
 
   events(window, "scroll", handle_nav, {passive: true});
