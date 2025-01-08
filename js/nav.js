@@ -22,7 +22,7 @@ export const nav = () => {
 
     const main_top = main.offsetTop;
 
-    const navigation_top = navigation.scrollHeight;
+    const navigation_top = navigation.getBoundingClientRect().height;
 
     if (window.innerWidth <= 576) {
 
@@ -50,17 +50,13 @@ export const nav = () => {
       obj.position = "fixed";
       obj.top = `-${height}px`;
       obj.transition = "none";
-    } 
-    
-    if ((scroll_pos < main_top + navigation_top && scroll_pos > main_top && !positive) || (scroll_pos > main_top + navigation_top && positive)) {
+    } else if ((scroll_pos < main_top + navigation_top && scroll_pos > main_top && !positive) || (scroll_pos > main_top + navigation_top && positive)) {
 
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = `-${height}px`;
       obj.transition = "top 0.375s";   
-    } 
-    
-    if (scroll_pos > main_top + navigation_top && !positive) {
+    } else if (scroll_pos > main_top + navigation_top && !positive) {
 
       obj.clipPath = "initial";
       obj.position = "fixed";
