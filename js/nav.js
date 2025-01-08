@@ -50,7 +50,6 @@ export const nav = () => {
       obj.position = "fixed";
       obj.top = `-${height}px`;
       obj.transition = "none";
-      Object.assign(navigation.style, obj);   
     } 
     
     if ((scroll_pos < main_top + navigation_top && scroll_pos > main_top && !positive) || (scroll_pos > main_top + navigation_top && positive)) {
