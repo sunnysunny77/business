@@ -20,9 +20,7 @@ export const slider_8 = () => {
 
       if (scrollPos > top && !contains) {
         index.classList.add("animation");
-      }
-
-      if (scrollPos < top && contains) {
+      } else if (scrollPos < top && contains) {
         index.classList.remove("animation");
       }
     }
