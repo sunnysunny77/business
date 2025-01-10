@@ -8,10 +8,10 @@
   margin: 0 0 25% 0;
   @include min_md {
     margin: 0 auto 17% auto;
-    width: calc(87.5% + 26px);
+    width: 87.5%;
   }
   @include min_xxl {
-    width: calc(100% - 26px);
+    width: 96%;
   }
 }
 
@@ -21,20 +21,20 @@
 
 .slider_1-item {
   position: absolute;
-  left: 0;
-  right: 0;
   will-change: transform;
+  right: 0;
+  left: 0;
   @include min_md {
-    width: 50%;
+      width: calc(50% + 13px);
   }
-  @include min_xxl {
-    width: 33.333%;
+  @include min_xl {
+      width: calc(33.333% + 8px);
   }
 }
 
 .slider_1-item-padding {
   @include min_md {
-    padding: 0 13px;
+    padding: 0 26px 0 0;
   }
 }
 
@@ -98,10 +98,8 @@
   top: calc(50% - 52px);
   right: 0;
   transform: translateX(26px);
-  @include min_md {
-      transform: translateX(13px);  
-  }
 }
+
 
 .c-custom-1 {
   margin: 0;
