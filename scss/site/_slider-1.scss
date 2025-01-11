@@ -75,6 +75,24 @@
   right: -26px;
 }
 
+.slider-next-md.slider_1-button {
+  display: none;
+  @include min_md {
+    display: flex;
+  }
+  @include min_xl {
+    display: none;
+  }
+}
+
+.slider-next-lg.slider_1-button {
+  display: none;
+  @include min_xl {
+    display: flex;
+  }
+}
+
+
 .c-custom-1 {
   margin: 0;
   width: 52px;

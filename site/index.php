@@ -234,9 +234,9 @@
 
       <div class="slider_1-outer position-relative e d-flex align-items-stretch">
 
-        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-md d-none d-md-flex d-xl-none"><i class="fa-solid fa-arrow-right"></i></button>
+        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-md"><i class="fa-solid fa-arrow-right"></i></button>
 
-        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-lg d-none d-xl-flex"><i class="fa-solid fa-arrow-right"></i></button>
+        <button aria-label="next" class="c-custom-1 position-absolute slider_1-button slider-next slider-next-lg"><i class="fa-solid fa-arrow-right"></i></button>
 
         <div class="slider-container slider_1-row row d-flex flex-nowrap justify-content-start g-0">
           

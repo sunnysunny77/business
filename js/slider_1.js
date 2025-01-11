@@ -164,7 +164,7 @@ export const slider_1 = () => {
 
     let width = window.innerWidth;
 
-    if (width >= 768 && width < 1200) {
+    if (width >= 768 && width < 1024) {
 
       if (count === length - 1) {
         
@@ -180,7 +180,7 @@ export const slider_1 = () => {
           right: "-26px"
         });
       }
-    } else if (width >= 1200) {
+    } else if (width >= 1024) {
 
       if (count === length - 2)  {
 
