@@ -78,22 +78,6 @@
   box-sizing: border-box;
 }
 
-.slider_1-item-heading,
-.slider_1-item-bold,
-.slider_1-item-content {
-  transition: opacity 0.25s ease-in-out;
-  will-change: opacity;
-  opacity: 1;
-}
-
-.slider_1-item-has-opacity {
-  .slider_1-item-heading,
-  .slider_1-item-bold,
-  .slider_1-item-content {
-    opacity: 0.5;
-  }
-}
-
 .slider_1-button {
   top: calc(50% - 52px);
   right: 0;
