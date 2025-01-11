@@ -232,7 +232,7 @@
     </div>
     <div id="slider-1">
 
-      <div class="slider_1-outer position-relative e d-flex align-items-stretch">
+      <div class="slider_1-outer position-relative">
 
         <div class="slider-container slider_1-row row d-flex flex-nowrap justify-content-start g-0">
           
