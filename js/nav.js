@@ -24,6 +24,8 @@ export const nav = () => {
 
     const navigation_top = navigation.getBoundingClientRect().height;
 
+    const height = navigation.scrollHeight;
+
     if (window.innerWidth <= 576) {
 
       obj.clipPath = "initial";
@@ -41,8 +43,6 @@ export const nav = () => {
 
       positive = false;
     } 
-
-    const height = 51.59;
 
     if (scroll_pos < main_top ) {
 
