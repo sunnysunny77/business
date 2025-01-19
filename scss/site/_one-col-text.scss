@@ -13,11 +13,14 @@
     display: inline-block;
   }
   p {
-    margin: 12.5% auto;
+    margin: 12.5% auto 8% auto;
     border: 2px solid $c4;
     color: $c4;
     padding: 25px;
     font-size: clamp(14px, 1.6vw, 16px);
+    @include max_xxl {
+      margin: 12.5% auto;
+    }
     q {
       opacity: 0.85;
     }

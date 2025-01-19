@@ -12,7 +12,7 @@ header {
   @include landscape {
     height: 100vh;
   }
-  background-color: lighten($c4, 8%);
+  background-color: $c19;
   #header-list {
    clip-path: inset(100%);
     @include min_sm {
