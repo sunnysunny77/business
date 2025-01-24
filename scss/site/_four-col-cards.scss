@@ -1,9 +1,23 @@
 #four-col-cards {
   width: 100%;
-  padding: 35px 0 70px 0;
+  padding: 40px 0 70px 0;
   background-color: $c13;
+  position: relative;
   @include max_xl {
-    padding: 35px 0 35px 0;
+    padding: 40px 0 35px 0;
+  }
+  &:before {
+    background-color: $c3;
+    border-radius: 50%;
+    clip-path: inset(150px 7px 0 7px);
+    content: " ";
+    height: 200px;
+    position: absolute;
+    top: -150px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
   }
   h2 {
     text-align: left;
