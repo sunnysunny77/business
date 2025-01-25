@@ -14,15 +14,13 @@ export const nav = () => {
 
   let obj = {};
 
-  function handle_nav() {
+  let positive = false;
 
-    let positive = false;
+  function handle_nav() {
 
     let scroll_pos = window.scrollY;
 
     const main_top = main.offsetTop;
-
-    const navigation_top = navigation.getBoundingClientRect().height;
 
     const height = navigation.scrollHeight;
 
@@ -36,6 +34,28 @@ export const nav = () => {
       return;
     }
 
+    if (scroll_pos < main_top ) {
+
+      obj.clipPath = "inset(100%)";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "none";
+    } else if (scroll_pos > main_top && positive) {
+
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = "0px";
+      obj.transition = "top 0.375s";
+    } else if (scroll_pos > main_top && !positive)  {
+
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "top 0.375s";   
+    } 
+
+    Object.assign(navigation.style, obj);
+
     if (scroll_pos > scrollY) {
 
       positive = true;
@@ -43,28 +63,6 @@ export const nav = () => {
 
       positive = false;
     } 
-
-    if (scroll_pos < main_top ) {
-
-      obj.clipPath = "inset(100%)";
-      obj.position = "fixed";
-      obj.top = `-${height}px`;
-      obj.transition = "none";
-    } else if ((scroll_pos < main_top + navigation_top && scroll_pos > main_top && !positive) || (scroll_pos > main_top + navigation_top && positive)) {
-
-      obj.clipPath = "initial";
-      obj.position = "fixed";
-      obj.top = `-${height}px`;
-      obj.transition = "top 0.375s";   
-    } else if (scroll_pos > main_top + navigation_top && !positive) {
-
-      obj.clipPath = "initial";
-      obj.position = "fixed";
-      obj.top = "0px";
-      obj.transition = "top 0.375s";
-    } 
-
-    Object.assign(navigation.style, obj);
 
     scrollY = window.scrollY;
   }

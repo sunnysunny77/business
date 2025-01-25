@@ -2,16 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5% 12.5% 7.5% 12.5%;
-    @include max_xxl {
-        padding: 7.5% 6.25% 7.5% 6.25%;
+    flex-direction: column;
+    padding: 17% 6.25% 17% 6.25%;
+    @include min_md {
+        flex-direction: row;
+        padding: 13% 6.25% 13% 6.25%;
     }
-    @include max_xl {
-        padding: 17% 6.25% 7.5% 6.25%;
-    }
-    @include max_md {
-        flex-direction: column;
-        padding: 17% 5% 17% 5%;
+    @include min_xxl {
+        flex-direction: row;
+        padding: 9% 12.5% 9% 12.5%;
     }
     p {
         width: 25%;

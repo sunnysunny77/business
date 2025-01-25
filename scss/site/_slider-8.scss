@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 6.25% 9% 6.35%;
+    margin: 0 6.25% calc(6.25% - 52px) 6.25%;
     @include max_xl {
         flex-direction: column;
         margin: auto;

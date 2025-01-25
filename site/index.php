@@ -221,6 +221,121 @@
         </p>
       </article>
     </div>
+    <div id="slider_2-top" class="slider_2-outer row g-0">
+
+      <div class="slider_2-container timeline-container col-12 col-md-10 col-xl-8 mx-auto">
+
+        <?php
+
+        $index = 1;
+        $count = -1;
+        $array = array("Duis aute irure", "Lorem ipsum dolor", "Dolore magna aliqu", "Voluptate velit esse");
+
+        while ($index < 5) {
+
+          $direction = $index % 2 === 1 ? "flex-row" : "flex-row-reverse";
+          $direction_even = $index % 2 === 1 ? "flex-row-reverse" : "flex-row";
+          $justify_odd = $index % 2 === 1 ? "justify-content-md-end" : "justify-content-md-start";
+          $text_direction = $index % 2 === 1 ? "text-center text-md-end" : "text-center text-md-start";
+
+          $display = "d-none";
+
+          if ($index === 1) {
+
+            $display = "d-flex";
+          }
+
+          $count++;
+
+          if ($count === count($array)) {
+  
+            $count = 0;
+          }
+
+        ?>
+
+          <div class="slider_2-item timeline-item row <?php echo $direction; ?> justify-content-center <?php echo $display; ?> g-0">
+          
+            <div class="col-12 col-md-6 d-flex <?php echo $justify_odd; ?>">
+
+              <div class="slider_2-line-container d-flex flex-fill <?php echo $direction_even; ?>"> 
+
+                <div class="slider_2-line">
+
+                  <div class="slider_2-lineinner d-flex align-items-center justify-content-center mx-auto"><div class="slider_2-linemid"></div></div>
+
+                </div>   
+
+                <div class="slider_2-date d-flex justify-content-center align-items-center">
+                                    
+                  <p class="text-center">
+
+                    <?php echo $array[$count] ?>
+
+                    <span class="d-block">
+
+                      <?php 
+
+                          echo date('Y', strtotime("200$index-01-01"));
+
+                      ?>
+
+                    <span>
+
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="slider_2-content col-12 col-md-6">
+
+              <div class="row justify-content-center <?php echo $justify_odd; ?> g-0">
+
+                <div class="col-9 col-md-10 <?php echo $text_direction; ?>">
+                
+                  <p>
+
+                    <?php 
+
+                      echo str_repeat(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat."
+                      ,$index);
+
+                    ?>
+
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        <?php
+
+        $index++;
+
+        };
+
+        ?>
+
+        <div class="slider_2-button-container d-flex justify-content-center pt-5 pt-md-0">
+
+          <button aria-label="see more" class="c-custom-1 timeline-button"><i class="fa-solid fa-arrow-down"></i></button>
+
+        </div>
+
+      </div>
+
+    </div>
     <div id="three-col-box">
       <p>
         Consectetur adipiscing elit, sed do eiusmod.
