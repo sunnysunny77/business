@@ -1,7 +1,6 @@
 #nav {
     background-color: $c3;
     background-image: url(../images/nav-texture.webp);
-    padding: 5px 0;
     width: 100%;
     will-change: top;
     display: flex;
@@ -13,36 +12,25 @@
     z-index: 999;
     clip-path: inset(100%);
     position: fixed;
+    max-height: 39px;
     @include max_sm {
-        position: sticky;
+        position: static;
         clip-path: initial;
-        margin: 0 0 424px 0;
-        top: 0;
-        padding: 0;
-        > ul {
-            height: 0;
-        }
-        &:hover,
-        &:focus {
-            background-color: $c9;
-            > ul {
-                height: 210px;
-                li {
-                    transform: translateY(0);
-                }
+        overflow: hidden;
+        &.has-collapsed {
+            ul li {
+                transform: translateY(-210px);
             }
         }
     }
     ul {
-        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: calc(100% - 40px);
+        overflow: hidden;
         @include max_sm {
             flex-direction: column;
-            transition: height 0.65s;
-            will-change: height;
             justify-content: center;
             width: 100%;
         }
@@ -51,9 +39,9 @@
         list-style-type: none;
         @include max_sm {
             display: list-item;
+            transition: transform 0.375s;
             will-change: transform;
-            transition: transform 0.65s ease;
-            transform: translateY(-105px);
+            transform: translateY(0);
         }
         a {
             color: inherit;
@@ -64,13 +52,13 @@
             outline: none;
             display: block;
             margin: auto 25px;
+            transition:
+                0.1s ease background-color,
+                color 0.1s ease;
+            will-change: background-color, color;
             @include max_sm {
                 margin: auto auto 20px auto;
                 display: block;
-                transition:
-                    0.1s ease background-color,
-                    color 0.1s ease;
-                will-change: background-color, color;
             }
             span.desktop {
                 @include max_sm {
