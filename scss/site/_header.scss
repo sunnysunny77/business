@@ -3,6 +3,7 @@ header {
   clip-path: inset(0 0 0 0);
   height: 33vh;
   min-height: 320px;
+  background-color: $c16;
   @include min_sm {
     height: 50vh;
   }
@@ -12,7 +13,6 @@ header {
   @include landscape {
     height: 100vh;
   }
-  background-color: $c16;
   #header-list {
    clip-path: inset(100%);
     @include min_sm {

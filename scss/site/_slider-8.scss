@@ -6,8 +6,8 @@
     margin: 0 6.25% calc(6.25% - 52px) 6.25%;
     @include max_xl {
         flex-direction: column;
-        margin: auto;
         align-items: center;
+        margin: 0 auto calc(12.5% - 52px) auto;
     }
     article {
         display: flex;
