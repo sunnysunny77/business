@@ -56,7 +56,7 @@ export const nav = () => {
 
     let scroll_pos = window.scrollY;
 
-    const main_top = main.offsetTop - height;
+    const main_top = positive ? main.offsetTop - height : main.offsetTop;
 
     const main_bottom = main.offsetTop + main.scrollHeight - height;
 

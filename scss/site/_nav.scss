@@ -46,7 +46,7 @@
         a {
             color: inherit;
             width: fit-content;
-            padding: 5px 7.5px;
+            padding: 2px 5px;
             text-decoration: none;
             border-radius: 5px;
             outline: none;
@@ -59,6 +59,7 @@
             @include max_sm {
                 margin: auto auto 20px auto;
                 display: block;
+                padding: 5px 7.5px;
             }
             span.desktop {
                 @include max_sm {
