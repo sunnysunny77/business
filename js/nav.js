@@ -21,7 +21,6 @@ export const nav = () => {
 
   let height = window.innerWidth >= 576 ? navigation.scrollHeight : navigation.scrollHeight - navbar_collapse.scrollHeight;
 
-
   const handle_collapse = (transition, height_param) => {
 
     let obj = {};
