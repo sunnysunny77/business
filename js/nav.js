@@ -22,6 +22,8 @@ export const nav = () => {
 
     const main_top = main.offsetTop;
 
+    const main_bottom = main.offsetTop + main.scrollHeight - navigation.scrollHeight;
+
     const height = navigation.scrollHeight;
 
     if (window.innerWidth <= 576) {
@@ -34,7 +36,13 @@ export const nav = () => {
       return;
     }
 
-    if (scroll_pos < main_top ) {
+    if (scroll_pos > main_bottom) {
+
+      obj.clipPath = "initial";
+      obj.position = "fixed";
+      obj.top = `-${height}px`;
+      obj.transition = "top 0.375s";   
+    } else if (scroll_pos < main_top ) {
 
       obj.clipPath = "inset(100%)";
       obj.position = "fixed";
