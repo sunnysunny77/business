@@ -13,6 +13,7 @@
     clip-path: inset(100%);
     position: fixed;
     max-height: 39px;
+    outline: none;
     @include max_sm {
         position: static;
         clip-path: initial;

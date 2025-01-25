@@ -12,7 +12,7 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="images/pwa-logo-small.webp" />
   </head>
-  <body tabindex="0">
+  <body>
     <a class="hide" href="#main" accesskey="S"> Skip navigation </a>
     <header>
       <nav id="header-list">   
