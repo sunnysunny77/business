@@ -2,7 +2,7 @@
     background-color: $c3;
     background-image: url(../images/nav-texture.webp);
     width: 100%;
-    will-change: top;
+    will-change: top, max-height;
     display: flex;
     flex-wrap: wrap;
     font-family: $font2;
@@ -14,17 +14,12 @@
     position: fixed;
     max-height: 39px;
     outline: none;
+    overflow: hidden;
     @include max_sm {
         position: static;
         clip-path: initial;
-        overflow: hidden;
-        &.has-collapsed {
-            ul li {
-                transform: translateY(-210px);
-            }
-        }
     }
-    ul {
+    .navbar-collapse {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -35,48 +30,41 @@
             justify-content: center;
             width: 100%;
         }
-    }
-    li {
-        list-style-type: none;
-        @include max_sm {
-            display: list-item;
-            transition: transform 0.375s;
+        li {
+            list-style-type: none;
             will-change: transform;
-            transform: translateY(0);
-        }
-        a {
-            color: inherit;
-            width: fit-content;
-            padding: 2px 5px;
-            text-decoration: none;
-            border-radius: 5px;
-            outline: none;
-            display: block;
-            margin: auto 25px;
-            transition:
-                0.1s ease background-color,
-                color 0.1s ease;
-            will-change: background-color, color;
-            @include max_sm {
-                margin: auto auto 20px auto;
+            a {
+                color: inherit;
+                width: fit-content;
+                padding: 2px 5px;
+                text-decoration: none;
+                border-radius: 5px;
+                outline: none;
                 display: block;
-                padding: 5px 7.5px;
-            }
-            span.desktop {
+                margin: auto 25px;
+                transition: background-color 0.175s ease, color 0.175s ease;
+                will-change: background-color, color;
                 @include max_sm {
-                    display: none;
+                    margin: auto auto 20px auto;
+                    display: block;
+                    padding: 5px 7.5px;
                 }
-            }
-            span.mobile {
-                @include min_sm {
-                    display: none;
+                span.desktop {
+                    @include max_sm {
+                        display: none;
+                    }
                 }
-            }
-            &:hover,
-            &:focus {
-                color: $c3;
-                background-color: $c4;
-                background-image: none;
+                span.mobile {
+                    @include min_sm {
+                        display: none;
+                    }
+                }
+                &:hover,
+                &:focus {
+                    color: $c3;
+                    background-color: $c4;
+                    background-image: none;
+                }
             }
         }
     }

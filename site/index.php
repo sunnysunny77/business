@@ -38,7 +38,7 @@
       </picture>
       <h1> Adipiscin </h1>
     </header>
-    <nav tabindex="0" id="nav" class="has-collapsed">
+    <nav id="nav">
       <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
       <ul class="navbar-collapse">
         <li><a href="./index.php">Home</a></li>

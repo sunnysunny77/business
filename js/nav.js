@@ -19,40 +19,63 @@ export const nav = () => {
 
   let collapse;
 
-  let height = window.innerWidth >= 576 ? navigation.scrollHeight : navigation.scrollHeight - navbar_collapse.scrollHeight;
+  let has_collapsed = true;
+
+  let height = window.innerWidth < 576 ? navigation.scrollHeight - navbar_collapse.scrollHeight : navigation.scrollHeight;
 
   const handle_collapse = (transition, height_param) => {
 
-    let obj = {};
-
-    navigation.classList.add("has-collapsed");
-    obj.transition = transition;
-    obj.maxHeight = `${height_param}px`;
-    Object.assign(navigation.style, obj);
+    const wins = window.innerWidth < 576;
+    has_collapsed = true;
     collapse = height;
+
+    Object.assign(navigation.style, {
+
+      transition: transition,
+      maxHeight: `${height_param}px`,
+    });
+
+    for (const index of navbar_collapse.children) {
+
+      Object.assign(index.style, {
+
+        transition: wins ? "transform 0.375s" : "none",
+        transform: wins ? `translateY(-${navbar_collapse.children.length}00%)` : "translateY(0)",
+      });
+    };
   };
 
   const handle_toggle = () => {
 
-    if (window.innerWidth <= 576) {
+    if (window.innerWidth < 576) {
 
-      let obj = {};
+      has_collapsed = !has_collapsed;
+      collapse = has_collapsed ? height : navigation.scrollHeight;
 
-      navigation.classList.toggle("has-collapsed");
-      collapse = navigation.classList.contains("has-collapsed") ? height : navigation.scrollHeight;
-      obj.transition = "max-height 0.375s";
-      obj.maxHeight = `${collapse}px`;
-      Object.assign(navigation.style, obj);
+      Object.assign(navigation.style, {
+
+        transition: "max-height 0.375s",
+        maxHeight: `${collapse}px`,
+      });
+
+      for (const index of navbar_collapse.children) {
+
+        Object.assign(index.style, {
+
+          transition: "transform 0.375s",
+          transform: has_collapsed ? `translateY(-${navbar_collapse.children.length}00%)` : "translateY(0)",
+        });
+      };
     }
   };
 
-  const handle_height = () => {
-
-    height = window.innerWidth >= 576 ? navigation.scrollHeight : navigation.scrollHeight - navbar_collapse.scrollHeight;
-    collapse = navigation.classList.contains("has-collapsed") ? height : navigation.scrollHeight;
-  };
-
   function handle_nav() {
+
+    const wins = window.innerWidth < 576;
+
+    height = wins ? navigation.scrollHeight - navbar_collapse.scrollHeight : navigation.scrollHeight;
+
+    collapse = has_collapsed ? height : navigation.scrollHeight;
 
     let scroll_pos = window.scrollY;
 
@@ -61,8 +84,6 @@ export const nav = () => {
     const main_bottom = main.offsetTop + main.scrollHeight - height;
 
     const body = document.body;
-
-    const wins = window.innerWidth <= 576;
 
     let obj = {};
 
@@ -85,9 +106,8 @@ export const nav = () => {
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = "0px";
-      obj.transition = "top 0.375s, max-height 0.375s";
-      obj.maxHeight = `${collapse}px`;
-      body.style.marginTop = wins ? `${height}px` : "";   
+      body.style.marginTop = wins ? `${height}px` : "";
+      handle_collapse("top 0.375s, max-height 0.375s", collapse); 
     }
 
     if (obj !== style) Object.assign(navigation.style, obj);
@@ -108,6 +128,5 @@ export const nav = () => {
   events(window, "wheel", handle_nav, {passive: true});
   events(window, "scroll", handle_nav, {passive: true});
   events(window, "resize", handle_nav, {passive: true});
-  events(window, "resize", handle_height, { passive: true });
   events(navigation, "click", handle_toggle);
 };

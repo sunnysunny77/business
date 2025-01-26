@@ -55,9 +55,8 @@ header {
         margin: 4% 0;
         background-color: $c3;
         background-image: url(../images/nav-texture.webp);
-        transition:
-          0.1s ease background-color,
-          color 0.1s ease;
+        transition: background-color 0.175s ease ,color 0.175s ease;
+        will-change: background-color, color;
         &:hover,
         &:focus {
           color: $c3;
