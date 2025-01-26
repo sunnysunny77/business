@@ -23,9 +23,22 @@ export const nav = () => {
 
   let height = window.innerWidth < 576 ? navigation.scrollHeight - navbar_collapse.scrollHeight : navigation.scrollHeight;
 
-  const handle_collapse = (transition, height_param) => {
+  const handle_children = () => {
 
     const wins = window.innerWidth < 576;
+    
+    for (const index of navbar_collapse.children) {
+
+      Object.assign(index.style, {
+
+        transition: wins ? "transform 0.375s" : "none",
+        transform: wins && has_collapsed ? `translateY(-${navbar_collapse.children.length}00%)` : "translateY(0)",
+      });
+    };
+  };
+
+  const handle_collapse = (transition, height_param) => {
+
     has_collapsed = true;
     collapse = height;
 
@@ -34,39 +47,24 @@ export const nav = () => {
       transition: transition,
       maxHeight: `${height_param}px`,
     });
-
-    for (const index of navbar_collapse.children) {
-
-      Object.assign(index.style, {
-
-        transition: wins ? "transform 0.375s" : "none",
-        transform: wins ? `translateY(-${navbar_collapse.children.length}00%)` : "translateY(0)",
-      });
-    };
+    
+    handle_children();
   };
 
   const handle_toggle = () => {
 
-    if (window.innerWidth < 576) {
+    const wins = window.innerWidth < 576;
+    
+    has_collapsed = !has_collapsed;
+    collapse = has_collapsed ? height : navigation.scrollHeight;
 
-      has_collapsed = !has_collapsed;
-      collapse = has_collapsed ? height : navigation.scrollHeight;
+    Object.assign(navigation.style, {
 
-      Object.assign(navigation.style, {
+      transition: wins ? "max-height 0.375s" : "top 0.375s, max-height 0.375s",
+      maxHeight: `${collapse}px`,
+    });
 
-        transition: "max-height 0.375s",
-        maxHeight: `${collapse}px`,
-      });
-
-      for (const index of navbar_collapse.children) {
-
-        Object.assign(index.style, {
-
-          transition: "transform 0.375s",
-          transform: has_collapsed ? `translateY(-${navbar_collapse.children.length}00%)` : "translateY(0)",
-        });
-      };
-    }
+    handle_children();
   };
 
   function handle_nav() {
@@ -106,8 +104,10 @@ export const nav = () => {
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = "0px";
+      obj.transition = "top 0.375s, max-height 0.375s";
+      obj.maxHeight = `${collapse}px`;
       body.style.marginTop = wins ? `${height}px` : "";
-      handle_collapse("top 0.375s, max-height 0.375s", collapse); 
+      handle_children();
     }
 
     if (obj !== style) Object.assign(navigation.style, obj);
