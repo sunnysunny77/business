@@ -48,7 +48,7 @@
     </nav>
     <main id="main">
       <article id="one-col-text">
-        <h2>Lorem ipsum ..</h2>
+        <h2 class="main-heading">Lorem ipsum ..</h2>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -57,16 +57,54 @@
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat.
         </span>
-        <p>
-          <q>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat.
-          </q>
-          <br />
-          <br />Adipiscing elit
-        </p>
+        <div class="accordion" id="accordionText">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Urna diam quisque
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionText">
+              <div class="accordion-body">
+                Sapien ac purus risus aliquet ex. Volutpat proin arcu finibus elementum at rutrum purus consequat nisl. Dolor mauris placerat metus maximus porta curae facilisis suspendisse. 
+                <br>
+                <br>
+                Suscipit varius sodales penatibus; sollicitudin diam fusce auctor. At libero auctor risus odio senectus penatibus. Vestibulum duis placerat fusce cubilia diam efficitur phasellus nascetur.
+                Sollicitudin varius at accumsan; est egestas turpis egestas. Convallis lacus integer ad facilisis himenaeos primis ultricies. Tempus himenaeos cubilia venenatis ornare gravida faucibus duis litora sed.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Dictum cubilia sapien
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionText">
+              <div class="accordion-body">
+                Lobortis penatibus cubilia aliquam ut; eleifend pharetra interdum. Eros placerat habitant sodales vivamus ultricies suscipit; lectus cursus. Conubia euismod penatibus vitae dignissim arcu iaculis scelerisque. Ipsum quis penatibus tellus risus semper ligula praesent magna. Mus dictumst bibendum mauris porttitor orci in faucibus purus suscipit. 
+                <br>
+                <br>
+                Libero dignissim montes finibus nascetur massa. Proin orci dolor, suspendisse est sem finibus nibh. Mauris fames ipsum dapibus sodales varius tristique bibendum ac congue. Ridiculus convallis euismod senectus condimentum pellentesque sodales porta.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Parturient felis
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionText">
+              <div class="accordion-body">
+                Convallis sagittis dapibus tortor inceptos porta suspendisse facilisis. Fames parturient adipiscing mattis dis efficitur vel aliquam diam. 
+                <br>
+                <br>
+                Ex proin integer primis volutpat ipsum non venenatis dis. Dapibus turpis ornare ex taciti natoque ante netus, lectus sodales. Proin fusce blandit lacinia quam velit luctus imperdiet. Sit mauris sapien molestie leo urna feugiat.
+              </div>
+            </div>
+          </div>
+        </div>
       </article>
       <div id="layer-layout">
         <img

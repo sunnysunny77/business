@@ -1,7 +1,7 @@
 //import "../node_modules/bootstrap/js/dist/alert";
 //import "../node_modules/bootstrap/js/dist/button";
 import "../node_modules/bootstrap/js/dist/carousel";
-//import "../node_modules/bootstrap/js/dist/collapse";
+import "../node_modules/bootstrap/js/dist/collapse";
 //import "../node_modules/bootstrap/js/dist/dropdown";
 //import "../node_modules/ootstrap/js/dist/modal";
 //import "../node_modules/bootstrap/js/dist/offcanvas";

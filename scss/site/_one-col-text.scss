@@ -4,7 +4,7 @@
   @include max_xl {
     width: 90%;
   }
-  h2 {
+  .main-heading {
     margin: calc(65px + 4%) auto 3% 4%;
   }
   span {
@@ -12,17 +12,55 @@
     text-align: justify;
     display: inline-block;
   }
-  p {
-    margin: 12.5% auto 8% auto;
-    border: 2px solid $c4;
+  .accordion {
+    margin: 12.5% auto 4% auto;
+    border-right: 2px solid $c4;
+    border-bottom: 2px solid $c4;
+    border-left: 2px solid $c4;
     color: $c4;
-    padding: 25px;
+    padding: 56px 25px 25px 25px;
     font-size: clamp(14px, 1.6vw, 16px);
+    opacity: 0.85;
+    line-height: 2;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+    position: relative;
     @include max_xxl {
       margin: 12.5% auto;
     }
-    q {
-      opacity: 0.85;
+    @include max_md {
+      padding: 56px 12.5px 25px 12.5px;
+    }
+    &:after {
+      background-color: $c3;
+      border-radius: 50%;
+      content: " ";
+      height: 200px;
+      position: absolute;
+      top: -152px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      border: 2px solid $c4;
+      width: 200px;
+      z-index: 50;
+    }
+    &:before {
+      content: " ";
+      height: 2px;
+      width: 100%;
+      background-color: $c4;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      left: 0;
+    }
+    button {
+      opacity: 1;
+      line-height: 1;
+      letter-spacing: 0.075em;
+      font-size: 18px;
+      font-family: "Poppins";
     }
   }
 }
