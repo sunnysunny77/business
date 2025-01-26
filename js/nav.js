@@ -54,7 +54,6 @@ export const nav = () => {
   const handle_toggle = () => {
 
     const wins = window.innerWidth < 576;
-    
     has_collapsed = !has_collapsed;
     collapse = has_collapsed ? height : navigation.scrollHeight;
 
