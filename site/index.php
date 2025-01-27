@@ -39,10 +39,10 @@
       <h1> Adipiscin </h1>
     </header>
     <nav id="nav">
-      <i id="menu" role="button" aria-label="Menu" c class="fa-solid fa-circle-dot"></i>
+      <i id="menu" role="button" aria-label="Menu" class="fa-solid fa-circle-dot"></i>
       <ul class="navbar-collapse">
         <li><a href="./index.php">Home</a></li>
-        <li><a href="tel:123-456-7890"><span class="mobile">123-456-7890</span><span class="desktop">Phone<span></a></li>
+        <li><a href="tel:123-456-7890"><span class="mobile">123-456-7890</span><span class="desktop">Phone</span></a></li>
         <li><a href="mailto:name@email.com"><span class="mobile">lorem@email.com</span><span class="desktop">Email</span></a></li>
       </ul>     
     </nav>
@@ -318,7 +318,7 @@
 
                       ?>
 
-                    <span>
+                    </span>
 
                   </p>
 
