@@ -11,7 +11,7 @@ import "../node_modules/bootstrap/js/dist/collapse";
 //import "../node_modules/bootstrap/js/dist/toast";
 //import "../node_modules/bootstrap/js/dist/tooltip";
 
-import AOS from "../node_modules/aos/dist/aos.js";
+import AOS from "aos";
 import { service_worker } from "./service_worker.js";
 import { nav } from "./nav.js";
 import { slider_2 } from "./slider_2.js";
