@@ -26,17 +26,35 @@
           </li>
         </ul>
       </nav>
-      <picture>
-        <source
-          media="(max-width: 993px)"
-          srcset="./images/header-mobile.webp"
-        />
-        <img
-          src="./images/header.webp"
-          alt="header"
-        />
-      </picture>
       <h1> Adipiscin </h1>
+
+      <div id="picture">
+        <picture>
+          <source
+            media="(max-width: 993px)"
+            srcset="./images/header-mobile.webp"
+          />
+          <img
+            src="./images/header.webp"
+            alt="header"
+          />
+        </picture>
+        <div id="header-int">
+            <div class="header-int-text-container">
+              <p>
+                Register your interest with us now for
+                the best service guaranteed!
+              </p>
+              <p class="header-int-text-lower">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+                eiusmod tempor incididunt.
+              </p>
+              <button>
+                Register
+              </button>
+            </div>
+          </div>
+      </div>
     </header>
     <nav id="nav">
       <i id="menu" role="button" aria-label="Menu" class="fa-solid fa-circle-dot"></i>
