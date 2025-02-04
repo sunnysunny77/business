@@ -2,7 +2,7 @@ header {
   position: relative;
   clip-path: inset(0 0 0 0);
   background-color: $c16;
-  min-height: 50vh;
+  min-height: 408px;
   @include min_sm {
     min-height: 75vh;
     padding: 0;
@@ -10,17 +10,24 @@ header {
   @include min_lg {
     min-height: 100vh;
   }
+  @include landscape {
+    min-height: 100vh;
+  }
   #header-list {
-    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
     clip-path: inset(100%);
     @include min_sm {
+      width: 100%;
+      height: initial;
       display: block;
       clip-path: initial;
       font-family: $font2;
       max-width: 1920px;
-      color: $c15;
+      color: $c16;
       font-size: larger;
-      position: relative;
+      position: absolute;
       z-index: 999;
       background-color: $c3;
     }
@@ -51,7 +58,6 @@ header {
         display: block;
         margin: 4% 0;
         background-color: $c3;
-        background-image: url(../images/nav-texture.webp);
         transition:
           background-color 0.175s ease,
           color 0.175s ease;
@@ -60,20 +66,19 @@ header {
         &:focus {
           color: $c3;
           background-color: $c4;
-          background-image: none;
         }
       }
     }
   }
   #picture {
-    width: 100%;
+    width: 100vw;
     background-color: $c3;
     display: flex;
     overflow: hidden;
     align-items: flex-start;
     flex-wrap: wrap;
     z-index: 998;
-    min-height: calc(50vh - 60px);
+    min-height: 358px;
     border-bottom-left-radius: 6rem;
     position: fixed;
     top: 0;
@@ -87,6 +92,7 @@ header {
     }
     @include landscape {
       min-height: calc(100vh - 60px);
+      align-items: center;
     }
   }
   #header-int {
@@ -97,29 +103,40 @@ header {
       order: 1;
       width: 55%;
     }
+    @include landscape {
+      order: 1;
+      width: 67%;
+    }
     display: flex;
     align-items: center;
     z-index: 999;
     .header-int-text-container {
       color: $c16;
-      font-size: clamp(18px, 3vw, 34px);
+      font-size: clamp(16px, 3vw, 34px);
       line-height: 1.35;
       letter-spacing: 0.05em;
-      margin: 4vw 5% 8vw 5%;
-      width: 90%;
+      margin: 1rem auto auto auto;
+      width: 84%;
       text-align: right;
       @include min_sm {
         width: 75%;
-        margin: 4vw 5% auto  25%;
+        margin: auto;
       }
       @include min_lg {
-        margin: 0 0 12.5vw 25%;
+        margin: 0 0 9vw 25%;
         text-align: left;
         max-width: 650px;
       }
+      @include landscape {
+        width: 90%;
+        margin: 4% 0 0 10%;
+        text-align: left;
+        max-width: 650px;
+        font-size: 18px;
+      }
     }
     .header-int-text-lower {
-      font-size: clamp(18px, 3vw, 20px);
+      font-size: clamp(14px, 3vw, 20px);
       width: 100%;
       margin:  1rem 0 0 auto;
       @include min_sm {
@@ -127,6 +144,10 @@ header {
       }
       @include min_lg {
         margin: 1rem 0 0 0;
+      }
+      @include landscape {
+        width: 100%;
+        font-size: 16px;
       }
       opacity: 0.9;
       line-height: 1.35;
@@ -145,9 +166,12 @@ header {
       opacity: 1;
       transition: opacity 0.25s ease-in-out;
       will-change: opacity;
-      margin: 3rem 0 0 0;
+      margin: 5vw 0 0 0;
       @include min_lg {
         padding: 20px 35px;
+      }
+      @include landscape {
+        font-size: 16px;
       }
       &:hover {
         opacity: 0.88;
@@ -158,11 +182,17 @@ header {
     width: 100%;
     height: 12.5vh;
     order: 1;
+    display: flex;
     @include min_sm {
       height: 25vh;
     }
     @include min_lg {
       width: 45%;
+      height: 75vh;
+      order: 2;
+    }
+    @include landscape {
+      width: 33%;
       height: 75vh;
       order: 2;
     }
@@ -174,11 +204,15 @@ header {
     width: 100%;
     height: 100%;
     @include min_sm {
-      margin: 10vw 0 auto auto;
+      margin: 10vw auto auto auto;
     }
     @include min_lg {
       margin: auto 0 auto auto;
       object-fit: cover;
+    }
+    @include landscape {
+      margin: auto 0 auto auto;
+      object-fit: contain;
     }
   }
   h1 {
