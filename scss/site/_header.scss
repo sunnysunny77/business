@@ -2,7 +2,7 @@ header {
   position: relative;
   clip-path: inset(0 0 0 0);
   background-color: $c16;
-  height: 453px;
+  height: 483px;
   @include min_sm {
     height: 50vh;
   }
@@ -77,7 +77,7 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
     z-index: 998;
-    min-height: 403px;
+    min-height: 427px;
     border-bottom-left-radius: 6rem;
     position: fixed;
     top: 0;
