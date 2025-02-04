@@ -157,6 +157,9 @@ header {
       @include min_xxl {
         padding: 20px 35px;
       }
+      @include landscape {
+        margin: 3vw 0 0 0;
+      }
       &:hover {
         opacity: 0.88;
       }
