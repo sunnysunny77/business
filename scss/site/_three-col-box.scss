@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 17% 6.25% 17% 6.25%;
+    padding: 17% 7.5% 17% 7.5%;
     @include min_md {
         flex-direction: row;
         padding: 13% 6.25% 13% 6.25%;
@@ -25,7 +25,7 @@
         position: relative;
         @include max_md {
             width: 94%;
-            margin: 7.5% 0;
+            margin: 9% 0;
             height: initial;
             min-height: 100px;
         }
