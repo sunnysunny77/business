@@ -61,8 +61,8 @@ export const nav = () => {
     Object.assign(navigation.style, {
 
       transition: wins ? "max-height 0.375s, background-color 0.375s" : "top 0.375s, max-height 0.375s",
-      backgroundColor: !has_collapsed ? wins ? "#d3d3d3" : "#FFFFFF" : "#FFFFFF",
-      maxHeight: `${collapse}px`,
+      backgroundColor: !has_collapsed && wins ? "#d3d3d3" : "#FFFFFF",
+      maxHeight: wins ? `${collapse}px` : `${height}px`,
     });
 
     handle_children();
@@ -107,9 +107,11 @@ export const nav = () => {
       obj.top = "0px";
       obj.transition = "top 0.375s, max-height 0.375s";
       obj.maxHeight = `${collapse}px`;
+      obj.backgroundColor = !has_collapsed && wins ? "#d3d3d3" : "#FFFFFF",
       body.style.marginTop = wins ? `${height}px` : "";
       handle_children();
     }
+
 
     if (obj !== style) Object.assign(navigation.style, obj);
 
