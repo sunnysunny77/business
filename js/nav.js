@@ -45,6 +45,7 @@ export const nav = () => {
     Object.assign(navigation.style, {
 
       transition: transition,
+      backgroundColor: "#FFFFFF",
       maxHeight: `${height_param}px`,
     });
     
@@ -59,7 +60,8 @@ export const nav = () => {
 
     Object.assign(navigation.style, {
 
-      transition: wins ? "max-height 0.375s" : "top 0.375s, max-height 0.375s",
+      transition: wins ? "max-height 0.375s, background-color 0.375s" : "top 0.375s, max-height 0.375s",
+      backgroundColor: !has_collapsed ? wins ? "#d3d3d3" : "#FFFFFF" : "#FFFFFF",
       maxHeight: `${collapse}px`,
     });
 
@@ -90,14 +92,14 @@ export const nav = () => {
       obj.position = wins ? "static" : "fixed";
       obj.top = wins ? "0px" : `-${height}px`;
       body.style.marginTop = "";
-      handle_collapse(wins ? "max-height 0.375s" : "top 0.375s, max-height 0.375s", height);
+      handle_collapse(wins ? "max-height 0.375s, background-color 0.375s" : "top 0.375s, max-height 0.375s", height);
     } else if ((scroll_pos > main_top && !positive) || (scroll_pos > main_bottom))  {
 
       obj.clipPath = "initial";
       obj.position = "fixed";
       obj.top = `-${height}px`;
       body.style.marginTop = wins ? `${height}px` : "";   
-      handle_collapse("top 0.375s, max-height 0.375s", height);
+      handle_collapse(wins ? "top 0.375s, max-height 0.375s, background-color 0.375s" : "top 0.375s, max-height 0.375s", height);
     } else if (scroll_pos > main_top && positive) {
 
       obj.clipPath = "initial";

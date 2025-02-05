@@ -69,7 +69,7 @@ header {
       }
     }
   }
-  #picture {
+  #fixed-container {
     width: 100vw;
     background-color: $c3;
     display: flex;
@@ -94,7 +94,7 @@ header {
       min-height: calc(100vh - 63px);
     }
   }
-  #header-int {
+  #header-cta {
     width: 100%;
     height: 100%;
     order: 2;
@@ -108,7 +108,7 @@ header {
     display: flex;
     align-items: center;
     z-index: 999;
-    .header-int-text-container {
+    .header-cta-text-container {
       color: $c16;
       font-size: clamp(16px, 2vw, 34px);
       line-height: 1.35;
@@ -128,7 +128,7 @@ header {
         max-width: 650px;
       }
     }
-    .header-int-text-lower {
+    .header-cta-text-lower {
       font-size: clamp(14px, 1.25vw, 20px);
       width: 100%;
       margin:  1rem 0 0 auto;

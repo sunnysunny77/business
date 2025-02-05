@@ -1,9 +1,7 @@
 #one-col-text {
-  width: 60%;
+  width: 90%;
   margin: auto;
-  @include max_xl {
-    width: 90%;
-  }
+  max-width: 1024px;
   .main-heading {
     margin: calc(65px + 4%) auto 3% 4%;
   }

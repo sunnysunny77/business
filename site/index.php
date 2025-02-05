@@ -27,8 +27,7 @@
         </ul>
       </nav>
       <h1> Adipiscin </h1>
-
-      <div id="picture">
+      <div id="fixed-container">
         <picture>
           <source
             media="(max-width: 993px)"
@@ -39,13 +38,13 @@
             alt="header"
           />
         </picture>
-        <div id="header-int">
-            <div class="header-int-text-container">
+        <div id="header-cta">
+            <div class="header-cta-text-container">
               <p>
                 Register your interest with us now for
                 the best service guaranteed!
               </p>
-              <p class="header-int-text-lower">
+              <p class="header-cta-text-lower">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit
                 eiusmod tempor incididunt.
               </p>
@@ -84,12 +83,11 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionText">
               <div class="accordion-body">
-                Sapien ac purus risus aliquet ex. Volutpat proin arcu finibus elementum at rutrum purus consequat nisl. Dolor mauris placerat metus maximus porta curae facilisis suspendisse. 
+                Convallis sagittis dapibus tortor inceptos porta suspendisse facilisis. Fames parturient adipiscing mattis dis efficitur vel aliquam diam. 
                 <br>
                 <br>
-                Suscipit varius sodales penatibus; sollicitudin diam fusce auctor. At libero auctor risus odio senectus penatibus. Vestibulum duis placerat fusce cubilia diam efficitur phasellus nascetur.
-                Sollicitudin varius at accumsan; est egestas turpis egestas. Convallis lacus integer ad facilisis himenaeos primis ultricies. Tempus himenaeos cubilia venenatis ornare gravida faucibus duis litora sed.
-              </div>
+                Ex proin integer primis volutpat ipsum non venenatis dis. Dapibus turpis ornare ex taciti natoque ante netus, lectus sodales. Proin fusce blandit lacinia quam velit luctus imperdiet. Sit mauris sapien molestie leo urna feugiat.
+              </div> 
             </div>
           </div>
           <div class="accordion-item">
@@ -115,10 +113,11 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionText">
               <div class="accordion-body">
-                Convallis sagittis dapibus tortor inceptos porta suspendisse facilisis. Fames parturient adipiscing mattis dis efficitur vel aliquam diam. 
+                Sapien ac purus risus aliquet ex. Volutpat proin arcu finibus elementum at rutrum purus consequat nisl. Dolor mauris placerat metus maximus porta curae facilisis suspendisse. 
                 <br>
                 <br>
-                Ex proin integer primis volutpat ipsum non venenatis dis. Dapibus turpis ornare ex taciti natoque ante netus, lectus sodales. Proin fusce blandit lacinia quam velit luctus imperdiet. Sit mauris sapien molestie leo urna feugiat.
+                Suscipit varius sodales penatibus; sollicitudin diam fusce auctor. At libero auctor risus odio senectus penatibus. Vestibulum duis placerat fusce cubilia diam efficitur phasellus nascetur.
+                Sollicitudin varius at accumsan; est egestas turpis egestas. Convallis lacus integer ad facilisis himenaeos primis ultricies. Tempus himenaeos cubilia venenatis ornare gravida faucibus duis litora sed.
               </div>
             </div>
           </div>
