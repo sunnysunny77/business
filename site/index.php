@@ -83,7 +83,7 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionText">
               <div class="accordion-body">
-                Convallis sagittis dapibus tortor inceptos porta suspendisse facilisis. Fames parturient adipiscing mattis dis efficitur vel aliquam diam. 
+                Convallis sagittis dapibus tortor inceptos porta suspendisse facilisis. Fames parturient adipiscing mattis dis efficitur vel aliquam diam.
                 <br>
                 <br>
                 Ex proin integer primis volutpat ipsum non venenatis dis. Dapibus turpis ornare ex taciti natoque ante netus, lectus sodales. Proin fusce blandit lacinia quam velit luctus imperdiet. Sit mauris sapien molestie leo urna feugiat.
