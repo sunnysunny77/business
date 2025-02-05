@@ -110,7 +110,7 @@ header {
     z-index: 999;
     .header-cta-text-container {
       color: $c16;
-      font-size: clamp(16px, 2vw, 34px);
+      font-size: clamp(16px, 2.75vw, 34px);
       line-height: 1.35;
       letter-spacing: 0.05em;
       margin: 1rem auto auto auto;
@@ -129,7 +129,7 @@ header {
       }
     }
     .header-cta-text-lower {
-      font-size: clamp(14px, 1.25vw, 20px);
+      font-size: clamp(14px, 1.67vw, 20px);
       width: 100%;
       margin:  1rem 0 0 auto;
       @include min_sm {
