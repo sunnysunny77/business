@@ -6,14 +6,13 @@
     max-height: 1230px;
     max-width: 1230px;
     width: 100%;
-    margin: 10% auto 0 auto;
+    margin: auto;
      @include max_md {
       padding-bottom: initial;
       position: static;
       height: initial;
       max-height: initial;
       max-width: initial;
-      margin: auto;
       display: flex;
       flex-wrap: wrap;
     }

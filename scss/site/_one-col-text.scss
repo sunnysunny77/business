@@ -2,6 +2,9 @@
   width: 90%;
   margin: auto;
   max-width: 1024px;
+  @include min_md {
+    width: 75%;
+  }
   .main-heading {
     margin: calc(65px + 4%) auto 3% 4%;
   }
@@ -11,7 +14,7 @@
     display: inline-block;
   }
   .accordion {
-    margin: 12.5% auto 4% auto;
+    margin: 12.5% auto 12.5% auto;
     border-right: 2px solid $c4;
     border-bottom: 2px solid $c4;
     border-left: 2px solid $c4;
@@ -23,9 +26,6 @@
     letter-spacing: 0.05em;
     overflow: hidden;
     position: relative;
-    @include max_xxl {
-      margin: 12.5% auto;
-    }
     @include max_md {
       padding: 56px 12.5px 25px 12.5px;
     }

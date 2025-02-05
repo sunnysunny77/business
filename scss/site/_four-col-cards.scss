@@ -69,6 +69,7 @@
         margin: 0;
         text-align: center;
         width: 100%;
+        font-size: 16.5px;
         @include max_xl {
           text-align: center;
           height: initial;
@@ -78,7 +79,7 @@
           display: inline;
           color: $c4;
           margin-right: 5px;
-          font-size: 17px;
+          font-size: 15px;
         }
       }
       p {
@@ -97,6 +98,7 @@
           text-align: right;
           color: $c2;
           opacity: 0.95;
+          font-size: 16px;
           @include max_xl {
             text-align: center;
             height: initial;
@@ -107,6 +109,7 @@
           display: inline-block;
           text-align: right;
           height: 111px;
+          font-size: 16px;
           @include max_xl {
             text-align: center;
             padding: 3% 0;

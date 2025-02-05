@@ -17,7 +17,7 @@
         height: fit-content;
 
         @include max_xl {
-            width: 90%;
+            width: 75%;
         }
         &:nth-child(1) {
             @include max_xl {
@@ -66,8 +66,8 @@
         margin: 2.5% 0;
         border: 2px solid $c4;
         @include max_xl {
-            width: 90%;
-            padding: 27% 0;
+            width: 75%;
+            padding: 25% 0;
             margin: 5% 0 0 0;
         }
         &:nth-child(2) {
