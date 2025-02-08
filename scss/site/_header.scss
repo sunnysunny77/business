@@ -103,7 +103,7 @@ header {
       width: 67%;
     }
     @include min_xxl {
-      width: 55%;
+      width: 64%;
     }
     display: flex;
     align-items: center;
@@ -175,7 +175,7 @@ header {
       order: 2;
     }
     @include min_xxl {
-      width: 45%;
+      width: 36%;
       order: 2;
     }
   }
