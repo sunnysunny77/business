@@ -150,7 +150,7 @@ header {
       font-size: clamp(16px, 2vw, 22px);
       padding: 10px 17.5px;
       color: $c3;
-      opacity: 1;
+      opacity: 0.95;
       transition: opacity 0.25s ease-in-out;
       will-change: opacity;
       margin: 5vw 0 0 0;
@@ -171,11 +171,13 @@ header {
     padding: 25px 0 0 0;
     display: flex;
     @include min_sm {
-      width: 33%;
+      width: 30%;
+      margin: 0 3% 0 0;
       order: 2;
     }
     @include min_xxl {
-      width: 36%;
+      width: 30%;
+      margin: 0 6% 0 0;
       order: 2;
     }
   }
@@ -187,13 +189,14 @@ header {
     height: 100%;
     margin: auto;
     box-sizing: border-box;
+    opacity: 0.95;
     @include min_sm {
       width: 100%;
       margin: auto 0 auto auto;
       padding: 17%;
     }
     @include min_xxl {
-      padding: 25%;
+      padding: 20% 25% 30% 25%;
       margin: auto 0 auto auto;
     }
   }
